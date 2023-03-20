@@ -1,0 +1,6 @@
+% fafa
+
+\newcommand{\R}[1]{{\color{red}\textbf{#1}}}
+\newcommand{\rarrw}{; \R{\textrightarrow} ;;}
+
+\R{1}
