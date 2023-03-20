@@ -1,6 +1,9 @@
-% fafa
+% Закоментированный текст
 
-\newcommand{\R}[1]{{\color{red}\textbf{#1}}}
-\newcommand{\rarrw}{; \R{\textrightarrow} ;;}
+Текст перед коментарием % коментарий
 
-\R{1}
+\newcommand{\macro}[1]{{\color{red}\textbf{#1}}}
+\newcommand{\rarrw}{; \macro{\textrightarrow} ;;}
+
+Текст перед макросом \macro{1} нашелся
+А вот этот макрос мы не задавали: \newMacro{2}, он без изменений
