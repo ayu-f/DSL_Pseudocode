@@ -1,0 +1,190 @@
+{
+  "nonterm": "ALG",
+  "content": [
+    {
+      "term": "algorithm"
+    },
+    {
+      "nonterm": "ЗАГОЛОВОК_АЛГОРИТМА",
+      "content": [
+        {
+          "nonterm": "ТИП_ВОЗВРАТА",
+          "content": []
+        },
+        {
+          "nonterm": "ИМЯ_ФУНКЦИИ",
+          "content": []
+        },
+        {
+          "nonterm": "ВХОД",
+          "content": []
+        },
+        {
+          "nonterm": "ВЫХОД",
+          "content": []
+        }
+      ]
+    },
+    {
+      "nonterm": "БЛОК_КОДА",
+      "content": [
+        {
+          "nonterm": "КОМАНДА",
+          "content": [
+            {
+              "nonterm": "ПРИСВАИВАНИЕ",
+              "content": [
+                {
+                  "nonterm": "ПЕРЕМЕННАЯ",
+                  "content": [
+                    {
+                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                      "content": [
+                        {
+                          "term": "ИМЯ",
+                          "value": "B"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "term": ":="
+                },
+                {
+                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                  "content": [
+                    {
+                      "nonterm": "НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ",
+                      "content": [
+                        {
+                          "term": "@set"
+                        },
+                        {
+                          "term": "("
+                        },
+                        {
+                          "nonterm": "СПИСОК_ПАРАМЕТРОВ",
+                          "content": [
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА ",
+                                  "value": "2"
+                                }
+                              ]
+                            },
+                            {
+                              "term": ","
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА ",
+                                  "value": "3"
+                                }
+                              ]
+                            },
+                            {
+                              "term": ","
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА ",
+                                  "value": "4"
+                                }
+                              ]
+                            },
+                            {
+                              "term": ","
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА ",
+                                  "value": "5"
+                                }
+                              ]
+                            },
+                            {
+                              "term": "..."
+                            },
+                            {
+                              "term": ","
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "nonterm": "ПЕРЕМЕННАЯ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                      "content": [
+                                        {
+                                          "term": "ИМЯ",
+                                          "value": "n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "term": ")"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nonterm": "КОМАНДА",
+          "content": [
+            {
+              "nonterm": "RETURN",
+              "content": [
+                {
+                  "term": "return"
+                },
+                {
+                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                  "content": [
+                    {
+                      "nonterm": "ПЕРЕМЕННАЯ",
+                      "content": [
+                        {
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "B"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "term": "end algorithm"
+    }
+  ]
+}
