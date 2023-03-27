@@ -1,9 +1,16 @@
-% Закоментированный текст
+% Закоментированный текст 1
 
-Текст перед коментарием % коментарий
+\newcommand{\macro}[2]{{\color{red{blue{green{#2}}}}\textbf{#1}}}
+\newcommand{\multiply}[2]{#1 + #2}
+\newcommand{\expr}[2]{ 10 + \multiply{#1}{#2} }
+\newcommand{\larrw}{\left }
+\newcommand{\rarrw}{\larrw {\textrightarrow} }
 
-\newcommand{\macro}[1]{{\color{red}\textbf{#1}}}
-\newcommand{\rarrw}{; \macro{\textrightarrow} ;;}
+a = 5 % коментарий
+\macro{first_arg}{second_arg}
+b = 6 + \expr{3}{4} - a
+c = 7
 
-Текст перед макросом \macro{1} нашелся
-А вот этот макрос мы не задавали: \newMacro{2}, он без изменений
+\rarrw
+
+% Закоментированный текст 2
