@@ -26,11 +26,4 @@ def print_node(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
 def print_default(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
     for node in root["content"]:
         print_node(node, depth, nonterm_handler_map, term_map)
-
-
-def print_new_line(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
-    print(depth * "\\tab ", end="")
-    for node in root["content"]:
-        print_node(node, depth, nonterm_handler_map, term_map)
-    print("\\\\")
     
