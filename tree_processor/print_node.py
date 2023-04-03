@@ -12,9 +12,9 @@ def print_node(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
             print(str, end="")
         else:
             if "value" in root.keys():
-                print(root["value"], end=" ")
+                print(root["value"], end="")
             else:
-                print(root["term"], end=" ")
+                print(root["term"], end="")
     else:
         nonterm_name = root["nonterm"]
         node_handler = print_default
@@ -24,6 +24,8 @@ def print_node(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
         
 
 def print_default(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
-    for node in root["content"]:
+    for i, node in enumerate(root["content"]):
         print_node(node, depth, nonterm_handler_map, term_map)
+        if i != len(root["content"]) - 1:
+            print(" ", end="")
     
