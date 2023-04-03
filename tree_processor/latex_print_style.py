@@ -18,8 +18,8 @@ def print_set(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
     print('$\\}$ ', end='')
 
 
-def tex_textbf(str: str):
-    return f'\\textbf{{{str}}} '
+def tex_textbf(term: str):
+    return f'\\textbf{{{{{term}}}}} '
 
 nonterm_map = {
     'ЗАГОЛОВОК_АЛГОРИТМА': print_new_line,
