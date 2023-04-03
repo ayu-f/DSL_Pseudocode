@@ -7,8 +7,11 @@ def print_code_block(root:dict, depth, nonterm_handler_map:dict):
         print_node(node, depth, nonterm_handler_map)
 
 
-unformated_nonterm_print_map = {
+nonterm_map = {
     'ЗАГОЛОВОК_АЛГОРИТМА': print_new_line,
     'КОМАНДА': print_new_line,
     'БЛОК_КОДА': print_code_block,
+}
+term_map = {
+    
 }
