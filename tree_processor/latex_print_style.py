@@ -1,67 +1,117 @@
-from print_node import print_node
+from tree_processor import TreeProcessor
 
-def print_new_line(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
-    print(depth * "\\tab ", end="")
-    for i, node in enumerate(root["content"]):
-        print_node(node, depth, nonterm_handler_map, term_map)
-        if i != len(root["content"]) - 1:
-            print(" ", end="")
+class PragmaCommand:
+    
+    def __init__(self, root:dict):
+        self.name = root["content"][1]["content"][0]["value"]
+        self.args = []
+        for child in root["content"]:
+            if "term" in child.keys() and child["term"] == "СТРОКА":
+                self.args.append(child["value"][1:-1])
 
-def print_code_block(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
-    depth += 1
+def print_pragma(root:dict, depth, processor: TreeProcessor):
+    pragma_command = PragmaCommand(root)
+    if pragma_command.name == "comment":
+        print("//", *pragma_command.args, end="")
+    elif pragma_command.name == "set_name_formatted":
+        if not hasattr(processor, "names_formated"):
+            processor.names_formated = {}
+        processor.names_formated[pragma_command.args[0]] = pragma_command.args[1]
+
+def print_lines(root:dict, depth, processor: TreeProcessor):
     for i, node in enumerate(root["content"]):
-        print_node(node, depth, nonterm_handler_map, term_map)
+        processor.print_node(node, depth)
         if i != len(root["content"]) - 1:
             print("\\\\")
+            print(depth * "\\tb ", end="")
 
-def print_set(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
+def print_code_block(root:dict, depth, processor: TreeProcessor):
+    print_lines(root, depth, processor)
+
+def print_set(root:dict, depth, processor: TreeProcessor):
     print('$\\{$', end='')
-    print_node(root["content"][2], depth, nonterm_handler_map, term_map)
+    processor.print_node(root["content"][2], depth)
     print('$\\}$', end='')
-    
-def print_alg(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
-    print_node(root["content"][0], depth, nonterm_handler_map, term_map)
-    print(" ", end="")
-    print_node(root["content"][1], depth, nonterm_handler_map, term_map)
-    print("\\\\")
-    print_node(root["content"][2], depth, nonterm_handler_map, term_map)
-    print("\\\\")
-    print_node(root["content"][3], depth, nonterm_handler_map, term_map)
 
-def print_params_list(root:dict, depth, nonterm_handler_map:dict, term_map:dict):
+def print_comma_list(root:dict, depth, processor: TreeProcessor):
     for i, node in enumerate(root["content"]):
-        if "term" in node.keys() and node["term"] == ',':
-            print_node(node, depth, nonterm_handler_map, term_map)
-            if i != len(root["content"]) - 1:
-                print(" ", end="")
-        elif "term" in node.keys() and node["term"] == '...':
-            print(" ", end="")
-            print_node(node, depth, nonterm_handler_map, term_map)
+        if "key" in node.keys() and node["key"] == ',':
+            processor.print_node(node, depth)
             if i != len(root["content"]) - 1:
                 print(" ", end="")
         else:
-            print_node(node, depth, nonterm_handler_map, term_map)
+            processor.print_node(node, depth)
+
+def print_alg(root:dict, depth, processor: TreeProcessor):
+    processor.print_node(root["content"][0], depth)
+    print("\\\\")
+    print((depth + 1) * "\\tb ", end="")
+    processor.print_node(root["content"][1], depth + 1)
+    print("\\\\")
+    print((depth) * "\\tb ", end="")
+    processor.print_node(root["content"][2], depth)
+
+def print_if(root:dict, depth, processor: TreeProcessor):
+    i = 0
+    while root["content"][i]["key"] != "end if":
+        processor.print_node(root["content"][i], depth)
+        print(" ", end="")
+        i += 1
+        if root["content"][i-1]["key"] != "else":
+            processor.print_node(root["content"][i], depth)
+            print(" ", end="")
+            i += 1
+            processor.print_node(root["content"][i], depth)
+            print(" ", end="")
+            i += 1
+        while "nonterm" in root["content"][i].keys() and root["content"][i]["nonterm"] == "ПРАГМА":
+            processor.print_node(root["content"][i], depth)
+            print(" ", end="")
+            i += 1
+        print("\\\\")
+        print((depth + 1) * "\\tb ", end="")
+        processor.print_node(root["content"][i], depth + 1)
+        print("\\\\")
+        i += 1
+        print((depth) * "\\tb ", end="")
+    processor.print_node(root["content"][i], depth)
+
 
 def tex_textbf(term: str):
-    return f'\\textbf{{{{{term}}}}}'
+    return f'\\textbf{{{term}}}'
+
+def name_format(value:str, processor: TreeProcessor):
+    if not hasattr(processor, "names_formated"):
+        processor.names_formated = {}
+    return processor.names_formated.get(value, f"${value}$")
+
+def number_format(value:str, processor: TreeProcessor):
+    return f"${value}$"
+        
 
 nonterm_map = {
+    'S': print_lines,
     'ALG': print_alg,
-    'КОМАНДА': print_new_line,
+    'ВЕТВЛЕНИЕ': print_if,
+    'WHILE': print_lines,
+    'ПРАГМА': print_pragma,
     'БЛОК_КОДА': print_code_block,
     'НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ': print_set,
-    'СПИСОК_ПАРАМЕТРОВ': print_params_list,
+    'СПИСОК_ПАРАМЕТРОВ': print_comma_list,
+    'СПИСОК_ЗНАЧЕНИЙ': print_comma_list,
 }
 term_map = {
-    'algorithm': tex_textbf('algorithm'),
+    'ИМЯ': name_format,
+    'ЧИСЛЕННАЯ_КОНСТАНТА': number_format,
+}
+key_map = {
     'end algorithm': tex_textbf('end algorithm'),
     'return': tex_textbf('return'),
-    'ИМЯ': '${value}$',
     '(': '$($',
     ')': '$)$',
     '...': '$...$',
     ':=': '$:=$',
-    'ЧИСЛЕННАЯ_КОНСТАНТА': '${value}$',
+    'integer': '$\mathbb{N}$',
     'for': tex_textbf('for'),
     'do': tex_textbf('do'),
     'end for': tex_textbf('end for'),
@@ -81,4 +131,6 @@ term_map = {
     'proc': tex_textbf('proc'),
     'func': tex_textbf('func'),
     'iter': tex_textbf('iter'),
+    '!=': "$\\neq$",
+    '&': "$\\&$",
 }

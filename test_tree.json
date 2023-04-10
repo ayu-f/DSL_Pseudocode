@@ -1,147 +1,100 @@
 {
-  "nonterm": "ALG",
+  "nonterm": "S",
   "content": [
     {
-      "term": "algorithm"
-    },
-    {
-      "nonterm": "ЗАГОЛОВОК_АЛГОРИТМА",
+      "nonterm": "ALG",
       "content": [
         {
-          "nonterm": "ТИП_ВОЗВРАТА",
-          "content": []
-        },
-        {
-          "nonterm": "ИМЯ_ФУНКЦИИ",
-          "content": []
-        },
-        {
-          "nonterm": "ВХОД",
-          "content": []
-        },
-        {
-          "nonterm": "ВЫХОД",
-          "content": []
-        }
-      ]
-    },
-    {
-      "nonterm": "БЛОК_КОДА",
-      "content": [
-        {
-          "nonterm": "КОМАНДА",
+          "nonterm": "ЗАГОЛОВОК_АЛГОРИТМА",
           "content": [
             {
-              "nonterm": "ПРИСВАИВАНИЕ",
+              "nonterm": "ТИП_ВОЗВРАТА",
               "content": [
                 {
-                  "nonterm": "ПЕРЕМЕННАЯ",
+                  "key": "func"
+                }
+              ]
+            },
+            {
+              "nonterm": "ИМЯ_ФУНКЦИИ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "GetSet"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВХОД",
+              "content": [
+                {
+                  "key": "("
+                },
+                {
+                  "nonterm": "СПИСОК_ПАРАМЕТРОВ",
                   "content": [
                     {
-                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                      "nonterm": "ДЕКЛАРАЦИЯ_ПЕРЕМЕННОЙ",
                       "content": [
                         {
-                          "term": "ИМЯ",
-                          "value": "B"
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "n"
+                            }
+                          ]
+                        },
+                        {
+                          "key": ":"
+                        },
+                        {
+                          "nonterm": "ТИП",
+                          "content": [
+                            {
+                              "key": "integer"
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "term": ":="
+                  "key": ")"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВЫХОД",
+              "content": [
+                {
+                  "key": "->"
                 },
                 {
-                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                  "nonterm": "ПРАГМА",
                   "content": [
                     {
-                      "nonterm": "НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ",
+                      "key": "@@"
+                    },
+                    {
+                      "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
                       "content": [
                         {
-                          "term": "@set"
-                        },
-                        {
-                          "term": "("
-                        },
-                        {
-                          "nonterm": "СПИСОК_ПАРАМЕТРОВ",
-                          "content": [
-                            {
-                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
-                              "content": [
-                                {
-                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
-                                  "value": "2"
-                                }
-                              ]
-                            },
-                            {
-                              "term": ","
-                            },
-                            {
-                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
-                              "content": [
-                                {
-                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
-                                  "value": "3"
-                                }
-                              ]
-                            },
-                            {
-                              "term": ","
-                            },
-                            {
-                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
-                              "content": [
-                                {
-                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
-                                  "value": "4"
-                                }
-                              ]
-                            },
-                            {
-                              "term": ","
-                            },
-                            {
-                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
-                              "content": [
-                                {
-                                  "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
-                                  "value": "5"
-                                }
-                              ]
-                            },
-                            {
-                              "term": "..."
-                            },
-                            {
-                              "term": ","
-                            },
-                            {
-                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
-                              "content": [
-                                {
-                                  "nonterm": "ПЕРЕМЕННАЯ",
-                                  "content": [
-                                    {
-                                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
-                                      "content": [
-                                        {
-                                          "term": "ИМЯ",
-                                          "value": "n"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "term": ")"
+                          "term": "ИМЯ",
+                          "value": "comment"
                         }
                       ]
+                    },
+                    {
+                      "key": "{"
+                    },
+                    {
+                      "term": "СТРОКА",
+                      "value": "\"Множество $B$ целых чисел от $2$ до $n$\""
+                    },
+                    {
+                      "key": "}"
                     }
                   ]
                 }
@@ -150,16 +103,13 @@
           ]
         },
         {
-          "nonterm": "КОМАНДА",
+          "nonterm": "БЛОК_КОДА",
           "content": [
             {
-              "nonterm": "RETURN",
+              "nonterm": "КОМАНДА",
               "content": [
                 {
-                  "term": "return"
-                },
-                {
-                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                  "nonterm": "ПРИСВАИВАНИЕ",
                   "content": [
                     {
                       "nonterm": "ПЕРЕМЕННАЯ",
@@ -174,17 +124,779 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "key": ":="
+                    },
+                    {
+                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                      "content": [
+                        {
+                          "nonterm": "НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ",
+                          "content": [
+                            {
+                              "key": "@set"
+                            },
+                            {
+                              "key": "("
+                            },
+                            {
+                              "nonterm": "СПИСОК_ЗНАЧЕНИЙ",
+                              "content": [
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "2"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "3"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "4"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "5"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "key": "..."
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                          "content": [
+                                            {
+                                              "term": "ИМЯ",
+                                              "value": "n"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "RETURN",
+                  "content": [
+                    {
+                      "key": "return"
+                    },
+                    {
+                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                      "content": [
+                        {
+                          "nonterm": "ПЕРЕМЕННАЯ",
+                          "content": [
+                            {
+                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                              "content": [
+                                {
+                                  "term": "ИМЯ",
+                                  "value": "B"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             }
           ]
+        },
+        {
+          "key": "end algorithm"
         }
       ]
     },
     {
-      "term": "end algorithm"
+      "nonterm": "БЛОК_КОДА",
+      "content": [
+        {
+          "nonterm": "ПРАГМА",
+          "content": [
+            {
+              "key": "@@"
+            },
+            {
+              "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "set_name_formatted"
+                }
+              ]
+            },
+            {
+              "key": "{"
+            },
+            {
+              "term": "СТРОКА",
+              "value": "\"gcd\""
+            },
+            {
+              "key": ","
+            },
+            {
+              "term": "СТРОКА",
+              "value": "\"\\textrm{gcd}\""
+            },
+            {
+              "key": "}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nonterm": "ALG",
+      "content": [
+        {
+          "nonterm": "ЗАГОЛОВОК_АЛГОРИТМА",
+          "content": [
+            {
+              "nonterm": "ТИП_ВОЗВРАТА",
+              "content": [
+                {
+                  "key": "func"
+                }
+              ]
+            },
+            {
+              "nonterm": "ИМЯ_ФУНКЦИИ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "gcd"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВХОД",
+              "content": [
+                {
+                  "key": "("
+                },
+                {
+                  "nonterm": "СПИСОК_ПАРАМЕТРОВ",
+                  "content": [
+                    {
+                      "nonterm": "ДЕКЛАРАЦИЯ_ПЕРЕМЕННОЙ",
+                      "content": [
+                        {
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "a"
+                            }
+                          ]
+                        },
+                        {
+                          "key": ":"
+                        },
+                        {
+                          "nonterm": "ТИП",
+                          "content": [
+                            {
+                              "key": "integer"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "key": ","
+                    },
+                    {
+                      "nonterm": "ДЕКЛАРАЦИЯ_ПЕРЕМЕННОЙ",
+                      "content": [
+                        {
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "b"
+                            }
+                          ]
+                        },
+                        {
+                          "key": ":"
+                        },
+                        {
+                          "nonterm": "ТИП",
+                          "content": [
+                            {
+                              "key": "integer"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "key": ")"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВЫХОД",
+              "content": [
+                {
+                  "key": "->"
+                },
+                {
+                  "nonterm": "ПРАГМА",
+                  "content": [
+                    {
+                      "key": "@@"
+                    },
+                    {
+                      "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
+                      "content": [
+                        {
+                          "term": "ИМЯ",
+                          "value": "comment"
+                        }
+                      ]
+                    },
+                    {
+                      "key": "{"
+                    },
+                    {
+                      "term": "СТРОКА",
+                      "value": "\"НОД чисел $a$ и $b$\""
+                    },
+                    {
+                      "key": "}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nonterm": "БЛОК_КОДА",
+          "content": [
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "ОПЕРАТОР_УПРАВЛЕНИЯ",
+                  "content": [
+                    {
+                      "nonterm": "ЦИКЛ",
+                      "content": [
+                        {
+                          "nonterm": "WHILE",
+                          "content": [
+                            {
+                              "key": "while"    
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                          "content": [
+                                            {
+                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                              "content": [
+                                                {
+                                                  "term": "ИМЯ",
+                                                  "value": "a"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                      "content": [
+                                        {
+                                          "key": "!="
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                          "value": "0"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                      "content": [
+                                        {
+                                          "key": "&"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                          "content": [
+                                            {
+                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                              "content": [
+                                                {
+                                                  "term": "ИМЯ",
+                                                  "value": "b"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                      "content": [
+                                        {
+                                          "key": "!="
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                          "value": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "do"
+                            },
+                            {
+                              "nonterm": "БЛОК_КОДА",
+                              "content": [
+                                {
+                                  "nonterm": "КОМАНДА",
+                                  "content": [
+                                    {
+                                      "nonterm": "ОПЕРАТОР_УПРАВЛЕНИЯ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ВЕТВЛЕНИЕ",
+                                          "content": [
+                                            {
+                                              "key": "if"
+                                            },
+                                            {
+                                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                              "content": [
+                                                {
+                                                  "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                                                  "content": [
+                                                    {
+                                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                      "content": [
+                                                        {
+                                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                              "content": [
+                                                                {
+                                                                  "term": "ИМЯ",
+                                                                  "value": "a"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                                      "content": [
+                                                        {
+                                                          "key": ">"
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                      "content": [
+                                                        {
+                                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                              "content": [
+                                                                {
+                                                                  "term": "ИМЯ",
+                                                                  "value": "b"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "then"
+                                            },
+                                            {
+                                              "nonterm": "БЛОК_КОДА",
+                                              "content": [
+                                                {
+                                                  "nonterm": "КОМАНДА",
+                                                  "content": [
+                                                    {
+                                                      "nonterm": "ПРИСВАИВАНИЕ",
+                                                      "content": [
+                                                        {
+                                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                              "content": [
+                                                                {
+                                                                  "term": "ИМЯ",
+                                                                  "value": "a"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "key": ":="
+                                                        },
+                                                        {
+                                                          "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                                                              "content": [
+                                                                {
+                                                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                                  "content": [
+                                                                    {
+                                                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                                                      "content": [
+                                                                        {
+                                                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                                          "content": [
+                                                                            {
+                                                                              "term": "ИМЯ",
+                                                                              "value": "a"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                                                  "content": [
+                                                                    {
+                                                                      "key": "mod"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                                  "content": [
+                                                                    {
+                                                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                                                      "content": [
+                                                                        {
+                                                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                                          "content": [
+                                                                            {
+                                                                              "term": "ИМЯ",
+                                                                              "value": "b"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "else"
+                                            },
+                                            {
+                                              "nonterm": "БЛОК_КОДА",
+                                              "content": [
+                                                {
+                                                  "nonterm": "КОМАНДА",
+                                                  "content": [
+                                                    {
+                                                      "nonterm": "ПРИСВАИВАНИЕ",
+                                                      "content": [
+                                                        {
+                                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                              "content": [
+                                                                {
+                                                                  "term": "ИМЯ",
+                                                                  "value": "b"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "key": ":="
+                                                        },
+                                                        {
+                                                          "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                                                              "content": [
+                                                                {
+                                                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                                  "content": [
+                                                                    {
+                                                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                                                      "content": [
+                                                                        {
+                                                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                                          "content": [
+                                                                            {
+                                                                              "term": "ИМЯ",
+                                                                              "value": "b"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                                                  "content": [
+                                                                    {
+                                                                      "key": "mod"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                                  "content": [
+                                                                    {
+                                                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                                                      "content": [
+                                                                        {
+                                                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                                          "content": [
+                                                                            {
+                                                                              "term": "ИМЯ",
+                                                                              "value": "a"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "key": "end if"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "end while"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "RETURN",
+                  "content": [
+                    {
+                      "key": "return"
+                    },
+                    {
+                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                      "content": [
+                        {
+                          "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                          "content": [
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "nonterm": "ПЕРЕМЕННАЯ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                      "content": [
+                                        {
+                                          "term": "ИМЯ",
+                                          "value": "a"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                              "content": [
+                                {
+                                  "key": "+"
+                                }
+                              ]
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "nonterm": "ПЕРЕМЕННАЯ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                      "content": [
+                                        {
+                                          "term": "ИМЯ",
+                                          "value": "b"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "end algorithm"
+        }
+      ]
     }
   ]
 }
