@@ -3,6 +3,13 @@ class TreeProcessor():
         self.key_map = key_map
         self.term_map = term_map
         self.nonterm_map = nonterm_map
+        self.curr_line_number = 0
+    
+    def print_new_line(self, depth):
+        self.curr_line_number += 1
+        print(f"{self.curr_line_number}", end="")
+        print(depth * "\\tb ", end="")
+
 
     def print_node(self, root:dict, depth):
 
@@ -32,6 +39,11 @@ class TreeProcessor():
 def print_default(root:dict, depth, processor: TreeProcessor):
     for i, node in enumerate(root["content"]):
         processor.print_node(node, depth)
+        if "key" in node.keys() and node["key"] == "\\n":
+            if "nonterm" in root["content"][i+1] and root["content"][i+1]["nonterm"] == "БЛОК_КОДА":
+                processor.print_new_line(depth+1)
+            else:
+                processor.print_new_line(depth)
         if i != len(root["content"]) - 1:
             print(" ", end="")
         

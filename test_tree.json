@@ -52,7 +52,7 @@
                           "nonterm": "ТИП",
                           "content": [
                             {
-                              "key": "integer"
+                              "key": "natural"
                             }
                           ]
                         }
@@ -101,6 +101,9 @@
               ]
             }
           ]
+        },
+        {
+          "key": "\\n"
         },
         {
           "nonterm": "БЛОК_КОДА",
@@ -230,6 +233,9 @@
               ]
             },
             {
+              "key": "\\n"
+            },
+            {
               "nonterm": "КОМАНДА",
               "content": [
                 {
@@ -264,9 +270,15 @@
           ]
         },
         {
+          "key": "\\n"
+        },
+        {
           "key": "end algorithm"
         }
       ]
+    },
+    {
+      "key": "\\n"
     },
     {
       "nonterm": "БЛОК_КОДА",
@@ -306,6 +318,9 @@
           ]
         }
       ]
+    },
+    {
+      "key": "\\n"
     },
     {
       "nonterm": "ALG",
@@ -358,7 +373,7 @@
                           "nonterm": "ТИП",
                           "content": [
                             {
-                              "key": "integer"
+                              "key": "natural"
                             }
                           ]
                         }
@@ -386,7 +401,7 @@
                           "nonterm": "ТИП",
                           "content": [
                             {
-                              "key": "integer"
+                              "key": "natural"
                             }
                           ]
                         }
@@ -435,6 +450,9 @@
               ]
             }
           ]
+        },
+        {
+          "key": "\\n"
         },
         {
           "nonterm": "БЛОК_КОДА",
@@ -546,6 +564,9 @@
                             },
                             {
                               "key": "do"
+                            },
+                            {
+                              "key": "\\n"
                             },
                             {
                               "nonterm": "БЛОК_КОДА",
@@ -823,6 +844,9 @@
               ]
             },
             {
+              "key": "\\n"
+            },
+            {
               "nonterm": "КОМАНДА",
               "content": [
                 {
@@ -892,6 +916,464 @@
               ]
             }
           ]
+        },
+        {
+          "key": "\\n"
+        },
+        {
+          "key": "end algorithm"
+        }
+      ]
+    },
+    {
+      "key": "\\n"
+    },
+    {
+      "nonterm": "ALG",
+      "content": [
+        {
+          "nonterm": "ЗАГОЛОВОК_АЛГОРИТМА",
+          "content": [
+            {
+              "nonterm": "ТИП_ВОЗВРАТА",
+              "content": [
+                {
+                  "key": "func"
+                }
+              ]
+            },
+            {
+              "nonterm": "ИМЯ_ФУНКЦИИ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "EratosphenGrid"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВХОД",
+              "content": [
+                {
+                  "key": "("
+                },
+                {
+                  "nonterm": "СПИСОК_ПАРАМЕТРОВ",
+                  "content": [
+                    {
+                      "nonterm": "ДЕКЛАРАЦИЯ_ПЕРЕМЕННОЙ",
+                      "content": [
+                        {
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "n"
+                            }
+                          ]
+                        },
+                        {
+                          "key": ":"
+                        },
+                        {
+                          "nonterm": "ТИП",
+                          "content": [
+                            {
+                              "key": "natural"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "key": ")"
+                }
+              ]
+            },
+            {
+              "nonterm": "ВЫХОД",
+              "content": [
+                {
+                  "key": "->"
+                },
+                {
+                  "nonterm": "ПРАГМА",
+                  "content": [
+                    {
+                      "key": "@@"
+                    },
+                    {
+                      "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
+                      "content": [
+                        {
+                          "term": "ИМЯ",
+                          "value": "comment"
+                        }
+                      ]
+                    },
+                    {
+                      "key": "{"
+                    },
+                    {
+                      "term": "СТРОКА",
+                      "value": "\"Множество $B$ простых чисел, не превосходящих $n$\""
+                    },
+                    {
+                      "key": "}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "\\n"
+        },
+        {
+          "nonterm": "БЛОК_КОДА",
+          "content": [
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "ПРИСВАИВАНИЕ",
+                  "content": [
+                    {
+                      "nonterm": "ПЕРЕМЕННАЯ",
+                      "content": [
+                        {
+                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                          "content": [
+                            {
+                              "term": "ИМЯ",
+                              "value": "B"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "key": ":="
+                    },
+                    {
+                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                      "content": [
+                        {
+                          "nonterm": "НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ",
+                          "content": [
+                            {
+                              "key": "@set"
+                            },
+                            {
+                              "key": "("
+                            },
+                            {
+                              "nonterm": "СПИСОК_ЗНАЧЕНИЙ",
+                              "content": [
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "2"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "3"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "4"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "term": "ЧИСЛЕННАЯ_КОНСТАНТА",
+                                      "value": "5"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "key": "..."
+                                },
+                                {
+                                  "key": ","
+                                },
+                                {
+                                  "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ПЕРЕМЕННАЯ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                          "content": [
+                                            {
+                                              "term": "ИМЯ",
+                                              "value": "n"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "\\n"
+            },
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "ОПЕРАТОР_УПРАВЛЕНИЯ",
+                  "content": [
+                    {
+                      "nonterm": "ЦИКЛ",
+                      "content": [
+                        {
+                          "nonterm": "WHILE",
+                          "content": [
+                            {
+                              "key": "while"    
+                            },
+                            {
+                              "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                              "content": [
+                                {
+                                  "nonterm": "ОПЕРАЦИЯ_ИНФИКСНАЯ",
+                                  "content": [
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                          "content": [
+                                            {
+                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                              "content": [
+                                                {
+                                                  "term": "ИМЯ",
+                                                  "value": "B"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ОПЕРАТОР_ИНФИКСНЫЙ",
+                                      "content": [
+                                        {
+                                          "key": "!="
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ПОЛЬЗОВАТЕЛЬСКОЕ_ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                          "content": [
+                                            {
+                                              "key": "@value"
+                                            },
+                                            {
+                                              "key": "{"
+                                            },
+                                            {
+                                              "term": "СТРОКА",
+                                              "value": "\"$\\emptyset$\""
+                                            },
+                                            {
+                                              "key": "}"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "do"
+                            },
+                            {
+                              "key": "\\n"
+                            },
+                            {
+                              "nonterm": "БЛОК_КОДА",
+                              "content": [
+                                {
+                                  "nonterm": "КОМАНДА",
+                                  "content": [
+                                    {
+                                      "nonterm": "ПРИСВАИВАНИЕ",
+                                      "content": [
+                                        {
+                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                          "content": [
+                                            {
+                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                              "content": [
+                                                {
+                                                  "term": "ИМЯ",
+                                                  "value": "x"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "key": ":="
+                                        },
+                                        {
+                                          "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                          "content":[
+                                            {
+                                              "nonterm": "ВЫЗОВ_ФУНКЦИИ",
+                                              "content": [
+                                                {
+                                                  "nonterm": "ИМЯ_ФУНКЦИИ",
+                                                  "content": [
+                                                    {
+                                                      "term": "ИМЯ",
+                                                      "value": "min"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "key": "("
+                                                },
+                                                {
+                                                  "nonterm": "СПИСОК_ЗНАЧЕНИЙ",
+                                                  "content": [
+                                                    {
+                                                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                                                      "content": [
+                                                        {
+                                                          "nonterm": "ПЕРЕМЕННАЯ",
+                                                          "content": [
+                                                            {
+                                                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                                                              "content": [
+                                                                {
+                                                                  "term": "ИМЯ",
+                                                                  "value": "B"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "key": ")"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "key": "end while"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "key": "\\n"
+            },
+            {
+              "nonterm": "КОМАНДА",
+              "content": [
+                {
+                  "nonterm": "RETURN",
+                  "content": [
+                    {
+                      "key": "return"
+                    },
+                    {
+                      "nonterm": "ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ",
+                      "content": [
+                        {
+                          "nonterm": "ПЕРЕМЕННАЯ",
+                          "content": [
+                            {
+                              "nonterm": "ИМЯ_ПЕРЕМЕННОЙ",
+                              "content": [
+                                {
+                                  "term": "ИМЯ",
+                                  "value": "B"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "\\n"
         },
         {
           "key": "end algorithm"

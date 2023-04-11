@@ -1,9 +1,16 @@
-from tree_processor import TreeProcessor
+from tree_processor import TreeProcessor, print_default
 
 class PragmaCommand:
     
     def __init__(self, root:dict):
         self.name = root["content"][1]["content"][0]["value"]
+        self.args = []
+        for child in root["content"]:
+            if "term" in child.keys() and child["term"] == "СТРОКА":
+                self.args.append(child["value"][1:-1])
+class UserDefined:
+    def __init__(self, root:dict):
+        self.name = root["content"][0]["key"][1:]
         self.args = []
         for child in root["content"]:
             if "term" in child.keys() and child["term"] == "СТРОКА":
@@ -18,15 +25,12 @@ def print_pragma(root:dict, depth, processor: TreeProcessor):
             processor.names_formated = {}
         processor.names_formated[pragma_command.args[0]] = pragma_command.args[1]
 
-def print_lines(root:dict, depth, processor: TreeProcessor):
-    for i, node in enumerate(root["content"]):
-        processor.print_node(node, depth)
-        if i != len(root["content"]) - 1:
-            print("\\\\")
-            print(depth * "\\tb ", end="")
+def print_user_defined(root:dict, depth, processor: TreeProcessor):
+    user_defined = UserDefined(root)
+    print(user_defined.args[0], end="")
 
 def print_code_block(root:dict, depth, processor: TreeProcessor):
-    print_lines(root, depth, processor)
+    print_default(root, depth + 1, processor)
 
 def print_set(root:dict, depth, processor: TreeProcessor):
     print('$\\{$', end='')
@@ -42,40 +46,6 @@ def print_comma_list(root:dict, depth, processor: TreeProcessor):
         else:
             processor.print_node(node, depth)
 
-def print_alg(root:dict, depth, processor: TreeProcessor):
-    processor.print_node(root["content"][0], depth)
-    print("\\\\")
-    print((depth + 1) * "\\tb ", end="")
-    processor.print_node(root["content"][1], depth + 1)
-    print("\\\\")
-    print((depth) * "\\tb ", end="")
-    processor.print_node(root["content"][2], depth)
-
-def print_if(root:dict, depth, processor: TreeProcessor):
-    i = 0
-    while root["content"][i]["key"] != "end if":
-        processor.print_node(root["content"][i], depth)
-        print(" ", end="")
-        i += 1
-        if root["content"][i-1]["key"] != "else":
-            processor.print_node(root["content"][i], depth)
-            print(" ", end="")
-            i += 1
-            processor.print_node(root["content"][i], depth)
-            print(" ", end="")
-            i += 1
-        while "nonterm" in root["content"][i].keys() and root["content"][i]["nonterm"] == "ПРАГМА":
-            processor.print_node(root["content"][i], depth)
-            print(" ", end="")
-            i += 1
-        print("\\\\")
-        print((depth + 1) * "\\tb ", end="")
-        processor.print_node(root["content"][i], depth + 1)
-        print("\\\\")
-        i += 1
-        print((depth) * "\\tb ", end="")
-    processor.print_node(root["content"][i], depth)
-
 
 def tex_textbf(term: str):
     return f'\\textbf{{{term}}}'
@@ -90,11 +60,12 @@ def number_format(value:str, processor: TreeProcessor):
         
 
 nonterm_map = {
-    'S': print_lines,
-    'ALG': print_alg,
-    'ВЕТВЛЕНИЕ': print_if,
-    'WHILE': print_lines,
     'ПРАГМА': print_pragma,
+    'ПОЛЬЗОВАТЕЛЬСКОЕ_ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ': print_user_defined,
+    'ПОЛЬЗОВАТЕЛЬСКАЯ_ПЕРЕМЕННАЯ': print_user_defined,
+    'ПОЛЬЗОВАТЕЛЬСКИЙ_ОПЕРАТОР_УНАРНЫЙ': print_user_defined,
+    'ПОЛЬЗОВАТЕЛЬСКИЙ_ОПЕРАТОР_ИНФИКСНЫЙ': print_user_defined,
+    'ПОЛЬЗОВАТЕЛЬСКИЙ_ТИП': print_user_defined,
     'БЛОК_КОДА': print_code_block,
     'НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ': print_set,
     'СПИСОК_ПАРАМЕТРОВ': print_comma_list,
@@ -105,13 +76,23 @@ term_map = {
     'ЧИСЛЕННАЯ_КОНСТАНТА': number_format,
 }
 key_map = {
+    '\\n': '\\\\\n',
+    ';': ';',
+    ':': ':',
     'end algorithm': tex_textbf('end algorithm'),
+    '->': '->',
     'return': tex_textbf('return'),
     '(': '$($',
     ')': '$)$',
+    '[': '$[$',
+    ']': '$]$',
+    '{': '\\{',
+    '}': '\\}',
+    ',': '$,$',
     '...': '$...$',
+    '..': '$..$',
+    '.': '$.$',
     ':=': '$:=$',
-    'integer': '$\mathbb{N}$',
     'for': tex_textbf('for'),
     'do': tex_textbf('do'),
     'end for': tex_textbf('end for'),
@@ -131,6 +112,33 @@ key_map = {
     'proc': tex_textbf('proc'),
     'func': tex_textbf('func'),
     'iter': tex_textbf('iter'),
+    'array': tex_textbf('array'),
+    'of': tex_textbf('of'),
+    'struct': tex_textbf('struct'),
+    '\\uparrow': '$\\uparrow$',
+    'natural': '$\\mathbb{N}$',
+    'integer': '$\\mathbb{Z}$',
+    'rational': '$\\mathbb{Q}$',
+    'binary': '$0..1$',
+    '<': '$<$',
+    '>': '$>$',
+    '<=': '$\\leq$',
+    '>=': '$\\geq$',
+    '==': '$=$',
     '!=': "$\\neq$",
+    '+': '$+$',
+    '-': '$-$',
+    '/': '$/$',
+    '*': '$*$',
+    'div': tex_textbf('div'),
+    'mod': tex_textbf('mod'),
     '&': "$\\&$",
+    '|': "$\\vee$",
+    '\\cup': "$\\cup$",
+    '\\cap': "$\\cap$",
+    '\\': "$\\backslash$",
+    '\\in': "$\\in$",
+    '\\notin': "$\\notin$",
+    '\\subset': "$\\subset$",
+    'pow':  tex_textbf('pow'),
 }
