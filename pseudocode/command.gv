@@ -1,10 +1,14 @@
 digraph COMMAND {
     start [label=COMMAND shape=plaintext]
     return [label=RETURN shape=box]
+    control_operator [label=CONTROL_OPERATOR shape=box]
     pragma [label=PRAGMA shape=box]
     end [label="" shape=point]
     start -> return
+    start -> control_operator
     return -> pragma
+    control_operator -> pragma
+    control_operator -> end
     return -> end
     pragma -> end
 }

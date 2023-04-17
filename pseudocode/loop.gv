@@ -1,0 +1,14 @@
+digraph LOOP {
+    start [label=LOOP shape=plaintext]
+    for [label=FOR shape=box]
+    while [label=WHILE shape=box]
+    until [label=UNTIL shape=box]
+    transition_operator [label=TRANSITION_OPERATOR shape=box]
+    end [label="" shape=point]
+    start -> loop
+    start -> branching
+    start -> transition_operator
+    loop -> end
+    branching -> end
+    transition_operator -> end
+}
