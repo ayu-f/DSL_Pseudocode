@@ -114,7 +114,8 @@
         "UNTIL",
         "GOTO",
         "GOTO_MARK",
-        "NEXT_FOR"
+        "NEXT_FOR",
+        "MARK_NAME"
     ],
     "AXIOM": "S"
 }

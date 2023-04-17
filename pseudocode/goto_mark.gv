@@ -1,0 +1,9 @@
+digraph GOTO_MARK {
+    start [label=GOTO_MARK shape=plaintext]
+    mark_name [label=MARK_NAME shape=box]
+    colon [label=":" shape=oval]
+    end [label="" shape=point]
+    start -> mark_name
+    mark_name -> colon
+    colon -> end
+}
