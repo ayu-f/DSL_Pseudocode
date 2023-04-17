@@ -1,0 +1,10 @@
+digraph YIELD {
+    start [label=YIELD shape=plaintext]
+    yield [label="yield" shape=oval]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    end [label="" shape=point]
+
+    start -> yield
+    yield -> expression_value
+    expression_value -> end
+}
