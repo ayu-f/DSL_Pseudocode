@@ -1,0 +1,17 @@
+digraph ARRAY_SLICE {
+    start [label=ARRAY_SLICE shape=plaintext]
+    var [label=VAR_NAME shape=box]
+    br_open [label="[" shape=oval]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    comma [label="," shape=oval]
+    br_close [label="]" shape=box]
+    end [label="" shape=point]
+
+    start -> var
+    var -> br_open
+    br_open -> expression_value
+    expression_value -> comma
+    expression_value -> br_close
+    comma -> expression_value
+    br_close -> end
+}
