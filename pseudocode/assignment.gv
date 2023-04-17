@@ -1,0 +1,11 @@
+digraph ASSIGNMENT {
+    start [label=ASSIGNMENT shape=plaintext]
+    var [label=VAR shape=box]
+    assign [label=":=" shape=oval]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    end [label="" shape=point]
+    start -> var
+    var -> assign
+    assign -> expression_value
+    expression_value -> end
+}
