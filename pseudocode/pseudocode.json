@@ -129,7 +129,8 @@
         "CUSTOM_TYPE",
         "INFIX_OPERATION",
         "UNARY_OPERATOR",
-        "CUSTOM_UNARY_OPERATOR"
+        "CUSTOM_UNARY_OPERATOR",
+        "CUSTOM_INFIX_OPERATOR"
     ],
     "AXIOM": "S"
 }

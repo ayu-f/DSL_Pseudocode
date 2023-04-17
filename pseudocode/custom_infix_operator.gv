@@ -1,0 +1,13 @@
+digraph CUSTOM_INFIX_OPERATOR {
+    start [label=CUSTOM_INFIX_OPERATOR shape=plaintext]
+    custom_infix_prefix [label="@infix" shape=oval]
+    br_open [label="{" shape=oval]
+    string [label=string shape=diamond]
+    br_close [label="}" shape=oval]
+    end [label="" shape=point]
+
+    custom_infix_prefix -> br_open
+    br_open -> string
+    string -> br_close
+    br_close -> end
+}
