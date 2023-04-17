@@ -2,13 +2,13 @@ digraph CALL_FUNC {
     start [label=CALL_FUNC shape=plaintext]
     func_name [label=FUNC_NAME shape=box]
     br_open [label="(" shape=oval]
-    param_list [label=PARAM_LIST shape=box]
+    value_list [label=VALUE_LIST shape=box]
     br_close [label=")" shape=oval]
     end [label="" shape=point]
 
     start -> func_name
     func_name -> br_open
-    br_open -> param_list
-    param_list -> br_close
+    br_open -> value_list
+    value_list -> br_close
     br_close -> end
 }
