@@ -1,15 +1,6 @@
 return B
-return G
-func GetSet (n) -> @@comment{"Множество $B$ целых чисел от $2$ до $n$"}
-    return B
-    return B
-    return B
-    return B; return B
-end algorithm
-@@comment{"Множество $B$ целых чисел от $2$ до $n$"}
 return B
-return G
 return B
-func GetSet (n) -> @@comment{"Множество $B$ целых чисел от $2$ до $n$"}
-    return B
-end algorithm
+return B
+return B
+select t in B

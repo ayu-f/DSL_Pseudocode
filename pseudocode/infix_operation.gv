@@ -7,5 +7,4 @@ digraph INFIX_OPERATION {
     expression_value -> infix_operator
     expression_value -> end
     infix_operator -> expression_value
-    infix_operator -> end
 }

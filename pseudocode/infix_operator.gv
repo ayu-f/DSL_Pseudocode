@@ -15,7 +15,7 @@ digraph INFIX_OPERATOR {
     in [label="\in" shape=oval]
     notin [label="\notin" shape=oval]
     subset [label="\subset" shape=oval]
-    differ [label="\" shape=oval]
+    differ [label="\\" shape=oval]
     pow [label="pow" shape=oval]
     lesseq [label="<=" shape=oval]
     greq [label=">=" shape=oval]
