@@ -1,0 +1,10 @@
+digraph NEXT_FOR {
+    start [label=NEXT_FOR shape=plaintext]
+    key_next_for [label="next for" shape=oval]
+    var_loop [label=VAR_LOOP shape=box]
+    end [label="" shape=point]
+
+    start -> key_next_for
+    key_next_for -> var_loop
+    var_loop -> end
+}
