@@ -1,13 +1,36 @@
 digraph COMMAND {
     start [label=COMMAND shape=plaintext]
-    return [label=RETURN shape=box]
     control_operator [label=CONTROL_OPERATOR shape=box]
+    assignment [label=ASSIGNMENT shape=box]
+    declaration_var [label=DECLARATION_VAR shape=box]
+    call_func [label=CALL_FUNC shape=box]
+    return [label=RETURN shape=box]
+    yield [label=YIELD shape=box]
+    select [label=SELECT shape=box]
     pragma [label=PRAGMA shape=box]
     end [label="" shape=point]
+
     start -> return
     start -> control_operator
+    start -> assignment
+    start -> declaration_var
+    start -> call_func
+    start -> yield
+    start -> select
+
     return -> pragma
+    assignment -> pragma
+    declaration_var -> pragma
+    call_func -> pragma
+    yield -> pragma
+    select -> pragma
     control_operator -> pragma
+
+    assignment -> end
+    declaration_var -> end
+    call_func -> end
+    yield -> end
+    select -> end
     control_operator -> end
     return -> end
     pragma -> end
