@@ -1,0 +1,12 @@
+digraph DECLARATION_VAR {
+    start [label=DECLARATION_VAR shape=plaintext]
+    var_name [label=VAR_NAME shape=box]
+    colon [label=":" shape=oval]
+    type [label=TYPE shape=box]
+    end [label="" shape=point]
+
+    start -> var_name
+    var_name -> colon
+    colon -> type
+    type -> end
+}
