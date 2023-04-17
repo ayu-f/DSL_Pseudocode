@@ -1,23 +1,31 @@
-digraph WHILE {
-    start [label=WHILE shape=plaintext]
-    key_while [label="while" shape=oval]
+digraph FOR {
+    start [label=FOR shape=plaintext]
+    key_for [label="for" shape=oval]
+    var_loop [label=VAR_LOOP shape=box]
+    belong [label="\in" shape=oval]
+    iterator [label=ITERATOR shape=box]
+    belong [label="\in" shape=oval]
     key_do [label="do" shape=oval]
-    key_end [label="end while" shape=oval]
-    expression_value [label=EXPRESSION_VALUE shape=box]
     pragma [label=PRAGMA shape=box]
     code_block [label=CODE_BLOCK shape=box]
     nl_1 [label="\n" shape=oval]
     nl_2 [label="\n" shape=oval]
+    key_end [label="end for" shape=oval]
     end [label="" shape=point]
 
-    start -> key_while
-    key_while -> expression_value
-    expression_value -> key_do
+    start -> key_for
+    key_for -> var_loop
+    var_loop -> belong
+    belong -> iterator
+    iterator -> key_do
+
     key_do -> pragma
     key_do -> nl_1
     key_do -> code_block
+
     pragma -> nl_1
     pragma -> code_block
+
     nl_1 -> code_block
     code_block -> nl_2
     code_block -> key_end
