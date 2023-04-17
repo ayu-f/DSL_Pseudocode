@@ -5,10 +5,10 @@ digraph LOOP {
     until [label=UNTIL shape=box]
     transition_operator [label=TRANSITION_OPERATOR shape=box]
     end [label="" shape=point]
-    start -> loop
-    start -> branching
-    start -> transition_operator
-    loop -> end
-    branching -> end
-    transition_operator -> end
+    start -> for
+    start -> while
+    start -> until
+    for -> end
+    while -> end
+    until -> end
 }
