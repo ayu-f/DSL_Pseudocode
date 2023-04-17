@@ -1,0 +1,12 @@
+digraph BR_PRIOR {
+    start [label=BR_PRIOR shape=plaintext]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    br_open [label="(" shape=oval]
+    br_close [label=")" shape=oval]
+    end [label="" shape=point]
+
+    start -> br_open
+    br_open -> expression_value
+    expression_value -> br_close
+    br_close -> end
+}
