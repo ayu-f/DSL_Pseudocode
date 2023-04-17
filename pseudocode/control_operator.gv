@@ -1,13 +1,13 @@
 digraph CONTROL_OPERATOR {
     start [label=CONTROL_OPERATOR shape=plaintext]
-    branching [label=BRANCHING shape=box]
+    if [label=IF shape=box]
     loop [label=LOOP shape=box]
     transition_operator [label=TRANSITION_OPERATOR shape=box]
     end [label="" shape=point]
     start -> loop
-    start -> branching
+    start -> if
     start -> transition_operator
     loop -> end
-    branching -> end
+    if -> end
     transition_operator -> end
 }

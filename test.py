@@ -19,7 +19,8 @@ syntaxInfo = {
 
 file = open("test_code.txt", "r", encoding="UTF-8")
 code = file.read()
-res = json.loads(process(code, syntaxInfo, "other"))
+res = process(code, syntaxInfo)
+res = json.loads(res)
 
 processor = SourceTreeProcessor()
 processor.print_tree(res)

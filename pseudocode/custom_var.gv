@@ -5,7 +5,7 @@ digraph CUSTOM_VAR {
     string [label=string shape=diamond]
     br_close [label="}" shape=oval]
     end [label="" shape=point]
-
+    start -> custom_var_prefix
     custom_var_prefix -> br_open
     br_open -> string
     string -> br_close

@@ -107,7 +107,6 @@
         "CALL_FUNC",
         "SELECT",
         "YIELD",
-        "BRANCHING",
         "LOOP",
         "TRANSITION_OPERATOR",
         "FOR",
