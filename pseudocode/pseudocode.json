@@ -126,7 +126,10 @@
         "TYPE_ARRAY",
         "TYPE_STRUCT",
         "TYPE_POINTER",
-        "CUSTOM_TYPE"
+        "CUSTOM_TYPE",
+        "INFIX_OPERATION",
+        "UNARY_OPERATOR",
+        "CUSTOM_UNARY_OPERATOR"
     ],
     "AXIOM": "S"
 }

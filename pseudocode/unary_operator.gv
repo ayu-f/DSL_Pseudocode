@@ -1,0 +1,24 @@
+digraph UNARY_OPERATOR {
+    start [label=UNARY_OPERATOR shape=plaintext]
+    minus [label="-" shape=oval]
+    factorial [label="factorial" shape=oval]
+    floor [label="floor" shape=oval]
+    ceil [label="ceil" shape=oval]
+    abs [label="abs" shape=oval]
+    custom_unary_operation [label=CUSTOM_UNARY_OPERATOR shape=box]
+    end [label="" shape=point]
+
+    start -> minus
+    start -> factorial
+    start -> floor
+    start -> ceil
+    start -> abs
+    start -> custom_unary_operation
+
+    minus -> end
+    factorial -> end
+    floor -> end
+    ceil -> end
+    abs -> end
+    custom_unary_operation -> end
+}
