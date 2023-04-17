@@ -15,6 +15,7 @@
         "@type",
         "@set",
         "@seq",
+        "@var",
         "factorial",
         "floor",
         "ceil",
@@ -117,7 +118,10 @@
         "GOTO_MARK",
         "NEXT_FOR",
         "MARK_NAME",
-        "ITERATOR"
+        "ITERATOR",
+        "STRUCT_FIELD",
+        "ARRAY_SLICE",
+        "CUSTOM_VAR"
     ],
     "AXIOM": "S"
 }

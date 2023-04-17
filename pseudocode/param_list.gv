@@ -1,11 +1,16 @@
 digraph PARAM_LIST {
     start [label=PARAM_LIST shape=plaintext]
     var [label=VAR shape=box]
+    declaration_var [label=DECLARATION_VAR shape=box]
     comma [label="," shape=oval]
     end [label="" shape=point]
     start -> var
+    start -> declaration_var
     start -> end
+    declaration_var -> comma
+    declaration_var -> end
     var -> comma
     var -> end
     comma -> var
+    comma -> declaration_var
 }

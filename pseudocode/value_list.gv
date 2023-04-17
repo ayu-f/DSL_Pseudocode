@@ -1,0 +1,25 @@
+digraph VALUE_LIST {
+    start [label=VALUE_LIST shape=plaintext]
+    expression_value_1 [label=EXPRESSION_VALUE shape=box]
+    expression_value_2 [label=EXPRESSION_VALUE shape=box]
+    ellipsis [label=ELLIPSIS shape=box]
+    comma_1 [label="," shape=oval]
+    comma_2 [label="," shape=oval]
+    comma_3 [label="," shape=oval]
+    comma_4 [label="," shape=oval]
+    end [label="" shape=point]
+
+    start -> expression_value_1
+    expression_value_1 -> comma_1
+    expression_value_1 -> comma_2
+    comma_2 -> ellipsis
+    ellipsis -> comma_3
+    comma_3 -> expression_value_2
+    expression_value_2 -> comma_4
+    expression_value_2 -> end
+
+    expression_value_1 -> end
+    comma_4 -> expression_value_2
+    comma_1 -> expression_value_1
+    start -> end
+}
