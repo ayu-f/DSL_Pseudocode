@@ -1,12 +1,12 @@
 digraph STRUCT_FIELD {
     start [label=STRUCT_FIELD shape=plaintext]
-    var [label=VAR shape=box]
+    var_name_1 [label=VAR_NAME shape=box]
     dot [label="." shape=oval]
-    var_name [label=VAR_NAME shape=box]
+    var_name_2 [label=VAR_NAME shape=box]
     end [label="" shape=point]
 
-    start -> var
-    var -> dot
-    dot -> var_name
-    var_name -> end
+    start -> var_name_1
+    var_name_1 -> dot
+    dot -> var_name_2
+    var_name_2 -> end
 }
