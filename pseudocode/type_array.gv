@@ -1,0 +1,21 @@
+digraph TYPE_ARRAY {
+    start [label=TYPE_ARRAY shape=plaintext]
+    key_array [label="array" shape=oval]
+    br_open [label="[" shape=oval]
+    br_close [label="]" shape=oval]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    comma [label="," shape=oval]
+    key_of [label="of" shape=oval]
+    type [label=TYPE shape=box]
+    end [label="" shape=point]
+
+    start -> key_array
+    key_array -> br_open
+    br_open -> expression_value
+    expression_value -> br_close
+    expression_value -> comma
+    br_close -> key_of
+    key_of -> type
+    comma -> expression_value
+    type -> end
+}
