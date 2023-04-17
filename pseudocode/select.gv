@@ -1,0 +1,14 @@
+digraph SELECT {
+    start [label=SELECT shape=plaintext]
+    select [label="select" shape=oval]
+    var_name [label=VAR_NAME shape=box]
+    in [label="\in" shape=oval]
+    iterator [label=ITERATOR shape=box]
+    end [label="" shape=point]
+
+    start -> select
+    select -> var_name
+    var_name -> in
+    in -> iterator
+    iterator -> end
+}
