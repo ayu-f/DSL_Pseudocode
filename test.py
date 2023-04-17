@@ -10,14 +10,14 @@ from dsl_generator_pseudocode.process_pseudocode import process
 syntaxInfo = {
     "type": "virt",
     "info": {
-        "supportInfo": "dsl_generator_pseudocode/_examples/pseudocode/pseudocode.sgi",
-        "diagrams": "dsl_generator_pseudocode/_examples/pseudocode"
+        "supportInfo": "pseudocode/pseudocode.sgi",
+        "diagrams": "pseudocode"
     }
 }
 
 file = open("test_code.txt", "r", encoding="UTF-8")
 code = file.read()
-res = json.loads(process(code, syntaxInfo))
+res = json.loads(process(code, syntaxInfo, "other"))
 
 processor = SourceTreeProcessor()
 processor.print_tree(res)

@@ -1,0 +1,224 @@
+digraph token_stream_after_scanner {
+	0 [label="" shape=point]
+	1 [label="KEY
+string: return" shape=oval]
+	0 -> 1
+	2 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	1 -> 2
+	3 [label="KEY
+string: \n" shape=oval]
+	2 -> 3
+	4 [label="KEY
+string: return" shape=oval]
+	3 -> 4
+	5 [label="TERMINAL
+type: name
+string: G" shape=diamond]
+	4 -> 5
+	6 [label="KEY
+string: \n" shape=oval]
+	5 -> 6
+	7 [label="KEY
+string: func" shape=oval]
+	6 -> 7
+	8 [label="TERMINAL
+type: name
+string: GetSet" shape=diamond]
+	7 -> 8
+	9 [label="KEY
+string: (" shape=oval]
+	8 -> 9
+	10 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	9 -> 10
+	11 [label="KEY
+string: )" shape=oval]
+	10 -> 11
+	12 [label="KEY
+string: ->" shape=oval]
+	11 -> 12
+	13 [label="KEY
+string: @@" shape=oval]
+	12 -> 13
+	14 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	13 -> 14
+	15 [label="KEY
+string: {" shape=oval]
+	14 -> 15
+	16 [label="TERMINAL
+type: string
+string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	15 -> 16
+	17 [label="KEY
+string: }" shape=oval]
+	16 -> 17
+	18 [label="KEY
+string: \n" shape=oval]
+	17 -> 18
+	19 [label="KEY
+string: return" shape=oval]
+	18 -> 19
+	20 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	19 -> 20
+	21 [label="KEY
+string: \n" shape=oval]
+	20 -> 21
+	22 [label="KEY
+string: return" shape=oval]
+	21 -> 22
+	23 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	22 -> 23
+	24 [label="KEY
+string: \n" shape=oval]
+	23 -> 24
+	25 [label="KEY
+string: return" shape=oval]
+	24 -> 25
+	26 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	25 -> 26
+	27 [label="KEY
+string: \n" shape=oval]
+	26 -> 27
+	28 [label="KEY
+string: return" shape=oval]
+	27 -> 28
+	29 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	28 -> 29
+	30 [label="KEY
+string: ;" shape=oval]
+	29 -> 30
+	31 [label="KEY
+string: return" shape=oval]
+	30 -> 31
+	32 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	31 -> 32
+	33 [label="KEY
+string: \n" shape=oval]
+	32 -> 33
+	34 [label="KEY
+string: end algorithm" shape=oval]
+	33 -> 34
+	35 [label="KEY
+string: \n" shape=oval]
+	34 -> 35
+	36 [label="KEY
+string: @@" shape=oval]
+	35 -> 36
+	37 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	36 -> 37
+	38 [label="KEY
+string: {" shape=oval]
+	37 -> 38
+	39 [label="TERMINAL
+type: string
+string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	38 -> 39
+	40 [label="KEY
+string: }" shape=oval]
+	39 -> 40
+	41 [label="KEY
+string: \n" shape=oval]
+	40 -> 41
+	42 [label="KEY
+string: return" shape=oval]
+	41 -> 42
+	43 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	42 -> 43
+	44 [label="KEY
+string: \n" shape=oval]
+	43 -> 44
+	45 [label="KEY
+string: return" shape=oval]
+	44 -> 45
+	46 [label="TERMINAL
+type: name
+string: G" shape=diamond]
+	45 -> 46
+	47 [label="KEY
+string: \n" shape=oval]
+	46 -> 47
+	48 [label="KEY
+string: return" shape=oval]
+	47 -> 48
+	49 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	48 -> 49
+	50 [label="KEY
+string: \n" shape=oval]
+	49 -> 50
+	51 [label="KEY
+string: func" shape=oval]
+	50 -> 51
+	52 [label="TERMINAL
+type: name
+string: GetSet" shape=diamond]
+	51 -> 52
+	53 [label="KEY
+string: (" shape=oval]
+	52 -> 53
+	54 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	53 -> 54
+	55 [label="KEY
+string: )" shape=oval]
+	54 -> 55
+	56 [label="KEY
+string: ->" shape=oval]
+	55 -> 56
+	57 [label="KEY
+string: @@" shape=oval]
+	56 -> 57
+	58 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	57 -> 58
+	59 [label="KEY
+string: {" shape=oval]
+	58 -> 59
+	60 [label="TERMINAL
+type: string
+string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	59 -> 60
+	61 [label="KEY
+string: }" shape=oval]
+	60 -> 61
+	62 [label="KEY
+string: \n" shape=oval]
+	61 -> 62
+	63 [label="KEY
+string: return" shape=oval]
+	62 -> 63
+	64 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	63 -> 64
+	65 [label="KEY
+string: \n" shape=oval]
+	64 -> 65
+	66 [label="KEY
+string: end algorithm" shape=oval]
+	65 -> 66
+	67 [label="" shape=point]
+	66 -> 67
+}
