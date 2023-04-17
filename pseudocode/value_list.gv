@@ -14,7 +14,7 @@ digraph VALUE_LIST {
     expression_value_1 -> comma_2
     comma_2 -> ellipsis
     ellipsis -> comma_3
-    comma_3 - > expression_value_2
+    comma_3 -> expression_value_2
     expression_value_2 -> comma_4
     expression_value_2 -> end
 
