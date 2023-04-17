@@ -316,6 +316,26 @@
               "key": "}"
             }
           ]
+        },
+        {
+          "key": "\\n"
+        },
+        {
+          "nonterm": "ПРАГМА",
+          "content": [
+            {
+              "key": "@@"
+            },
+            {
+              "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "begin_enumerate"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -833,6 +853,9 @@
                               ]
                             },
                             {
+                              "key": "\\n"
+                            },
+                            {
                               "key": "end while"
                             }
                           ]
@@ -922,6 +945,31 @@
         },
         {
           "key": "end algorithm"
+        }
+      ]
+    },
+    {
+      "key": "\\n"
+    },
+    {
+      "nonterm": "БЛОК_КОДА",
+      "content": [
+        {
+          "nonterm": "ПРАГМА",
+          "content": [
+            {
+              "key": "@@"
+            },
+            {
+              "nonterm": "ИМЯ_ПРАГМА_КОМАНДЫ",
+              "content": [
+                {
+                  "term": "ИМЯ",
+                  "value": "end_enumerate"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1323,6 +1371,9 @@
                                   ]
                                 }
                               ]
+                            },
+                            {
+                              "key": "\\n"
                             },
                             {
                               "key": "end while"

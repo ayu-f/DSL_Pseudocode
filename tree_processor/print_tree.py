@@ -1,13 +1,18 @@
 import json
-from tree_processor import TreeProcessor
-import latex_print_style as latex_style
-import unformated_print_style as unformated_style
-
+from latex_print_style import LatexTreeProcessor, LatexSourceTreeProcessor
+from unformated_print_style import SourceTreeProcessor
 
 file = open("test_tree.json", "r", encoding="UTF-8")
 code = file.read()
 res = json.loads(code)
 
-processor = TreeProcessor(latex_style.key_map, latex_style.term_map, latex_style.nonterm_map)
-processor.print_new_line(0)
-processor.print_node(res, 0)
+processor = SourceTreeProcessor()
+processor.print_tree(res)
+print()
+print()
+processor = LatexSourceTreeProcessor()
+processor.print_tree(res)
+print()
+print()
+processor = LatexTreeProcessor()
+processor.print_tree(res)
