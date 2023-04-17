@@ -1,0 +1,17 @@
+digraph TYPE_STRUCT {
+    start [label=TYPE_STRUCT shape=plaintext]
+    key_struct [label="struct" shape=oval]
+    br_open [label="{" shape=oval]
+    br_close [label="}" shape=oval]
+    declaration_var [label=EXPRESSION_VALUE shape=box]
+    comma [label=";" shape=oval]
+    end [label="" shape=point]
+
+    start -> key_struct
+    key_struct -> br_open
+    br_open -> declaration_var
+    declaration_var -> br_close
+    declaration_var -> comma
+    comma -> declaration_var
+    declaration_var -> end
+}

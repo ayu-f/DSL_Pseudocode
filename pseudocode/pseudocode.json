@@ -121,7 +121,12 @@
         "ITERATOR",
         "STRUCT_FIELD",
         "ARRAY_SLICE",
-        "CUSTOM_VAR"
+        "CUSTOM_VAR",
+        "INT_RANGE",
+        "TYPE_ARRAY",
+        "TYPE_STRUCT",
+        "TYPE_POINTER",
+        "CUSTOM_TYPE"
     ],
     "AXIOM": "S"
 }

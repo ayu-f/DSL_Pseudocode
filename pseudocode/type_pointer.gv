@@ -1,0 +1,10 @@
+digraph TYPE_POINTER {
+    start [label=TYPE_POINTER shape=plaintext]
+    key_pointer [label="\uparrow" shape=oval]
+    type [label=TYPE shape=box]
+    end [label="" shape=point]
+
+    start -> key_pointer
+    key_pointer -> type
+    type -> end
+}

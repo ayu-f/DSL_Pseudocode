@@ -1,0 +1,27 @@
+digraph TYPE {
+    start [label=TYPE shape=plaintext]
+    type_array [label=TYPE_ARRAY shape=box]
+    type_struct [label=TYPE_STRUCT shape=box]
+    type_pointer [label=TYPE_POINTER shape=box]
+    natural [label="natural" shape=oval]
+    integer [label="integer" shape=oval]
+    binary [label="binary" shape=oval]
+    custom_type [label=CUSTOM_TYPE shape=box]
+    end [label="" shape=point]
+
+    start -> type_array
+    start -> type_struct
+    start -> type_pointer
+    start -> natural
+    start -> integer
+    start -> binary
+    start -> custom_type
+
+    type_array -> end
+    type_struct -> end
+    type_pointer -> end
+    natural -> end
+    integer -> end
+    binary -> end
+    custom_type -> end
+}
