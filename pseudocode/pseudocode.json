@@ -111,7 +111,10 @@
         "TRANSITION_OPERATOR",
         "FOR",
         "WHILE",
-        "UNTIL"
+        "UNTIL",
+        "GOTO",
+        "GOTO_MARK",
+        "NEXT_FOR"
     ],
     "AXIOM": "S"
 }

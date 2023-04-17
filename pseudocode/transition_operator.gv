@@ -1,0 +1,13 @@
+digraph TRANSITION_OPERATOR {
+    start [label=TRANSITION_OPERATOR shape=plaintext]
+    next_for [label=NEXT_FOR shape=box]
+    goto_mark [label=GOTO_MARK shape=box]
+    goto [label=GOTO shape=box]
+    end [label="" shape=point]
+    start -> next_for
+    start -> goto_mark
+    start -> goto
+    next_for -> end
+    goto_mark -> end
+    goto -> end
+}
