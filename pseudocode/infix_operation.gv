@@ -1,0 +1,11 @@
+digraph INFIX_OPERATION {
+    start [label=INFIX_OPERATION shape=plaintext]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    infix_operator [label=INFIX_OPERATOR shape=box]
+    end [label="" shape=point]
+    start -> expression_value
+    expression_value -> infix_operator
+    expression_value -> end
+    infix_operator -> expression_value
+    infix_operator -> end
+}
