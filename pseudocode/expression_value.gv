@@ -1,0 +1,37 @@
+digraph EXPRESSION_VALUE {
+    start [label=EXPRESSION_VALUE shape=plaintext]
+    int_const [label=number shape=diamond]
+    call_func [label=CALL_FUNC shape=box]
+    int_range [label=INT_RANGE shape=box]
+    var_name [label=VAR_NAME shape=box]
+    operator_infix [label=INFIX_OPERATION shape=box]
+    operator_unary [label=UNARY_OPERATOR shape=box]
+    br_prior [label=BR_PRIORITY shape=box]
+    set [label=SET shape=box]
+    sequence [label=SEQUENCE shape=box]
+    custom_expr_value [label=CUSTOM_EXPR shape=box]
+
+    end [label="" shape=point]
+
+    start -> int_const
+    start -> call_func
+    start -> int_range
+    start -> var_name
+    start -> operator_infix
+    start -> operator_unary
+    start -> br_prior
+    start -> set
+    start -> sequence
+    start -> custom_expr_value
+
+    int_const -> end
+    call_func -> end
+    int_range -> end
+    var_name -> end
+    operator_infix -> end
+    operator_unary -> end
+    br_prior -> end
+    set -> end
+    sequence -> end
+    custom_expr_value -> end
+}
