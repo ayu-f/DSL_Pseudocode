@@ -45,7 +45,6 @@ digraph IF {
     pragma_2 -> nl_3
     pragma_2 -> code_block_2
     nl_3 -> code_block_2
-    code_block_2 -> key_end_if
     code_block_2 -> nl_4
     code_block_2 -> key_elif
     code_block_2 -> key_else
