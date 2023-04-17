@@ -1,0 +1,22 @@
+digraph FOR {
+    start [label=FOR shape=plaintext]
+    key_for [label="for" shape=oval]
+    var_loop [label=VAR_LOOP shape=box]
+    belong [label="\in" shape=oval]
+    iterator [label=ITERATOR shape=box]
+    belong [label="\in" shape=oval]
+    key_do [label="do" shape=oval]
+    pragma [label=PRAGMA shape=box]
+    nl [label="\n" shape=oval]
+    key_end [label="end while" shape=oval]
+
+    start -> key_for
+    key_for -> var_loop
+    var_loop -> belong
+    belong -> iterator
+    iterator -> key_do
+    key_do -> pragma
+    key_do -> nl
+    pragma -> nl
+    nl -> key_end
+}
