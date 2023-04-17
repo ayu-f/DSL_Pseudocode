@@ -38,6 +38,8 @@ class SourceTreeProcessor():
             return ""
         if "key" in left.keys() and left["key"] == "}":
             return ""
+        if "key" in right.keys() and right["key"] == ";":
+            return ""
         return self.default_separator
         
     def print_tree(self, root:dict):
@@ -76,10 +78,8 @@ class SourceTreeProcessor():
             print(str, end="")
 
     def print_default(self, root:dict, depth):
-        if root["nonterm"] == "БЛОК_КОДА":
+        if root["nonterm"] == "CODE_BLOCK":
             depth += 1
-        elif self.is_new_line:
-            self.print_new_line(depth)
         for i, node in enumerate(root["content"]):
             self.print_node(node, depth)
             if i != len(root["content"]) - 1 and not self.is_new_line:

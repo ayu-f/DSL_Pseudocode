@@ -1,4 +1,4 @@
-from unformated_print_style import SourceTreeProcessor
+from .unformated_print_style import SourceTreeProcessor
 def tex_textbf(term: str):
     return f'\\textbf{{{term}}}'
 
@@ -21,9 +21,9 @@ class LatexSourceTreeProcessor(SourceTreeProcessor):
             '\\subset': "$\\backslash$subset",
         }
         self.term_map = {
-            'ИМЯ': self.any_format,
-            'ЧИСЛЕННАЯ_КОНСТАНТА': self.any_format,
-            'СТРОКА': self.any_format,
+            'name': self.any_format,
+            'number': self.any_format,
+            'string': self.any_format,
         }
 
 
@@ -120,11 +120,11 @@ class LatexTreeProcessor(SourceTreeProcessor):
             'pow':  tex_textbf('pow'),
         }
         self.term_map = {
-            'ИМЯ': self.name_format,
-            'ЧИСЛЕННАЯ_КОНСТАНТА': self.number_format,
+            'name': self.name_format,
+            'number': self.number_format,
         }
         self.nonterm_map = {
-            'ПРАГМА': self.print_pragma,
+            'PRAGMA': self.print_pragma,
             'ПОЛЬЗОВАТЕЛЬСКОЕ_ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ': self.print_user_defined,
             'ПОЛЬЗОВАТЕЛЬСКАЯ_ПЕРЕМЕННАЯ': self.print_user_defined,
             'ПОЛЬЗОВАТЕЛЬСКИЙ_ОПЕРАТОР_УНАРНЫЙ': self.print_user_defined,
@@ -167,14 +167,14 @@ class LatexTreeProcessor(SourceTreeProcessor):
             self.name = root["content"][1]["content"][0]["value"]
             self.args = []
             for child in root["content"]:
-                if "term" in child.keys() and child["term"] == "СТРОКА":
+                if "term" in child.keys() and child["term"] == "string":
                     self.args.append(child["value"][1:-1])
     class UserDefined:
         def __init__(self, root:dict):
             self.name = root["content"][0]["key"][1:]
             self.args = []
             for child in root["content"]:
-                if "term" in child.keys() and child["term"] == "СТРОКА":
+                if "term" in child.keys() and child["term"] == "string":
                     self.args.append(child["value"][1:-1])
 
     def print_pragma(self, root:dict, depth) -> bool:

@@ -1,0 +1,3 @@
+[submodule "dsl_generator_pseudocode"]
+	path = dsl_generator_pseudocode
+	url = https://github.com/maloxit/dsl_generator_pseudocode
