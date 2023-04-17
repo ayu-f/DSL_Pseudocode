@@ -1,0 +1,7 @@
+digraph ITERATOR {
+    start [label=ITERATOR shape=plaintext]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    end [label="" shape=point]
+    start -> expression_value
+    expression_value -> end
+}
