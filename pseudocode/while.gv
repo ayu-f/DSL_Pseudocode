@@ -5,6 +5,7 @@ digraph WHILE {
     key_end [label="end while" shape=oval]
     expression_value [label=EXPRESSION_VALUE shape=box]
     pragma [label=PRAGMA shape=box]
+    code_block [label=CODE_BLOCK shape=box]
     nl_1 [label="\n" shape=oval]
     nl_2 [label="\n" shape=oval]
     end [label="" shape=point]
