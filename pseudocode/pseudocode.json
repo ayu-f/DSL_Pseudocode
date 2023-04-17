@@ -115,7 +115,8 @@
         "GOTO",
         "GOTO_MARK",
         "NEXT_FOR",
-        "MARK_NAME"
+        "MARK_NAME",
+        "ITERATOR"
     ],
     "AXIOM": "S"
 }
