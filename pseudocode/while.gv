@@ -22,4 +22,5 @@ digraph WHILE {
     code_block -> nl_2
     code_block -> key_end
     nl_2 -> key_end
+    key_end -> end
 }

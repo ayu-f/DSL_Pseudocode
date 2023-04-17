@@ -7,16 +7,28 @@ digraph FOR {
     belong [label="\in" shape=oval]
     key_do [label="do" shape=oval]
     pragma [label=PRAGMA shape=box]
-    nl [label="\n" shape=oval]
-    key_end [label="end while" shape=oval]
+    code_block [label=CODE_BLOCK shape=box]
+    nl_1 [label="\n" shape=oval]
+    nl_2 [label="\n" shape=oval]
+    key_end [label="end for" shape=oval]
+    end [label="" shape=point]
 
     start -> key_for
     key_for -> var_loop
     var_loop -> belong
     belong -> iterator
     iterator -> key_do
+
     key_do -> pragma
-    key_do -> nl
-    pragma -> nl
-    nl -> key_end
+    key_do -> nl_1
+    key_do -> code_block
+
+    pragma -> nl_1
+    pragma -> code_block
+
+    nl_1 -> code_block
+    code_block -> nl_2
+    code_block -> key_end
+    nl_2 -> key_end
+    key_end -> end
 }
