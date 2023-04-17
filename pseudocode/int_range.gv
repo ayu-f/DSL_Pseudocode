@@ -1,0 +1,12 @@
+digraph INT_RANGE {
+    start [label=INT_RANGE shape=plaintext]
+    expression_value [label=EXPRESSION_VALUE shape=box]
+    two_dots [label=".." shape=oval]
+    expression_value2 [label=EXPRESSION_VALUE shape=box]
+    end [label="" shape=point]
+
+    start -> expression_value
+    expression_value -> two_dots
+    two_dots -> expression_value2
+    expression_value2 -> end
+}
