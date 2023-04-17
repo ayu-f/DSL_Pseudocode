@@ -1,0 +1,17 @@
+digraph VAR_NAME {
+    start [label=VAR_NAME shape=plaintext]
+    key_set [label="@set" shape=oval]
+    br_open [label="(" shape=oval]
+    br_close [label=")" shape=oval]
+    int_range [label=INT_RANGE shape=box]
+    value_list [label=VALUE_LIST shape=box]
+    end [label="" shape=point]
+
+    start -> key_set
+    key_set -> br_open
+    br_open -> int_range
+    br_open -> value_list
+    int_range -> br_close
+    value_list -> br_close
+    br_close -> end
+}

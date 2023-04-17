@@ -1,0 +1,13 @@
+digraph CUSTOM_UNARY_OPERATOR {
+    start [label=CUSTOM_UNARY_OPERATOR shape=plaintext]
+    custom_unary_prefix [label="@unary" shape=oval]
+    br_open [label="{" shape=oval]
+    string [label=string shape=diamond]
+    br_close [label="}" shape=oval]
+    end [label="" shape=point]
+
+    custom_unary_prefix -> br_open
+    br_open -> string
+    string -> br_close
+    br_close -> end
+}

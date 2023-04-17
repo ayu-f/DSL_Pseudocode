@@ -1,0 +1,13 @@
+digraph CUSTOM_EXPRESSION_VALUE {
+    start [label=CUSTOM_EXPRESSION_VALUE shape=plaintext]
+    custom_expression_value_prefix [label="@value" shape=oval]
+    br_open [label="{" shape=oval]
+    string [label=string shape=diamond]
+    br_close [label="}" shape=oval]
+    end [label="" shape=point]
+
+    custom_expression_value_prefix -> br_open
+    br_open -> string
+    string -> br_close
+    br_close -> end
+}
