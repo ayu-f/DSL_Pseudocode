@@ -110,6 +110,7 @@
         "LOOP",
         "TRANSITION_OPERATOR",
         "FOR",
+        "IF",
         "WHILE",
         "UNTIL",
         "GOTO",
