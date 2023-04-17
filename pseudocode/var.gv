@@ -1,7 +1,18 @@
 digraph VAR {
     start [label=VAR shape=plaintext]
     var_name [label=VAR_NAME shape=box]
+    struct_field [label=STRUCT_FIELD shape=box]
+    array_slice [label=ARRAY_SLICE shape=box]
+    custom_var [label=CUSTOM_VAR shape=box]
     end [label="" shape=point]
+
     start -> var_name
+    start -> struct_field
+    start -> array_slice
+    start -> custom_var
+
     var_name -> end
+    struct_field -> end
+    array_slice -> end
+    custom_var -> end
 }
