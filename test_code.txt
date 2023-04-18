@@ -1,2 +1,20 @@
-select ad \in AGDSG + 646354
-return yrtyrt[756].rwere[5345][gdf+gds].fdsf.jjj
+func GetSet (n : natural) -> @@comment{"Множество $B$ целых чисел от $2$ до $n$"}
+B := @set(2, 3, 4, 5, ..., n)
+return B
+end algorithm
+@@set_name_formatted{"gcd", "\textrm{gcd}"}
+@@begin_enumerate
+func gcd (a : natural, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
+    while a != 0 & b != 0 do
+        if a > b then a := a mod b else b := b mod a end if
+    end while
+    return a + b
+end algorithm
+@@end_enumerate
+func EratosphenGrid (n : natural) -> @@comment{"Множество $B$ простых чисел, не превосходящих $n$"}
+    B := @set(2, 3, 4, 5, ..., n)
+    while B != @value{"$\emptyset$"} do
+        x := min(B)
+    end while
+    return B
+end algorithm

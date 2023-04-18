@@ -4,8 +4,8 @@ digraph PARAM_LIST {
     declaration_var [label=DECLARATION_VAR shape=box]
     comma [label="," shape=oval]
     end [label="" shape=point]
-    start -> var
     start -> declaration_var
+    start -> var
     start -> end
     declaration_var -> comma
     declaration_var -> end

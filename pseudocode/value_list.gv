@@ -10,8 +10,8 @@ digraph VALUE_LIST {
     end [label="" shape=point]
 
     start -> expression_value_1
-    expression_value_1 -> comma_1
     expression_value_1 -> comma_2
+    expression_value_1 -> comma_1
     comma_2 -> ellipsis
     ellipsis -> comma_3
     comma_3 -> expression_value_2
