@@ -75,7 +75,7 @@ class LatexTreeProcessor(SourceTreeProcessor):
             'end for': tex_textbf('end for'),
             'if': tex_textbf('if'),
             'then': tex_textbf('then'),
-            'elseif': tex_textbf('elseif'),
+            'elif': tex_textbf('elif'),
             'else': tex_textbf('else'),
             'end if': tex_textbf('end if'),
             'while': tex_textbf('while'),

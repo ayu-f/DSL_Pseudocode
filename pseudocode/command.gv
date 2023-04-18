@@ -11,9 +11,9 @@ digraph COMMAND {
     end [label="" shape=point]
 
     start -> return
-    start -> control_operator
     start -> assignment
     start -> declaration_var
+    start -> control_operator
     start -> call_func
     start -> yield
     start -> select

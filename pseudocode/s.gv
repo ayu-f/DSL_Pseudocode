@@ -6,6 +6,7 @@ digraph S {
     end [label="" shape=point]
     start -> alg
     start -> code_block
+    start -> end
     alg -> nl
     alg -> end
     code_block -> nl

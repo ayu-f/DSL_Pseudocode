@@ -3,6 +3,7 @@ B := @set(2, 3, 4, 5, ..., n)
 return B
 end algorithm
 @@set_name_formatted{"gcd", "\textrm{gcd}"}
+@@set_name_formatted{"min", "\textbf{min}"}
 @@begin_enumerate
 func gcd (a : natural, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
     while a != 0 & b != 0 do
@@ -14,12 +15,21 @@ end algorithm
 iter EratosphenGrid (n : natural) -> @@comment{"Перечисление простых чисел, не превосходящих $n$"}
     B := @set(2, 3, 4, 5, ..., n)
     while B != @value{"$\emptyset$"} do
-        x := min(B)
-        yield x
-        B := B - x
+        x := min(B) @@comment{"наименьший элемент"}
+        yield x  @@comment{"выдать $x$"}
+        B := B - x  @@comment{"удалить $x$ из $B$"}
         y := x pow 2
         while y <= n do
-            B := B - y; y := y + x
+            B := B - y; y := y + x @@comment{"удалить из $B$ все числа, кратные $x$"}
         end while
     end while
+end algorithm
+func gcd (a : natural, c, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
+    @@comment{"удалить $x$ из $B$"};@@comment{"удалить $x$ из $B$"}
+    while a != 0 & b != 0 do
+        @@comment{"удалить $x$ из $B$"}
+        if a > b then a := a mod b elif 5==2 then return 5 else b := b mod a end if
+        gdf : natural
+    end while
+    return a + b
 end algorithm
