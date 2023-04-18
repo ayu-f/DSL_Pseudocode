@@ -1,10 +1,10 @@
 digraph UNARY_OPERATION {
     start [label=UNARY_OPERATION shape=plaintext]
     unary_operator [label=UNARY_OPERATOR shape=box]
-    expression_value [label=EXPRESSION_VALUE shape=box]
+    operand_infix [label=INFIX_OPERAND shape=box]
     end [label="" shape=point]
 
     start -> unary_operator
-    unary_operator -> expression_value
-    expression_value -> end
+    unary_operator -> operand_infix
+    operand_infix -> end
 }

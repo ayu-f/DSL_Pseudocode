@@ -1,12 +1,12 @@
 digraph INT_RANGE {
     start [label=INT_RANGE shape=plaintext]
-    expression_value [label=EXPRESSION_VALUE shape=box]
+    operand_infix [label=INFIX_OPERAND shape=box]
     two_dots [label=".." shape=oval]
-    expression_value2 [label=EXPRESSION_VALUE shape=box]
+    operand_infix2 [label=INFIX_OPERAND shape=box]
     end [label="" shape=point]
 
-    start -> expression_value
-    expression_value -> two_dots
-    two_dots -> expression_value2
-    expression_value2 -> end
+    start -> operand_infix
+    operand_infix -> two_dots
+    two_dots -> operand_infix2
+    operand_infix2 -> end
 }

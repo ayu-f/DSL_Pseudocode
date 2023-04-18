@@ -40,6 +40,19 @@ class SourceTreeProcessor():
             return ""
         if "key" in right.keys() and right["key"] == ";":
             return ""
+            return ""
+        if "key" in right.keys() and right["key"] == "[":
+            return ""
+        if "key" in left.keys() and left["key"] == "[":
+            return ""
+        if "key" in right.keys() and right["key"] == "]":
+            return ""
+        if "key" in left.keys() and left["key"] == "]":
+            return ""
+        if "key" in right.keys() and right["key"] == ".":
+            return ""
+        if "key" in left.keys() and left["key"] == ".":
+            return ""
         return self.default_separator
         
     def print_tree(self, root:dict):

@@ -6,6 +6,7 @@ digraph CUSTOM_INFIX_OPERATOR {
     br_close [label="}" shape=oval]
     end [label="" shape=point]
 
+    start -> custom_infix_prefix
     custom_infix_prefix -> br_open
     br_open -> string
     string -> br_close

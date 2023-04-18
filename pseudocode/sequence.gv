@@ -1,14 +1,14 @@
-digraph SET {
-    start [label=SET shape=plaintext]
-    key_set [label="@set" shape=oval]
+digraph SEQUENCE {
+    start [label=SEQUENCE shape=plaintext]
+    key_seq [label="@seq" shape=oval]
     br_open [label="(" shape=oval]
     br_close [label=")" shape=oval]
     int_range [label=INT_RANGE shape=box]
     value_list [label=VALUE_LIST shape=box]
     end [label="" shape=point]
 
-    start -> key_set
-    key_set -> br_open
+    start -> key_seq
+    key_seq -> br_open
     br_open -> int_range
     br_open -> value_list
     int_range -> br_close

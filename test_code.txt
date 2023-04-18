@@ -1,6 +1,2 @@
-return B
-return B
-return B
-return B
-return B
-select t in B
+select ad \in AGDSG + 646354
+return yrtyrt[756].rwere[5345][gdf+gds].fdsf.jjj
