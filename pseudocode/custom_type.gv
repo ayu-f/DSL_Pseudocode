@@ -1,0 +1,13 @@
+digraph CUSTOM_TYPE {
+    start [label=CUSTOM_TYPE shape=plaintext]
+    custom_type_prefix [label="@type" shape=oval]
+    br_open [label="{" shape=oval]
+    string [label=string shape=diamond]
+    br_close [label="}" shape=oval]
+    end [label="" shape=point]
+    start -> custom_type_prefix
+    custom_type_prefix -> br_open
+    br_open -> string
+    string -> br_close
+    br_close -> end
+}

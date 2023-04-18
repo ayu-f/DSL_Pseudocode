@@ -125,12 +125,12 @@ class LatexTreeProcessor(SourceTreeProcessor):
         }
         self.nonterm_map = {
             'PRAGMA': self.print_pragma,
-            'ПОЛЬЗОВАТЕЛЬСКОЕ_ВЫРАЖЕНИЕ_ЗНАЧЕНИЕ': self.print_user_defined,
-            'ПОЛЬЗОВАТЕЛЬСКАЯ_ПЕРЕМЕННАЯ': self.print_user_defined,
-            'ПОЛЬЗОВАТЕЛЬСКИЙ_ОПЕРАТОР_УНАРНЫЙ': self.print_user_defined,
-            'ПОЛЬЗОВАТЕЛЬСКИЙ_ОПЕРАТОР_ИНФИКСНЫЙ': self.print_user_defined,
-            'ПОЛЬЗОВАТЕЛЬСКИЙ_ТИП': self.print_user_defined,
-            'НЕУПОРЯДОЧЕННАЯ_ПОСЛЕДОВАТЕЛЬНОСТЬ': self.print_set,
+            'CUSTOM_EXPRESSION_VALUE': self.print_user_defined,
+            'CUSTOM_VAR': self.print_user_defined,
+            'CUSTOM_UNARY_OPERATOR': self.print_user_defined,
+            'CUSTOM_INFIX_OPERATOR': self.print_user_defined,
+            'CUSTOM_TYPE': self.print_user_defined,
+            'SET': self.print_set,
         }
         self.is_enumerated = False
         self.names_formated = {}

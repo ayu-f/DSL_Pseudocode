@@ -11,10 +11,15 @@ func gcd (a : natural, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
     return a + b
 end algorithm
 @@end_enumerate
-func EratosphenGrid (n : natural) -> @@comment{"Множество $B$ простых чисел, не превосходящих $n$"}
+iter EratosphenGrid (n : natural) -> @@comment{"Перечисление простых чисел, не превосходящих $n$"}
     B := @set(2, 3, 4, 5, ..., n)
     while B != @value{"$\emptyset$"} do
         x := min(B)
+        yield x
+        B := B - x
+        y := x pow 2
+        while y <= n do
+            B := B - y; y := y + x
+        end while
     end while
-    return B
 end algorithm
