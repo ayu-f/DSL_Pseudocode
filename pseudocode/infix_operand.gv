@@ -8,19 +8,19 @@ digraph INFIX_OPERAND {
     br_prior [label=BR_PRIORITY shape=box]
     set [label=SET shape=box]
     sequence [label=SEQUENCE shape=box]
-    custom_expr_value [label=CUSTOM_EXPR shape=box]
+    custom_expr_value [label=CUSTOM_EXPRESSION_VALUE shape=box]
 
     end [label="" shape=point]
 
+    start -> sequence
+    start -> set
+    start -> custom_expr_value
+    start -> operation_unary
+    start -> call_func
+    start -> br_prior
     start -> int_const
     start -> var
-    start -> operation_unary
-    start -> set
-    start -> sequence
-    start -> call_func
     start -> int_range
-    start -> br_prior
-    start -> custom_expr_value
 
     int_const -> end
     call_func -> end

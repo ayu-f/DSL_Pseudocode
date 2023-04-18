@@ -1,5 +1,5 @@
-digraph BR_PRIOR {
-    start [label=BR_PRIOR shape=plaintext]
+digraph BR_PRIORITY {
+    start [label=BR_PRIORITY shape=plaintext]
     expression_value [label=EXPRESSION_VALUE shape=box]
     br_open [label="(" shape=oval]
     br_close [label=")" shape=oval]
