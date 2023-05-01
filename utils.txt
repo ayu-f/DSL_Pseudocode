@@ -1,0 +1,32 @@
+@@begin_oneline
+@@new_command { \for_each_key_word } [1] {
+            f"@@replace { @1 } { \"item\", \"if\" }",
+            f"@@replace { @1 } { \"item\", \"then\" }",
+            f"@@replace { @1 } { \"item\", \"else\" }",
+            f"@@replace { @1 } { \"item\", \"elif\" }",
+            f"@@replace { @1 } { \"item\", \"end if\" }",
+            f"@@replace { @1 } { \"item\", \"for\" }",
+            f"@@replace { @1 } { \"item\", \"do\" }",
+            f"@@replace { @1 } { \"item\", \"end for\" }",
+            f"@@replace { @1 } { \"item\", \"while\" }",
+            f"@@replace { @1 } { \"item\", \"end while\" }",
+            f"@@replace { @1 } { \"item\", \"repeat\" }",
+            f"@@replace { @1 } { \"item\", \"until\" }",
+            f"@@replace { @1 } { \"item\", \"return\" }",
+            f"@@replace { @1 } { \"item\", \"yield\" }",
+            f"@@replace { @1 } { \"item\", \"select\" }",
+            f"@@replace { @1 } { \"item\", \"goto\" }",
+            f"@@replace { @1 } { \"item\", \"end algorithm\" }",
+            f"@@replace { @1 } { \"item\", \"next for\" }",
+            f"@@replace { @1 } { \"item\", \"array\" }",
+            f"@@replace { @1 } { \"item\", \"of\" }",
+            f"@@replace { @1 } { \"item\", \"struct\" }",
+            f"@@replace { @1 } { \"item\", \"array\" }",
+            f"@@replace { @1 } { \"item\", \"func\" }",
+            f"@@replace { @1 } { \"item\", \"iter\" }",
+            f"@@replace { @1 } { \"item\", \"proc\" }"
+        }
+@@new_command { \key_format_colored } [2] { f"@@set_key_formatted{ @1, \"{\\color{#2}#prev}\" }" }
+@@new_command { \key_format_textbf } [1] { f"@@set_key_formatted{ @1, \"\\textbf{#prev}\" }" }
+@@new_command { \key_format_textrm } [1] { f"@@set_key_formatted{ @1, \"\\textrm{#prev}\" }" }
+@@end_oneline

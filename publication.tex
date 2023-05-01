@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[usenames]{color}
+\usepackage{latexsym,amssymb,amsthm}
+\setlength{\parindent}{0pt}
+\begin{document}
+\newcommand\tb[1][0.5cm]{\hspace*{#1}}
+
+\newpage
+func $\textrm{GetSet}$ $($$n$ : $\mathbb{N}$$)$ -> // Множество $B$ целых чисел от $2$ до $n$ \\
+\tb $B$ $:=$ $\{$$2$$,$ $3$$,$ $4$$,$ $5$$,$ $...$$,$ $n$$\}$ \\
+\tb return $B$ \\
+end algorithm \\
+\newpage
+
+\begin{enumerate}
+\item{\color{blue}\textbf{func}} {\color{green}\textrm{gcd}} $($$a$ : $\mathbb{N}$$,$ $b$ : $\mathbb{N}$$)$ -> // НОД чисел $a$ и $b$ 
+\item\tb {\color{blue}\textbf{while}} $a$ $\neq$ $0$ $\&$ $b$ $\neq$ $0$ {\color{blue}\textbf{do}} 
+\item\tb \tb {\color{blue}\textbf{if}} $a$ $>$ $b$ {\color{blue}\textbf{then}} $a$ $:=$ $a$ mod $b$ {\color{blue}\textbf{else}} $b$ $:=$ $b$ mod $a$ {\color{blue}\textbf{end if}} 
+\item\tb {\color{blue}\textbf{end while}} 
+\item\tb {\color{blue}\textbf{return}} $a$ $+$ $b$ 
+\item{\color{blue}\textbf{end algorithm}} 
+\end{enumerate}
+\newpage
+{\color{blue}\textbf{iter}} {\color{red}\textrm{EratosphenGrid}} $($$n$ : $\mathbb{N}$$)$ -> // Перечисление простых чисел, не превосходящих $n$ \\
+\tb $B$ $:=$ $\{$$2$$,$ $3$$,$ $4$$,$ $5$$,$ $...$$,$ $n$$\}$ \\
+\tb {\color{blue}\textbf{while}} $B$ $\neq$ $\emptyset$ {\color{blue}\textbf{do}} \\
+\tb \tb $x$ $:=$ {\color{red}\textrm{min}}$($$B$$)$; // наименьший элемент \\
+\tb \tb {\color{blue}\textbf{yield}} $x$; // выдать $x$ \\
+\tb \tb $B$ $:=$ $B$ $-$ $x$ // удалить $x$ из $B$ \\
+\tb \tb $y$ $:=$ $x$ pow $2$ \\
+\tb \tb {\color{blue}\textbf{while}} $y$ $\leq$ $n$ {\color{blue}\textbf{do}} \\
+\tb \tb \tb $B$ $:=$ $B$ $-$ $y$; $y$ $:=$ $y$ $+$ $x$ // удалить из $B$ все числа, кратные $x$ \\
+\tb \tb {\color{blue}\textbf{end while}} \\
+\tb {\color{blue}\textbf{end while}} \\
+{\color{blue}\textbf{end algorithm}} \\
+\newpage
+
+{\color{blue}\textbf{func}} {\color{green}\textrm{gcd}} $($$a$ : $\mathbb{N}$$,$ $c$$,$ $b$ : $\mathbb{N}$$)$ -> // НОД чисел $a$ и $b$ \\
+\tb // удалить $x$ из $B$; // удалить $x$ из $B$ \\
+\tb {\color{blue}\textbf{while}} $a$ $\neq$ $0$ $\&$ $b$ $\neq$ $0$ {\color{blue}\textbf{do}} \\
+\tb \tb // удалить $x$ из $B$ \\
+\tb \tb {\color{blue}\textbf{if}} $a$ $>$ $b$ {\color{blue}\textbf{then}}  $a$ $:=$ $a$ mod $b$  {\color{blue}\textbf{elif}} $5$ $=$ $2$ {\color{blue}\textbf{then}}  {\color{blue}\textbf{return}} $5$  {\color{blue}\textbf{else}}  $b$ $:=$ $b$ mod $a$  {\color{blue}\textbf{end if}}   \\
+\tb \tb $gdf$ : $\mathbb{N}$ \\
+\tb {\color{blue}\textbf{end while}} \\
+\tb {\color{blue}\textbf{for}} $g$ $\in$ $G$ {\color{blue}\textbf{do}} \\
+\tb \tb $s$ $:=$ $rew$$[$$g$$]$ \\
+\tb \tb {\color{blue}\textbf{next for}} $g$ \\
+\tb {\color{blue}\textbf{end for}} \\
+\tb {\color{blue}\textbf{repeat}} \\
+\tb \tb $s$ $:=$ $rew$$[$$g$$]$ \\
+\tb \tb {\color{blue}\textbf{next for}} $g$ \\
+\tb {\color{blue}\textbf{until}} $6$ $=$ $g$ \\
+\tb {\color{blue}\textbf{return}} $\emptyset$ \\
+\tb {\color{red}\textrm{gdfg}}$($$gdhfh$$,$ $gdfgf$$,$ $fd$$)$ \\
+\tb {\color{cyan}\textrm{gdfgdf}} : \\
+\tb {\color{blue}\textbf{select}} $gfd$ $\in$ $dff$ \\
+\tb {\color{blue}\textbf{goto}} {\color{cyan}\textrm{gdfgdf}} \\
+\tb {\color{blue}\textbf{return}} $1$ $*$ $($$532.54$ $+$ $654$ $-$ $($$ddds$ $-$ $5$ $*$ $($$432$$..$$43242$$)$$)$$)$ \\
+\tb $pGeter$ : $\uparrow$ $\mathbb{Z}$ \\
+{\color{blue}\textbf{end algorithm}} \\
+\end{document}

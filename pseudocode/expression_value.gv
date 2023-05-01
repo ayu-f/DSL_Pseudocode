@@ -1,9 +1,12 @@
 digraph EXPRESSION_VALUE {
     start [label=EXPRESSION_VALUE shape=plaintext]
+    int_range [label=INT_RANGE shape=box]
     operand_infix [label=INFIX_OPERAND shape=box]
     infix_operator [label=INFIX_OPERATOR shape=box]
     end [label="" shape=point]
+    start -> int_range
     start -> operand_infix
+    int_range -> end
     operand_infix -> infix_operator
     operand_infix -> end
     infix_operator -> operand_infix

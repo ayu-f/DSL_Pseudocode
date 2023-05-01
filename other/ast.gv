@@ -2,438 +2,2945 @@ digraph ast {
 	1 [label="NONTERMINAL
 type: S" shape=box]
 	2 [label="NONTERMINAL
-type: CODE_BLOCK" shape=box]
+type: ALG" shape=box]
 	1 -> 2
 	3 [label="KEY
 string: \n" shape=oval]
 	1 -> 3
 	4 [label="NONTERMINAL
-type: ALG" shape=box]
+type: CODE_BLOCK" shape=box]
 	1 -> 4
 	5 [label="KEY
 string: \n" shape=oval]
 	1 -> 5
 	6 [label="NONTERMINAL
-type: CODE_BLOCK" shape=box]
+type: ALG" shape=box]
 	1 -> 6
 	7 [label="KEY
 string: \n" shape=oval]
 	1 -> 7
 	8 [label="NONTERMINAL
-type: ALG" shape=box]
+type: CODE_BLOCK" shape=box]
 	1 -> 8
-	9 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	2 -> 9
-	10 [label="KEY
+	9 [label="KEY
 string: \n" shape=oval]
-	2 -> 10
-	11 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	2 -> 11
+	1 -> 9
+	10 [label="NONTERMINAL
+type: ALG" shape=box]
+	1 -> 10
+	11 [label="KEY
+string: \n" shape=oval]
+	1 -> 11
 	12 [label="NONTERMINAL
+type: ALG" shape=box]
+	1 -> 12
+	13 [label="NONTERMINAL
 type: ALG_HEAD" shape=box]
-	4 -> 12
-	13 [label="KEY
+	2 -> 13
+	14 [label="KEY
 string: \n" shape=oval]
-	4 -> 13
-	14 [label="NONTERMINAL
+	2 -> 14
+	15 [label="NONTERMINAL
 type: CODE_BLOCK" shape=box]
-	4 -> 14
-	15 [label="KEY
-string: \n" shape=oval]
-	4 -> 15
+	2 -> 15
 	16 [label="KEY
+string: \n" shape=oval]
+	2 -> 16
+	17 [label="KEY
 string: end algorithm" shape=oval]
-	4 -> 16
-	17 [label="NONTERMINAL
+	2 -> 17
+	18 [label="NONTERMINAL
 type: PRAGMA" shape=box]
-	6 -> 17
-	18 [label="KEY
+	4 -> 18
+	19 [label="KEY
 string: \n" shape=oval]
-	6 -> 18
-	19 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	6 -> 19
-	20 [label="KEY
+	4 -> 19
+	20 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	4 -> 20
+	21 [label="KEY
 string: \n" shape=oval]
-	6 -> 20
-	21 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	6 -> 21
-	22 [label="KEY
-string: \n" shape=oval]
-	6 -> 22
+	4 -> 21
+	22 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	4 -> 22
 	23 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	6 -> 23
-	24 [label="NONTERMINAL
 type: ALG_HEAD" shape=box]
-	8 -> 24
-	25 [label="KEY
+	6 -> 23
+	24 [label="KEY
 string: \n" shape=oval]
-	8 -> 25
-	26 [label="NONTERMINAL
+	6 -> 24
+	25 [label="NONTERMINAL
 type: CODE_BLOCK" shape=box]
-	8 -> 26
-	27 [label="KEY
+	6 -> 25
+	26 [label="KEY
 string: \n" shape=oval]
-	8 -> 27
-	28 [label="KEY
+	6 -> 26
+	27 [label="KEY
 string: end algorithm" shape=oval]
+	6 -> 27
+	28 [label="NONTERMINAL
+type: PRAGMA" shape=box]
 	8 -> 28
 	29 [label="NONTERMINAL
-type: RETURN" shape=box]
-	9 -> 29
-	30 [label="NONTERMINAL
-type: RETURN" shape=box]
-	11 -> 30
+type: ALG_HEAD" shape=box]
+	10 -> 29
+	30 [label="KEY
+string: \n" shape=oval]
+	10 -> 30
 	31 [label="NONTERMINAL
-type: ALG_TYPE" shape=box]
-	12 -> 31
-	32 [label="NONTERMINAL
-type: FUNC_NAME" shape=box]
-	12 -> 32
-	33 [label="NONTERMINAL
-type: ALG_IN" shape=box]
-	12 -> 33
+type: CODE_BLOCK" shape=box]
+	10 -> 31
+	32 [label="KEY
+string: \n" shape=oval]
+	10 -> 32
+	33 [label="KEY
+string: end algorithm" shape=oval]
+	10 -> 33
 	34 [label="NONTERMINAL
-type: ALG_OUT" shape=box]
+type: ALG_HEAD" shape=box]
 	12 -> 34
-	35 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	14 -> 35
-	36 [label="KEY
+	35 [label="KEY
 string: \n" shape=oval]
-	14 -> 36
-	37 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	14 -> 37
+	12 -> 35
+	36 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	12 -> 36
+	37 [label="KEY
+string: \n" shape=oval]
+	12 -> 37
 	38 [label="KEY
-string: \n" shape=oval]
-	14 -> 38
+string: end algorithm" shape=oval]
+	12 -> 38
 	39 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	14 -> 39
-	40 [label="KEY
-string: \n" shape=oval]
-	14 -> 40
+type: ALG_TYPE" shape=box]
+	13 -> 39
+	40 [label="NONTERMINAL
+type: FUNC_NAME" shape=box]
+	13 -> 40
 	41 [label="NONTERMINAL
-type: COMMAND" shape=box]
-	14 -> 41
-	42 [label="KEY
-string: ;" shape=oval]
-	14 -> 42
+type: ALG_IN" shape=box]
+	13 -> 41
+	42 [label="NONTERMINAL
+type: ALG_OUT" shape=box]
+	13 -> 42
 	43 [label="NONTERMINAL
 type: COMMAND" shape=box]
-	14 -> 43
+	15 -> 43
 	44 [label="KEY
-string: @@" shape=oval]
-	17 -> 44
+string: \n" shape=oval]
+	15 -> 44
 	45 [label="NONTERMINAL
-type: PRAGMA_NAME" shape=box]
-	17 -> 45
-	46 [label="KEY
-string: {" shape=oval]
-	17 -> 46
-	47 [label="TERMINAL
-type: string
-string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
-	17 -> 47
-	48 [label="KEY
-string: }" shape=oval]
-	17 -> 48
-	49 [label="NONTERMINAL
-type: RETURN" shape=box]
-	19 -> 49
-	50 [label="NONTERMINAL
-type: RETURN" shape=box]
-	21 -> 50
-	51 [label="NONTERMINAL
-type: RETURN" shape=box]
-	23 -> 51
-	52 [label="NONTERMINAL
-type: ALG_TYPE" shape=box]
-	24 -> 52
-	53 [label="NONTERMINAL
-type: FUNC_NAME" shape=box]
-	24 -> 53
-	54 [label="NONTERMINAL
-type: ALG_IN" shape=box]
-	24 -> 54
-	55 [label="NONTERMINAL
-type: ALG_OUT" shape=box]
-	24 -> 55
-	56 [label="NONTERMINAL
 type: COMMAND" shape=box]
-	26 -> 56
+	15 -> 45
+	46 [label="KEY
+string: @@" shape=oval]
+	18 -> 46
+	47 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	18 -> 47
+	48 [label="KEY
+string: {" shape=oval]
+	18 -> 48
+	49 [label="TERMINAL
+type: string
+string: \"gcd\"" shape=diamond]
+	18 -> 49
+	50 [label="KEY
+string: ," shape=oval]
+	18 -> 50
+	51 [label="TERMINAL
+type: string
+string: \"\textrm{gcd}\"" shape=diamond]
+	18 -> 51
+	52 [label="KEY
+string: }" shape=oval]
+	18 -> 52
+	53 [label="KEY
+string: @@" shape=oval]
+	20 -> 53
+	54 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	20 -> 54
+	55 [label="KEY
+string: {" shape=oval]
+	20 -> 55
+	56 [label="TERMINAL
+type: string
+string: \"min\"" shape=diamond]
+	20 -> 56
 	57 [label="KEY
-string: return" shape=oval]
-	29 -> 57
-	58 [label="NONTERMINAL
-type: VAR" shape=box]
-	29 -> 58
+string: ," shape=oval]
+	20 -> 57
+	58 [label="TERMINAL
+type: string
+string: \"\textbf{min}\"" shape=diamond]
+	20 -> 58
 	59 [label="KEY
-string: return" shape=oval]
-	30 -> 59
-	60 [label="NONTERMINAL
-type: VAR" shape=box]
-	30 -> 60
-	61 [label="KEY
-string: func" shape=oval]
-	31 -> 61
-	62 [label="TERMINAL
-type: name
-string: GetSet" shape=diamond]
-	32 -> 62
-	63 [label="KEY
-string: (" shape=oval]
-	33 -> 63
+string: }" shape=oval]
+	20 -> 59
+	60 [label="KEY
+string: @@" shape=oval]
+	22 -> 60
+	61 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	22 -> 61
+	62 [label="NONTERMINAL
+type: ALG_TYPE" shape=box]
+	23 -> 62
+	63 [label="NONTERMINAL
+type: FUNC_NAME" shape=box]
+	23 -> 63
 	64 [label="NONTERMINAL
-type: PARAM_LIST" shape=box]
-	33 -> 64
-	65 [label="KEY
-string: )" shape=oval]
-	33 -> 65
-	66 [label="KEY
-string: ->" shape=oval]
-	34 -> 66
-	67 [label="NONTERMINAL
-type: PRAGMA" shape=box]
-	34 -> 67
+type: ALG_IN" shape=box]
+	23 -> 64
+	65 [label="NONTERMINAL
+type: ALG_OUT" shape=box]
+	23 -> 65
+	66 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	25 -> 66
+	67 [label="KEY
+string: \n" shape=oval]
+	25 -> 67
 	68 [label="NONTERMINAL
-type: RETURN" shape=box]
-	35 -> 68
-	69 [label="NONTERMINAL
-type: RETURN" shape=box]
-	37 -> 69
+type: COMMAND" shape=box]
+	25 -> 68
+	69 [label="KEY
+string: @@" shape=oval]
+	28 -> 69
 	70 [label="NONTERMINAL
-type: RETURN" shape=box]
-	39 -> 70
+type: PRAGMA_NAME" shape=box]
+	28 -> 70
 	71 [label="NONTERMINAL
-type: RETURN" shape=box]
-	41 -> 71
+type: ALG_TYPE" shape=box]
+	29 -> 71
 	72 [label="NONTERMINAL
-type: RETURN" shape=box]
-	43 -> 72
-	73 [label="TERMINAL
-type: name
-string: comment" shape=diamond]
-	45 -> 73
-	74 [label="KEY
-string: return" shape=oval]
-	49 -> 74
+type: FUNC_NAME" shape=box]
+	29 -> 72
+	73 [label="NONTERMINAL
+type: ALG_IN" shape=box]
+	29 -> 73
+	74 [label="NONTERMINAL
+type: ALG_OUT" shape=box]
+	29 -> 74
 	75 [label="NONTERMINAL
-type: VAR" shape=box]
-	49 -> 75
+type: COMMAND" shape=box]
+	31 -> 75
 	76 [label="KEY
-string: return" shape=oval]
-	50 -> 76
+string: \n" shape=oval]
+	31 -> 76
 	77 [label="NONTERMINAL
-type: VAR" shape=box]
-	50 -> 77
-	78 [label="KEY
-string: return" shape=oval]
-	51 -> 78
+type: COMMAND" shape=box]
+	31 -> 77
+	78 [label="NONTERMINAL
+type: ALG_TYPE" shape=box]
+	34 -> 78
 	79 [label="NONTERMINAL
-type: VAR" shape=box]
-	51 -> 79
-	80 [label="KEY
+type: FUNC_NAME" shape=box]
+	34 -> 79
+	80 [label="NONTERMINAL
+type: ALG_IN" shape=box]
+	34 -> 80
+	81 [label="NONTERMINAL
+type: ALG_OUT" shape=box]
+	34 -> 81
+	82 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	36 -> 82
+	83 [label="KEY
+string: ;" shape=oval]
+	36 -> 83
+	84 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	36 -> 84
+	85 [label="KEY
+string: \n" shape=oval]
+	36 -> 85
+	86 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 86
+	87 [label="KEY
+string: \n" shape=oval]
+	36 -> 87
+	88 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 88
+	89 [label="KEY
+string: \n" shape=oval]
+	36 -> 89
+	90 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 90
+	91 [label="KEY
+string: \n" shape=oval]
+	36 -> 91
+	92 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 92
+	93 [label="KEY
+string: \n" shape=oval]
+	36 -> 93
+	94 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 94
+	95 [label="KEY
+string: \n" shape=oval]
+	36 -> 95
+	96 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 96
+	97 [label="KEY
+string: \n" shape=oval]
+	36 -> 97
+	98 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 98
+	99 [label="KEY
+string: \n" shape=oval]
+	36 -> 99
+	100 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 100
+	101 [label="KEY
+string: \n" shape=oval]
+	36 -> 101
+	102 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 102
+	103 [label="KEY
+string: \n" shape=oval]
+	36 -> 103
+	104 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	36 -> 104
+	105 [label="KEY
 string: func" shape=oval]
-	52 -> 80
-	81 [label="TERMINAL
+	39 -> 105
+	106 [label="TERMINAL
 type: name
 string: GetSet" shape=diamond]
-	53 -> 81
-	82 [label="KEY
+	40 -> 106
+	107 [label="KEY
 string: (" shape=oval]
-	54 -> 82
-	83 [label="NONTERMINAL
-type: PARAM_LIST" shape=box]
-	54 -> 83
-	84 [label="KEY
-string: )" shape=oval]
-	54 -> 84
-	85 [label="KEY
-string: ->" shape=oval]
-	55 -> 85
-	86 [label="NONTERMINAL
-type: PRAGMA" shape=box]
-	55 -> 86
-	87 [label="NONTERMINAL
-type: RETURN" shape=box]
-	56 -> 87
-	88 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	58 -> 88
-	89 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	60 -> 89
-	90 [label="NONTERMINAL
-type: VAR" shape=box]
-	64 -> 90
-	91 [label="KEY
-string: @@" shape=oval]
-	67 -> 91
-	92 [label="NONTERMINAL
-type: PRAGMA_NAME" shape=box]
-	67 -> 92
-	93 [label="KEY
-string: {" shape=oval]
-	67 -> 93
-	94 [label="TERMINAL
-type: string
-string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
-	67 -> 94
-	95 [label="KEY
-string: }" shape=oval]
-	67 -> 95
-	96 [label="KEY
-string: return" shape=oval]
-	68 -> 96
-	97 [label="NONTERMINAL
-type: VAR" shape=box]
-	68 -> 97
-	98 [label="KEY
-string: return" shape=oval]
-	69 -> 98
-	99 [label="NONTERMINAL
-type: VAR" shape=box]
-	69 -> 99
-	100 [label="KEY
-string: return" shape=oval]
-	70 -> 100
-	101 [label="NONTERMINAL
-type: VAR" shape=box]
-	70 -> 101
-	102 [label="KEY
-string: return" shape=oval]
-	71 -> 102
-	103 [label="NONTERMINAL
-type: VAR" shape=box]
-	71 -> 103
-	104 [label="KEY
-string: return" shape=oval]
-	72 -> 104
-	105 [label="NONTERMINAL
-type: VAR" shape=box]
-	72 -> 105
-	106 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	75 -> 106
-	107 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	77 -> 107
+	41 -> 107
 	108 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	79 -> 108
-	109 [label="NONTERMINAL
-type: VAR" shape=box]
-	83 -> 109
+type: PARAM_LIST" shape=box]
+	41 -> 108
+	109 [label="KEY
+string: )" shape=oval]
+	41 -> 109
 	110 [label="KEY
-string: @@" shape=oval]
-	86 -> 110
+string: ->" shape=oval]
+	42 -> 110
 	111 [label="NONTERMINAL
-type: PRAGMA_NAME" shape=box]
-	86 -> 111
-	112 [label="KEY
-string: {" shape=oval]
-	86 -> 112
-	113 [label="TERMINAL
-type: string
-string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
-	86 -> 113
-	114 [label="KEY
-string: }" shape=oval]
-	86 -> 114
-	115 [label="KEY
-string: return" shape=oval]
-	87 -> 115
-	116 [label="NONTERMINAL
-type: VAR" shape=box]
-	87 -> 116
-	117 [label="TERMINAL
+type: PRAGMA" shape=box]
+	42 -> 111
+	112 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	43 -> 112
+	113 [label="NONTERMINAL
+type: RETURN" shape=box]
+	45 -> 113
+	114 [label="TERMINAL
 type: name
-string: B" shape=diamond]
-	88 -> 117
+string: set_name_formatted" shape=diamond]
+	47 -> 114
+	115 [label="TERMINAL
+type: name
+string: set_name_formatted" shape=diamond]
+	54 -> 115
+	116 [label="TERMINAL
+type: name
+string: begin_enumerate" shape=diamond]
+	61 -> 116
+	117 [label="KEY
+string: func" shape=oval]
+	62 -> 117
 	118 [label="TERMINAL
 type: name
-string: G" shape=diamond]
-	89 -> 118
-	119 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	90 -> 119
-	120 [label="TERMINAL
-type: name
-string: comment" shape=diamond]
-	92 -> 120
-	121 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	97 -> 121
-	122 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	99 -> 122
+string: gcd" shape=diamond]
+	63 -> 118
+	119 [label="KEY
+string: (" shape=oval]
+	64 -> 119
+	120 [label="NONTERMINAL
+type: PARAM_LIST" shape=box]
+	64 -> 120
+	121 [label="KEY
+string: )" shape=oval]
+	64 -> 121
+	122 [label="KEY
+string: ->" shape=oval]
+	65 -> 122
 	123 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	101 -> 123
+type: PRAGMA" shape=box]
+	65 -> 123
 	124 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	103 -> 124
+type: CONTROL_OPERATOR" shape=box]
+	66 -> 124
 	125 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	105 -> 125
+type: RETURN" shape=box]
+	68 -> 125
 	126 [label="TERMINAL
 type: name
-string: B" shape=diamond]
-	106 -> 126
-	127 [label="TERMINAL
-type: name
-string: G" shape=diamond]
-	107 -> 127
+string: end_enumerate" shape=diamond]
+	70 -> 126
+	127 [label="KEY
+string: iter" shape=oval]
+	71 -> 127
 	128 [label="TERMINAL
 type: name
-string: B" shape=diamond]
-	108 -> 128
-	129 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	109 -> 129
-	130 [label="TERMINAL
-type: name
-string: comment" shape=diamond]
-	111 -> 130
-	131 [label="NONTERMINAL
-type: VAR_NAME" shape=box]
-	116 -> 131
-	132 [label="TERMINAL
-type: name
-string: n" shape=diamond]
-	119 -> 132
-	133 [label="TERMINAL
-type: name
-string: B" shape=diamond]
-	121 -> 133
-	134 [label="TERMINAL
-type: name
-string: B" shape=diamond]
-	122 -> 134
-	135 [label="TERMINAL
-type: name
-string: B" shape=diamond]
-	123 -> 135
-	136 [label="TERMINAL
-type: name
-string: B" shape=diamond]
-	124 -> 136
+string: EratosphenGrid" shape=diamond]
+	72 -> 128
+	129 [label="KEY
+string: (" shape=oval]
+	73 -> 129
+	130 [label="NONTERMINAL
+type: PARAM_LIST" shape=box]
+	73 -> 130
+	131 [label="KEY
+string: )" shape=oval]
+	73 -> 131
+	132 [label="KEY
+string: ->" shape=oval]
+	74 -> 132
+	133 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	74 -> 133
+	134 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	75 -> 134
+	135 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	77 -> 135
+	136 [label="KEY
+string: func" shape=oval]
+	78 -> 136
 	137 [label="TERMINAL
 type: name
-string: B" shape=diamond]
-	125 -> 137
-	138 [label="TERMINAL
+string: gcd" shape=diamond]
+	79 -> 137
+	138 [label="KEY
+string: (" shape=oval]
+	80 -> 138
+	139 [label="NONTERMINAL
+type: PARAM_LIST" shape=box]
+	80 -> 139
+	140 [label="KEY
+string: )" shape=oval]
+	80 -> 140
+	141 [label="KEY
+string: ->" shape=oval]
+	81 -> 141
+	142 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	81 -> 142
+	143 [label="KEY
+string: @@" shape=oval]
+	82 -> 143
+	144 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	82 -> 144
+	145 [label="KEY
+string: {" shape=oval]
+	82 -> 145
+	146 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	82 -> 146
+	147 [label="KEY
+string: }" shape=oval]
+	82 -> 147
+	148 [label="KEY
+string: @@" shape=oval]
+	84 -> 148
+	149 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	84 -> 149
+	150 [label="KEY
+string: {" shape=oval]
+	84 -> 150
+	151 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	84 -> 151
+	152 [label="KEY
+string: }" shape=oval]
+	84 -> 152
+	153 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	86 -> 153
+	154 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	88 -> 154
+	155 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	90 -> 155
+	156 [label="NONTERMINAL
+type: RETURN" shape=box]
+	92 -> 156
+	157 [label="NONTERMINAL
+type: CALL_FUNC" shape=box]
+	94 -> 157
+	158 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	96 -> 158
+	159 [label="NONTERMINAL
+type: SELECT" shape=box]
+	98 -> 159
+	160 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	100 -> 160
+	161 [label="NONTERMINAL
+type: RETURN" shape=box]
+	102 -> 161
+	162 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	104 -> 162
+	163 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	108 -> 163
+	164 [label="KEY
+string: @@" shape=oval]
+	111 -> 164
+	165 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	111 -> 165
+	166 [label="KEY
+string: {" shape=oval]
+	111 -> 166
+	167 [label="TERMINAL
+type: string
+string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	111 -> 167
+	168 [label="KEY
+string: }" shape=oval]
+	111 -> 168
+	169 [label="NONTERMINAL
+type: VAR" shape=box]
+	112 -> 169
+	170 [label="KEY
+string: :=" shape=oval]
+	112 -> 170
+	171 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	112 -> 171
+	172 [label="KEY
+string: return" shape=oval]
+	113 -> 172
+	173 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	113 -> 173
+	174 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	120 -> 174
+	175 [label="KEY
+string: ," shape=oval]
+	120 -> 175
+	176 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	120 -> 176
+	177 [label="KEY
+string: @@" shape=oval]
+	123 -> 177
+	178 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	123 -> 178
+	179 [label="KEY
+string: {" shape=oval]
+	123 -> 179
+	180 [label="TERMINAL
+type: string
+string: \"НОД чисел $a$ и $b$\"" shape=diamond]
+	123 -> 180
+	181 [label="KEY
+string: }" shape=oval]
+	123 -> 181
+	182 [label="NONTERMINAL
+type: LOOP" shape=box]
+	124 -> 182
+	183 [label="KEY
+string: return" shape=oval]
+	125 -> 183
+	184 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	125 -> 184
+	185 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	130 -> 185
+	186 [label="KEY
+string: @@" shape=oval]
+	133 -> 186
+	187 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	133 -> 187
+	188 [label="KEY
+string: {" shape=oval]
+	133 -> 188
+	189 [label="TERMINAL
+type: string
+string: \"Перечисление простых чисел, не превосходящих $n$\"" shape=diamond]
+	133 -> 189
+	190 [label="KEY
+string: }" shape=oval]
+	133 -> 190
+	191 [label="NONTERMINAL
+type: VAR" shape=box]
+	134 -> 191
+	192 [label="KEY
+string: :=" shape=oval]
+	134 -> 192
+	193 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	134 -> 193
+	194 [label="NONTERMINAL
+type: LOOP" shape=box]
+	135 -> 194
+	195 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	139 -> 195
+	196 [label="KEY
+string: ," shape=oval]
+	139 -> 196
+	197 [label="NONTERMINAL
+type: VAR" shape=box]
+	139 -> 197
+	198 [label="KEY
+string: ," shape=oval]
+	139 -> 198
+	199 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	139 -> 199
+	200 [label="KEY
+string: @@" shape=oval]
+	142 -> 200
+	201 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	142 -> 201
+	202 [label="KEY
+string: {" shape=oval]
+	142 -> 202
+	203 [label="TERMINAL
+type: string
+string: \"НОД чисел $a$ и $b$\"" shape=diamond]
+	142 -> 203
+	204 [label="KEY
+string: }" shape=oval]
+	142 -> 204
+	205 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	144 -> 205
+	206 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	149 -> 206
+	207 [label="NONTERMINAL
+type: LOOP" shape=box]
+	153 -> 207
+	208 [label="NONTERMINAL
+type: LOOP" shape=box]
+	154 -> 208
+	209 [label="NONTERMINAL
+type: LOOP" shape=box]
+	155 -> 209
+	210 [label="KEY
+string: return" shape=oval]
+	156 -> 210
+	211 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	156 -> 211
+	212 [label="NONTERMINAL
+type: FUNC_NAME" shape=box]
+	157 -> 212
+	213 [label="KEY
+string: (" shape=oval]
+	157 -> 213
+	214 [label="NONTERMINAL
+type: VALUE_LIST" shape=box]
+	157 -> 214
+	215 [label="KEY
+string: )" shape=oval]
+	157 -> 215
+	216 [label="NONTERMINAL
+type: TRANSITION_OPERATOR" shape=box]
+	158 -> 216
+	217 [label="KEY
+string: select" shape=oval]
+	159 -> 217
+	218 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	159 -> 218
+	219 [label="KEY
+string: \in" shape=oval]
+	159 -> 219
+	220 [label="NONTERMINAL
+type: ITERATOR" shape=box]
+	159 -> 220
+	221 [label="NONTERMINAL
+type: TRANSITION_OPERATOR" shape=box]
+	160 -> 221
+	222 [label="KEY
+string: return" shape=oval]
+	161 -> 222
+	223 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	161 -> 223
+	224 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	162 -> 224
+	225 [label="KEY
+string: :" shape=oval]
+	162 -> 225
+	226 [label="NONTERMINAL
+type: TYPE" shape=box]
+	162 -> 226
+	227 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	163 -> 227
+	228 [label="KEY
+string: :" shape=oval]
+	163 -> 228
+	229 [label="NONTERMINAL
+type: TYPE" shape=box]
+	163 -> 229
+	230 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	165 -> 230
+	231 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	169 -> 231
+	232 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	171 -> 232
+	233 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	173 -> 233
+	234 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	174 -> 234
+	235 [label="KEY
+string: :" shape=oval]
+	174 -> 235
+	236 [label="NONTERMINAL
+type: TYPE" shape=box]
+	174 -> 236
+	237 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	176 -> 237
+	238 [label="KEY
+string: :" shape=oval]
+	176 -> 238
+	239 [label="NONTERMINAL
+type: TYPE" shape=box]
+	176 -> 239
+	240 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	178 -> 240
+	241 [label="NONTERMINAL
+type: WHILE" shape=box]
+	182 -> 241
+	242 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	184 -> 242
+	243 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	184 -> 243
+	244 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	184 -> 244
+	245 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	185 -> 245
+	246 [label="KEY
+string: :" shape=oval]
+	185 -> 246
+	247 [label="NONTERMINAL
+type: TYPE" shape=box]
+	185 -> 247
+	248 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	187 -> 248
+	249 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	191 -> 249
+	250 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	193 -> 250
+	251 [label="NONTERMINAL
+type: WHILE" shape=box]
+	194 -> 251
+	252 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	195 -> 252
+	253 [label="KEY
+string: :" shape=oval]
+	195 -> 253
+	254 [label="NONTERMINAL
+type: TYPE" shape=box]
+	195 -> 254
+	255 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	197 -> 255
+	256 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	199 -> 256
+	257 [label="KEY
+string: :" shape=oval]
+	199 -> 257
+	258 [label="NONTERMINAL
+type: TYPE" shape=box]
+	199 -> 258
+	259 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	201 -> 259
+	260 [label="NONTERMINAL
+type: WHILE" shape=box]
+	207 -> 260
+	261 [label="NONTERMINAL
+type: FOR" shape=box]
+	208 -> 261
+	262 [label="NONTERMINAL
+type: UNTIL" shape=box]
+	209 -> 262
+	263 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	211 -> 263
+	264 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	211 -> 264
+	265 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	211 -> 265
+	266 [label="TERMINAL
+type: name
+string: gdfg" shape=diamond]
+	212 -> 266
+	267 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	214 -> 267
+	268 [label="KEY
+string: ," shape=oval]
+	214 -> 268
+	269 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	214 -> 269
+	270 [label="KEY
+string: ," shape=oval]
+	214 -> 270
+	271 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	214 -> 271
+	272 [label="NONTERMINAL
+type: GOTO_MARK" shape=box]
+	216 -> 272
+	273 [label="TERMINAL
+type: name
+string: gfd" shape=diamond]
+	218 -> 273
+	274 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	220 -> 274
+	275 [label="NONTERMINAL
+type: GOTO" shape=box]
+	221 -> 275
+	276 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	223 -> 276
+	277 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	223 -> 277
+	278 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	223 -> 278
+	279 [label="TERMINAL
+type: name
+string: pGeter" shape=diamond]
+	224 -> 279
+	280 [label="NONTERMINAL
+type: TYPE_POINTER" shape=box]
+	226 -> 280
+	281 [label="TERMINAL
 type: name
 string: n" shape=diamond]
-	129 -> 138
-	139 [label="TERMINAL
+	227 -> 281
+	282 [label="KEY
+string: natural" shape=oval]
+	229 -> 282
+	283 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	231 -> 283
+	284 [label="NONTERMINAL
+type: SET" shape=box]
+	232 -> 284
+	285 [label="NONTERMINAL
+type: VAR" shape=box]
+	233 -> 285
+	286 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	234 -> 286
+	287 [label="KEY
+string: natural" shape=oval]
+	236 -> 287
+	288 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	237 -> 288
+	289 [label="KEY
+string: natural" shape=oval]
+	239 -> 289
+	290 [label="KEY
+string: while" shape=oval]
+	241 -> 290
+	291 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	241 -> 291
+	292 [label="KEY
+string: do" shape=oval]
+	241 -> 292
+	293 [label="KEY
+string: \n" shape=oval]
+	241 -> 293
+	294 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	241 -> 294
+	295 [label="KEY
+string: \n" shape=oval]
+	241 -> 295
+	296 [label="KEY
+string: end while" shape=oval]
+	241 -> 296
+	297 [label="NONTERMINAL
+type: VAR" shape=box]
+	242 -> 297
+	298 [label="KEY
+string: +" shape=oval]
+	243 -> 298
+	299 [label="NONTERMINAL
+type: VAR" shape=box]
+	244 -> 299
+	300 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	245 -> 300
+	301 [label="KEY
+string: natural" shape=oval]
+	247 -> 301
+	302 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	249 -> 302
+	303 [label="NONTERMINAL
+type: SET" shape=box]
+	250 -> 303
+	304 [label="KEY
+string: while" shape=oval]
+	251 -> 304
+	305 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	251 -> 305
+	306 [label="KEY
+string: do" shape=oval]
+	251 -> 306
+	307 [label="KEY
+string: \n" shape=oval]
+	251 -> 307
+	308 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	251 -> 308
+	309 [label="KEY
+string: \n" shape=oval]
+	251 -> 309
+	310 [label="KEY
+string: end while" shape=oval]
+	251 -> 310
+	311 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	252 -> 311
+	312 [label="KEY
+string: natural" shape=oval]
+	254 -> 312
+	313 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	255 -> 313
+	314 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	256 -> 314
+	315 [label="KEY
+string: natural" shape=oval]
+	258 -> 315
+	316 [label="KEY
+string: while" shape=oval]
+	260 -> 316
+	317 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	260 -> 317
+	318 [label="KEY
+string: do" shape=oval]
+	260 -> 318
+	319 [label="KEY
+string: \n" shape=oval]
+	260 -> 319
+	320 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	260 -> 320
+	321 [label="KEY
+string: \n" shape=oval]
+	260 -> 321
+	322 [label="KEY
+string: end while" shape=oval]
+	260 -> 322
+	323 [label="KEY
+string: for" shape=oval]
+	261 -> 323
+	324 [label="NONTERMINAL
+type: VAR_LOOP" shape=box]
+	261 -> 324
+	325 [label="KEY
+string: \in" shape=oval]
+	261 -> 325
+	326 [label="NONTERMINAL
+type: ITERATOR" shape=box]
+	261 -> 326
+	327 [label="KEY
+string: do" shape=oval]
+	261 -> 327
+	328 [label="KEY
+string: \n" shape=oval]
+	261 -> 328
+	329 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	261 -> 329
+	330 [label="KEY
+string: \n" shape=oval]
+	261 -> 330
+	331 [label="KEY
+string: end for" shape=oval]
+	261 -> 331
+	332 [label="KEY
+string: repeat" shape=oval]
+	262 -> 332
+	333 [label="KEY
+string: \n" shape=oval]
+	262 -> 333
+	334 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	262 -> 334
+	335 [label="KEY
+string: \n" shape=oval]
+	262 -> 335
+	336 [label="KEY
+string: until" shape=oval]
+	262 -> 336
+	337 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	262 -> 337
+	338 [label="NONTERMINAL
+type: VAR" shape=box]
+	263 -> 338
+	339 [label="KEY
+string: +" shape=oval]
+	264 -> 339
+	340 [label="NONTERMINAL
+type: VAR" shape=box]
+	265 -> 340
+	341 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	267 -> 341
+	342 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	269 -> 342
+	343 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	271 -> 343
+	344 [label="NONTERMINAL
+type: MARK_NAME" shape=box]
+	272 -> 344
+	345 [label="KEY
+string: :" shape=oval]
+	272 -> 345
+	346 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	274 -> 346
+	347 [label="KEY
+string: goto" shape=oval]
+	275 -> 347
+	348 [label="NONTERMINAL
+type: MARK_NAME" shape=box]
+	275 -> 348
+	349 [label="TERMINAL
+type: number
+string: 1" shape=diamond]
+	276 -> 349
+	350 [label="KEY
+string: *" shape=oval]
+	277 -> 350
+	351 [label="NONTERMINAL
+type: BR_PRIORITY" shape=box]
+	278 -> 351
+	352 [label="KEY
+string: \uparrow" shape=oval]
+	280 -> 352
+	353 [label="NONTERMINAL
+type: TYPE" shape=box]
+	280 -> 353
+	354 [label="TERMINAL
 type: name
 string: B" shape=diamond]
-	131 -> 139
+	283 -> 354
+	355 [label="KEY
+string: @set" shape=oval]
+	284 -> 355
+	356 [label="KEY
+string: (" shape=oval]
+	284 -> 356
+	357 [label="NONTERMINAL
+type: VALUE_LIST" shape=box]
+	284 -> 357
+	358 [label="KEY
+string: )" shape=oval]
+	284 -> 358
+	359 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	285 -> 359
+	360 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	291 -> 360
+	361 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	291 -> 361
+	362 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	291 -> 362
+	363 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	291 -> 363
+	364 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	291 -> 364
+	365 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	291 -> 365
+	366 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	291 -> 366
+	367 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	294 -> 367
+	368 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	297 -> 368
+	369 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	299 -> 369
+	370 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	302 -> 370
+	371 [label="KEY
+string: @set" shape=oval]
+	303 -> 371
+	372 [label="KEY
+string: (" shape=oval]
+	303 -> 372
+	373 [label="NONTERMINAL
+type: VALUE_LIST" shape=box]
+	303 -> 373
+	374 [label="KEY
+string: )" shape=oval]
+	303 -> 374
+	375 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	305 -> 375
+	376 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	305 -> 376
+	377 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	305 -> 377
+	378 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	308 -> 378
+	379 [label="KEY
+string: ;" shape=oval]
+	308 -> 379
+	380 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	308 -> 380
+	381 [label="KEY
+string: \n" shape=oval]
+	308 -> 381
+	382 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	308 -> 382
+	383 [label="KEY
+string: ;" shape=oval]
+	308 -> 383
+	384 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	308 -> 384
+	385 [label="KEY
+string: \n" shape=oval]
+	308 -> 385
+	386 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	308 -> 386
+	387 [label="KEY
+string: \n" shape=oval]
+	308 -> 387
+	388 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	308 -> 388
+	389 [label="KEY
+string: \n" shape=oval]
+	308 -> 389
+	390 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	308 -> 390
+	391 [label="TERMINAL
+type: name
+string: c" shape=diamond]
+	313 -> 391
+	392 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	317 -> 392
+	393 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	317 -> 393
+	394 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	317 -> 394
+	395 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	317 -> 395
+	396 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	317 -> 396
+	397 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	317 -> 397
+	398 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	317 -> 398
+	399 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	320 -> 399
+	400 [label="KEY
+string: \n" shape=oval]
+	320 -> 400
+	401 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	320 -> 401
+	402 [label="KEY
+string: \n" shape=oval]
+	320 -> 402
+	403 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	320 -> 403
+	404 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	324 -> 404
+	405 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	326 -> 405
+	406 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	329 -> 406
+	407 [label="KEY
+string: \n" shape=oval]
+	329 -> 407
+	408 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	329 -> 408
+	409 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	334 -> 409
+	410 [label="KEY
+string: \n" shape=oval]
+	334 -> 410
+	411 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	334 -> 411
+	412 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	337 -> 412
+	413 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	337 -> 413
+	414 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	337 -> 414
+	415 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	338 -> 415
+	416 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	340 -> 416
+	417 [label="NONTERMINAL
+type: VAR" shape=box]
+	341 -> 417
+	418 [label="NONTERMINAL
+type: VAR" shape=box]
+	342 -> 418
+	419 [label="NONTERMINAL
+type: VAR" shape=box]
+	343 -> 419
+	420 [label="TERMINAL
+type: name
+string: gdfgdf" shape=diamond]
+	344 -> 420
+	421 [label="NONTERMINAL
+type: VAR" shape=box]
+	346 -> 421
+	422 [label="TERMINAL
+type: name
+string: gdfgdf" shape=diamond]
+	348 -> 422
+	423 [label="KEY
+string: (" shape=oval]
+	351 -> 423
+	424 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	351 -> 424
+	425 [label="KEY
+string: )" shape=oval]
+	351 -> 425
+	426 [label="KEY
+string: integer" shape=oval]
+	353 -> 426
+	427 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	357 -> 427
+	428 [label="KEY
+string: ," shape=oval]
+	357 -> 428
+	429 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	357 -> 429
+	430 [label="KEY
+string: ," shape=oval]
+	357 -> 430
+	431 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	357 -> 431
+	432 [label="KEY
+string: ," shape=oval]
+	357 -> 432
+	433 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	357 -> 433
+	434 [label="KEY
+string: ," shape=oval]
+	357 -> 434
+	435 [label="KEY
+string: ..." shape=oval]
+	357 -> 435
+	436 [label="KEY
+string: ," shape=oval]
+	357 -> 436
+	437 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	357 -> 437
+	438 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	359 -> 438
+	439 [label="NONTERMINAL
+type: VAR" shape=box]
+	360 -> 439
+	440 [label="KEY
+string: !=" shape=oval]
+	361 -> 440
+	441 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	362 -> 441
+	442 [label="KEY
+string: &" shape=oval]
+	363 -> 442
+	443 [label="NONTERMINAL
+type: VAR" shape=box]
+	364 -> 443
+	444 [label="KEY
+string: !=" shape=oval]
+	365 -> 444
+	445 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	366 -> 445
+	446 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	367 -> 446
+	447 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	368 -> 447
+	448 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	369 -> 448
+	449 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	373 -> 449
+	450 [label="KEY
+string: ," shape=oval]
+	373 -> 450
+	451 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	373 -> 451
+	452 [label="KEY
+string: ," shape=oval]
+	373 -> 452
+	453 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	373 -> 453
+	454 [label="KEY
+string: ," shape=oval]
+	373 -> 454
+	455 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	373 -> 455
+	456 [label="KEY
+string: ," shape=oval]
+	373 -> 456
+	457 [label="KEY
+string: ..." shape=oval]
+	373 -> 457
+	458 [label="KEY
+string: ," shape=oval]
+	373 -> 458
+	459 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	373 -> 459
+	460 [label="NONTERMINAL
+type: VAR" shape=box]
+	375 -> 460
+	461 [label="KEY
+string: !=" shape=oval]
+	376 -> 461
+	462 [label="NONTERMINAL
+type: CUSTOM_EXPRESSION_VALUE" shape=box]
+	377 -> 462
+	463 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	378 -> 463
+	464 [label="KEY
+string: @@" shape=oval]
+	380 -> 464
+	465 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	380 -> 465
+	466 [label="KEY
+string: {" shape=oval]
+	380 -> 466
+	467 [label="TERMINAL
+type: string
+string: \"наименьший элемент\"" shape=diamond]
+	380 -> 467
+	468 [label="KEY
+string: }" shape=oval]
+	380 -> 468
+	469 [label="NONTERMINAL
+type: YIELD" shape=box]
+	382 -> 469
+	470 [label="KEY
+string: @@" shape=oval]
+	384 -> 470
+	471 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	384 -> 471
+	472 [label="KEY
+string: {" shape=oval]
+	384 -> 472
+	473 [label="TERMINAL
+type: string
+string: \"выдать $x$\"" shape=diamond]
+	384 -> 473
+	474 [label="KEY
+string: }" shape=oval]
+	384 -> 474
+	475 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	386 -> 475
+	476 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	386 -> 476
+	477 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	388 -> 477
+	478 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	390 -> 478
+	479 [label="NONTERMINAL
+type: VAR" shape=box]
+	392 -> 479
+	480 [label="KEY
+string: !=" shape=oval]
+	393 -> 480
+	481 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	394 -> 481
+	482 [label="KEY
+string: &" shape=oval]
+	395 -> 482
+	483 [label="NONTERMINAL
+type: VAR" shape=box]
+	396 -> 483
+	484 [label="KEY
+string: !=" shape=oval]
+	397 -> 484
+	485 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	398 -> 485
+	486 [label="KEY
+string: @@" shape=oval]
+	399 -> 486
+	487 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	399 -> 487
+	488 [label="KEY
+string: {" shape=oval]
+	399 -> 488
+	489 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	399 -> 489
+	490 [label="KEY
+string: }" shape=oval]
+	399 -> 490
+	491 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	401 -> 491
+	492 [label="NONTERMINAL
+type: DECLARATION_VAR" shape=box]
+	403 -> 492
+	493 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	404 -> 493
+	494 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	405 -> 494
+	495 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	406 -> 495
+	496 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	408 -> 496
+	497 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	409 -> 497
+	498 [label="NONTERMINAL
+type: CONTROL_OPERATOR" shape=box]
+	411 -> 498
+	499 [label="TERMINAL
+type: number
+string: 6" shape=diamond]
+	412 -> 499
+	500 [label="KEY
+string: ==" shape=oval]
+	413 -> 500
+	501 [label="NONTERMINAL
+type: VAR" shape=box]
+	414 -> 501
+	502 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	415 -> 502
+	503 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	416 -> 503
+	504 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	417 -> 504
+	505 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	418 -> 505
+	506 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	419 -> 506
+	507 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	421 -> 507
+	508 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	424 -> 508
+	509 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	424 -> 509
+	510 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	424 -> 510
+	511 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	424 -> 511
+	512 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	424 -> 512
+	513 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	427 -> 513
+	514 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	429 -> 514
+	515 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	431 -> 515
+	516 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	433 -> 516
+	517 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	437 -> 517
+	518 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	438 -> 518
+	519 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	439 -> 519
+	520 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	443 -> 520
+	521 [label="NONTERMINAL
+type: IF" shape=box]
+	446 -> 521
+	522 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	447 -> 522
+	523 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	448 -> 523
+	524 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	449 -> 524
+	525 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	451 -> 525
+	526 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	453 -> 526
+	527 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	455 -> 527
+	528 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	459 -> 528
+	529 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	460 -> 529
+	530 [label="KEY
+string: @value" shape=oval]
+	462 -> 530
+	531 [label="KEY
+string: {" shape=oval]
+	462 -> 531
+	532 [label="TERMINAL
+type: string
+string: \"$\emptyset$\"" shape=diamond]
+	462 -> 532
+	533 [label="KEY
+string: }" shape=oval]
+	462 -> 533
+	534 [label="NONTERMINAL
+type: VAR" shape=box]
+	463 -> 534
+	535 [label="KEY
+string: :=" shape=oval]
+	463 -> 535
+	536 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	463 -> 536
+	537 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	465 -> 537
+	538 [label="KEY
+string: yield" shape=oval]
+	469 -> 538
+	539 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	469 -> 539
+	540 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	471 -> 540
+	541 [label="NONTERMINAL
+type: VAR" shape=box]
+	475 -> 541
+	542 [label="KEY
+string: :=" shape=oval]
+	475 -> 542
+	543 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	475 -> 543
+	544 [label="KEY
+string: @@" shape=oval]
+	476 -> 544
+	545 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	476 -> 545
+	546 [label="KEY
+string: {" shape=oval]
+	476 -> 546
+	547 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	476 -> 547
+	548 [label="KEY
+string: }" shape=oval]
+	476 -> 548
+	549 [label="NONTERMINAL
+type: VAR" shape=box]
+	477 -> 549
+	550 [label="KEY
+string: :=" shape=oval]
+	477 -> 550
+	551 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	477 -> 551
+	552 [label="NONTERMINAL
+type: LOOP" shape=box]
+	478 -> 552
+	553 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	479 -> 553
+	554 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	483 -> 554
+	555 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	487 -> 555
+	556 [label="NONTERMINAL
+type: IF" shape=box]
+	491 -> 556
+	557 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	492 -> 557
+	558 [label="KEY
+string: :" shape=oval]
+	492 -> 558
+	559 [label="NONTERMINAL
+type: TYPE" shape=box]
+	492 -> 559
+	560 [label="NONTERMINAL
+type: VAR" shape=box]
+	494 -> 560
+	561 [label="NONTERMINAL
+type: VAR" shape=box]
+	495 -> 561
+	562 [label="KEY
+string: :=" shape=oval]
+	495 -> 562
+	563 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	495 -> 563
+	564 [label="NONTERMINAL
+type: TRANSITION_OPERATOR" shape=box]
+	496 -> 564
+	565 [label="NONTERMINAL
+type: VAR" shape=box]
+	497 -> 565
+	566 [label="KEY
+string: :=" shape=oval]
+	497 -> 566
+	567 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	497 -> 567
+	568 [label="NONTERMINAL
+type: TRANSITION_OPERATOR" shape=box]
+	498 -> 568
+	569 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	501 -> 569
+	570 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	502 -> 570
+	571 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	503 -> 571
+	572 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	504 -> 572
+	573 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	505 -> 573
+	574 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	506 -> 574
+	575 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	507 -> 575
+	576 [label="TERMINAL
+type: float
+string: 532.54" shape=diamond]
+	508 -> 576
+	577 [label="KEY
+string: +" shape=oval]
+	509 -> 577
+	578 [label="TERMINAL
+type: number
+string: 654" shape=diamond]
+	510 -> 578
+	579 [label="KEY
+string: -" shape=oval]
+	511 -> 579
+	580 [label="NONTERMINAL
+type: BR_PRIORITY" shape=box]
+	512 -> 580
+	581 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	513 -> 581
+	582 [label="TERMINAL
+type: number
+string: 3" shape=diamond]
+	514 -> 582
+	583 [label="TERMINAL
+type: number
+string: 4" shape=diamond]
+	515 -> 583
+	584 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	516 -> 584
+	585 [label="NONTERMINAL
+type: VAR" shape=box]
+	517 -> 585
+	586 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	519 -> 586
+	587 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	520 -> 587
+	588 [label="KEY
+string: if" shape=oval]
+	521 -> 588
+	589 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	521 -> 589
+	590 [label="KEY
+string: then" shape=oval]
+	521 -> 590
+	591 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	521 -> 591
+	592 [label="KEY
+string: else" shape=oval]
+	521 -> 592
+	593 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	521 -> 593
+	594 [label="KEY
+string: end if" shape=oval]
+	521 -> 594
+	595 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	524 -> 595
+	596 [label="TERMINAL
+type: number
+string: 3" shape=diamond]
+	525 -> 596
+	597 [label="TERMINAL
+type: number
+string: 4" shape=diamond]
+	526 -> 597
+	598 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	527 -> 598
+	599 [label="NONTERMINAL
+type: VAR" shape=box]
+	528 -> 599
+	600 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	529 -> 600
+	601 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	534 -> 601
+	602 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	536 -> 602
+	603 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	539 -> 603
+	604 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	541 -> 604
+	605 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	543 -> 605
+	606 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	543 -> 606
+	607 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	543 -> 607
+	608 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	545 -> 608
+	609 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	549 -> 609
+	610 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	551 -> 610
+	611 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	551 -> 611
+	612 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	551 -> 612
+	613 [label="NONTERMINAL
+type: WHILE" shape=box]
+	552 -> 613
+	614 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	553 -> 614
+	615 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	554 -> 615
+	616 [label="KEY
+string: if" shape=oval]
+	556 -> 616
+	617 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	556 -> 617
+	618 [label="KEY
+string: then" shape=oval]
+	556 -> 618
+	619 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	556 -> 619
+	620 [label="KEY
+string: elif" shape=oval]
+	556 -> 620
+	621 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	556 -> 621
+	622 [label="KEY
+string: then" shape=oval]
+	556 -> 622
+	623 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	556 -> 623
+	624 [label="KEY
+string: else" shape=oval]
+	556 -> 624
+	625 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	556 -> 625
+	626 [label="KEY
+string: end if" shape=oval]
+	556 -> 626
+	627 [label="TERMINAL
+type: name
+string: gdf" shape=diamond]
+	557 -> 627
+	628 [label="KEY
+string: natural" shape=oval]
+	559 -> 628
+	629 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	560 -> 629
+	630 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	561 -> 630
+	631 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	563 -> 631
+	632 [label="NONTERMINAL
+type: NEXT_FOR" shape=box]
+	564 -> 632
+	633 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	565 -> 633
+	634 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	567 -> 634
+	635 [label="NONTERMINAL
+type: NEXT_FOR" shape=box]
+	568 -> 635
+	636 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	569 -> 636
+	637 [label="TERMINAL
+type: name
+string: gdhfh" shape=diamond]
+	572 -> 637
+	638 [label="TERMINAL
+type: name
+string: gdfgf" shape=diamond]
+	573 -> 638
+	639 [label="TERMINAL
+type: name
+string: fd" shape=diamond]
+	574 -> 639
+	640 [label="TERMINAL
+type: name
+string: dff" shape=diamond]
+	575 -> 640
+	641 [label="KEY
+string: (" shape=oval]
+	580 -> 641
+	642 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	580 -> 642
+	643 [label="KEY
+string: )" shape=oval]
+	580 -> 643
+	644 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	585 -> 644
+	645 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	586 -> 645
+	646 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	587 -> 646
+	647 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	589 -> 647
+	648 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	589 -> 648
+	649 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	589 -> 649
+	650 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	591 -> 650
+	651 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	593 -> 651
+	652 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	599 -> 652
+	653 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	600 -> 653
+	654 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	601 -> 654
+	655 [label="NONTERMINAL
+type: CALL_FUNC" shape=box]
+	602 -> 655
+	656 [label="NONTERMINAL
+type: VAR" shape=box]
+	603 -> 656
+	657 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	604 -> 657
+	658 [label="NONTERMINAL
+type: VAR" shape=box]
+	605 -> 658
+	659 [label="KEY
+string: -" shape=oval]
+	606 -> 659
+	660 [label="NONTERMINAL
+type: VAR" shape=box]
+	607 -> 660
+	661 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	609 -> 661
+	662 [label="NONTERMINAL
+type: VAR" shape=box]
+	610 -> 662
+	663 [label="KEY
+string: pow" shape=oval]
+	611 -> 663
+	664 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	612 -> 664
+	665 [label="KEY
+string: while" shape=oval]
+	613 -> 665
+	666 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	613 -> 666
+	667 [label="KEY
+string: do" shape=oval]
+	613 -> 667
+	668 [label="KEY
+string: \n" shape=oval]
+	613 -> 668
+	669 [label="NONTERMINAL
+type: CODE_BLOCK" shape=box]
+	613 -> 669
+	670 [label="KEY
+string: \n" shape=oval]
+	613 -> 670
+	671 [label="KEY
+string: end while" shape=oval]
+	613 -> 671
+	672 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	614 -> 672
+	673 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	615 -> 673
+	674 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	617 -> 674
+	675 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	617 -> 675
+	676 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	617 -> 676
+	677 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	619 -> 677
+	678 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	621 -> 678
+	679 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	621 -> 679
+	680 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	621 -> 680
+	681 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	623 -> 681
+	682 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	625 -> 682
+	683 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	629 -> 683
+	684 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	630 -> 684
+	685 [label="NONTERMINAL
+type: VAR" shape=box]
+	631 -> 685
+	686 [label="KEY
+string: next for" shape=oval]
+	632 -> 686
+	687 [label="NONTERMINAL
+type: VAR_LOOP" shape=box]
+	632 -> 687
+	688 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	633 -> 688
+	689 [label="NONTERMINAL
+type: VAR" shape=box]
+	634 -> 689
+	690 [label="KEY
+string: next for" shape=oval]
+	635 -> 690
+	691 [label="NONTERMINAL
+type: VAR_LOOP" shape=box]
+	635 -> 691
+	692 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	636 -> 692
+	693 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	642 -> 693
+	694 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	642 -> 694
+	695 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	642 -> 695
+	696 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	642 -> 696
+	697 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	642 -> 697
+	698 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	644 -> 698
+	699 [label="NONTERMINAL
+type: VAR" shape=box]
+	647 -> 699
+	700 [label="KEY
+string: >" shape=oval]
+	648 -> 700
+	701 [label="NONTERMINAL
+type: VAR" shape=box]
+	649 -> 701
+	702 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	650 -> 702
+	703 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	651 -> 703
+	704 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	652 -> 704
+	705 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	654 -> 705
+	706 [label="NONTERMINAL
+type: FUNC_NAME" shape=box]
+	655 -> 706
+	707 [label="KEY
+string: (" shape=oval]
+	655 -> 707
+	708 [label="NONTERMINAL
+type: VALUE_LIST" shape=box]
+	655 -> 708
+	709 [label="KEY
+string: )" shape=oval]
+	655 -> 709
+	710 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	656 -> 710
+	711 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	657 -> 711
+	712 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	658 -> 712
+	713 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	660 -> 713
+	714 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	661 -> 714
+	715 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	662 -> 715
+	716 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	666 -> 716
+	717 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	666 -> 717
+	718 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	666 -> 718
+	719 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	669 -> 719
+	720 [label="KEY
+string: ;" shape=oval]
+	669 -> 720
+	721 [label="NONTERMINAL
+type: COMMAND" shape=box]
+	669 -> 721
+	722 [label="NONTERMINAL
+type: VAR" shape=box]
+	674 -> 722
+	723 [label="KEY
+string: >" shape=oval]
+	675 -> 723
+	724 [label="NONTERMINAL
+type: VAR" shape=box]
+	676 -> 724
+	725 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	677 -> 725
+	726 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	678 -> 726
+	727 [label="KEY
+string: ==" shape=oval]
+	679 -> 727
+	728 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	680 -> 728
+	729 [label="NONTERMINAL
+type: RETURN" shape=box]
+	681 -> 729
+	730 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	682 -> 730
+	731 [label="TERMINAL
+type: name
+string: G" shape=diamond]
+	683 -> 731
+	732 [label="TERMINAL
+type: name
+string: s" shape=diamond]
+	684 -> 732
+	733 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	685 -> 733
+	734 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	687 -> 734
+	735 [label="TERMINAL
+type: name
+string: s" shape=diamond]
+	688 -> 735
+	736 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	689 -> 736
+	737 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	691 -> 737
+	738 [label="NONTERMINAL
+type: VAR" shape=box]
+	693 -> 738
+	739 [label="KEY
+string: -" shape=oval]
+	694 -> 739
+	740 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	695 -> 740
+	741 [label="KEY
+string: *" shape=oval]
+	696 -> 741
+	742 [label="NONTERMINAL
+type: BR_PRIORITY" shape=box]
+	697 -> 742
+	743 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	698 -> 743
+	744 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	699 -> 744
+	745 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	701 -> 745
+	746 [label="NONTERMINAL
+type: VAR" shape=box]
+	702 -> 746
+	747 [label="KEY
+string: :=" shape=oval]
+	702 -> 747
+	748 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	702 -> 748
+	749 [label="NONTERMINAL
+type: VAR" shape=box]
+	703 -> 749
+	750 [label="KEY
+string: :=" shape=oval]
+	703 -> 750
+	751 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	703 -> 751
+	752 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	704 -> 752
+	753 [label="TERMINAL
+type: name
+string: min" shape=diamond]
+	706 -> 753
+	754 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	708 -> 754
+	755 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	710 -> 755
+	756 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	712 -> 756
+	757 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	713 -> 757
+	758 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	715 -> 758
+	759 [label="NONTERMINAL
+type: VAR" shape=box]
+	716 -> 759
+	760 [label="KEY
+string: <=" shape=oval]
+	717 -> 760
+	761 [label="NONTERMINAL
+type: VAR" shape=box]
+	718 -> 761
+	762 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	719 -> 762
+	763 [label="NONTERMINAL
+type: ASSIGNMENT" shape=box]
+	721 -> 763
+	764 [label="NONTERMINAL
+type: PRAGMA" shape=box]
+	721 -> 764
+	765 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	722 -> 765
+	766 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	724 -> 766
+	767 [label="NONTERMINAL
+type: VAR" shape=box]
+	725 -> 767
+	768 [label="KEY
+string: :=" shape=oval]
+	725 -> 768
+	769 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	725 -> 769
+	770 [label="KEY
+string: return" shape=oval]
+	729 -> 770
+	771 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	729 -> 771
+	772 [label="NONTERMINAL
+type: VAR" shape=box]
+	730 -> 772
+	773 [label="KEY
+string: :=" shape=oval]
+	730 -> 773
+	774 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	730 -> 774
+	775 [label="NONTERMINAL
+type: ARRAY_SLICE" shape=box]
+	733 -> 775
+	776 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	734 -> 776
+	777 [label="NONTERMINAL
+type: ARRAY_SLICE" shape=box]
+	736 -> 777
+	778 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	737 -> 778
+	779 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	738 -> 779
+	780 [label="KEY
+string: (" shape=oval]
+	742 -> 780
+	781 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	742 -> 781
+	782 [label="KEY
+string: )" shape=oval]
+	742 -> 782
+	783 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	744 -> 783
+	784 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	745 -> 784
+	785 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	746 -> 785
+	786 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	748 -> 786
+	787 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	748 -> 787
+	788 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	748 -> 788
+	789 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	749 -> 789
+	790 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	751 -> 790
+	791 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	751 -> 791
+	792 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	751 -> 792
+	793 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	754 -> 793
+	794 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	755 -> 794
+	795 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	756 -> 795
+	796 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	757 -> 796
+	797 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	758 -> 797
+	798 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	759 -> 798
+	799 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	761 -> 799
+	800 [label="NONTERMINAL
+type: VAR" shape=box]
+	762 -> 800
+	801 [label="KEY
+string: :=" shape=oval]
+	762 -> 801
+	802 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	762 -> 802
+	803 [label="NONTERMINAL
+type: VAR" shape=box]
+	763 -> 803
+	804 [label="KEY
+string: :=" shape=oval]
+	763 -> 804
+	805 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	763 -> 805
+	806 [label="KEY
+string: @@" shape=oval]
+	764 -> 806
+	807 [label="NONTERMINAL
+type: PRAGMA_NAME" shape=box]
+	764 -> 807
+	808 [label="KEY
+string: {" shape=oval]
+	764 -> 808
+	809 [label="TERMINAL
+type: string
+string: \"удалить из $B$ все числа, кратные $x$\"" shape=diamond]
+	764 -> 809
+	810 [label="KEY
+string: }" shape=oval]
+	764 -> 810
+	811 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	765 -> 811
+	812 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	766 -> 812
+	813 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	767 -> 813
+	814 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	769 -> 814
+	815 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	769 -> 815
+	816 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	769 -> 816
+	817 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	771 -> 817
+	818 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	772 -> 818
+	819 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	774 -> 819
+	820 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	774 -> 820
+	821 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	774 -> 821
+	822 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	775 -> 822
+	823 [label="KEY
+string: [" shape=oval]
+	775 -> 823
+	824 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	775 -> 824
+	825 [label="KEY
+string: ]" shape=oval]
+	775 -> 825
+	826 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	777 -> 826
+	827 [label="KEY
+string: [" shape=oval]
+	777 -> 827
+	828 [label="NONTERMINAL
+type: EXPRESSION_VALUE" shape=box]
+	777 -> 828
+	829 [label="KEY
+string: ]" shape=oval]
+	777 -> 829
+	830 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	779 -> 830
+	831 [label="NONTERMINAL
+type: INT_RANGE" shape=box]
+	781 -> 831
+	832 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	783 -> 832
+	833 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	784 -> 833
+	834 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	785 -> 834
+	835 [label="NONTERMINAL
+type: VAR" shape=box]
+	786 -> 835
+	836 [label="KEY
+string: mod" shape=oval]
+	787 -> 836
+	837 [label="NONTERMINAL
+type: VAR" shape=box]
+	788 -> 837
+	838 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	789 -> 838
+	839 [label="NONTERMINAL
+type: VAR" shape=box]
+	790 -> 839
+	840 [label="KEY
+string: mod" shape=oval]
+	791 -> 840
+	841 [label="NONTERMINAL
+type: VAR" shape=box]
+	792 -> 841
+	842 [label="NONTERMINAL
+type: VAR" shape=box]
+	793 -> 842
+	843 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	798 -> 843
+	844 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	799 -> 844
+	845 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	800 -> 845
+	846 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	802 -> 846
+	847 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	802 -> 847
+	848 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	802 -> 848
+	849 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	803 -> 849
+	850 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	805 -> 850
+	851 [label="NONTERMINAL
+type: INFIX_OPERATOR" shape=box]
+	805 -> 851
+	852 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	805 -> 852
+	853 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	807 -> 853
+	854 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	811 -> 854
+	855 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	812 -> 855
+	856 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	813 -> 856
+	857 [label="NONTERMINAL
+type: VAR" shape=box]
+	814 -> 857
+	858 [label="KEY
+string: mod" shape=oval]
+	815 -> 858
+	859 [label="NONTERMINAL
+type: VAR" shape=box]
+	816 -> 859
+	860 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	817 -> 860
+	861 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	818 -> 861
+	862 [label="NONTERMINAL
+type: VAR" shape=box]
+	819 -> 862
+	863 [label="KEY
+string: mod" shape=oval]
+	820 -> 863
+	864 [label="NONTERMINAL
+type: VAR" shape=box]
+	821 -> 864
+	865 [label="TERMINAL
+type: name
+string: rew" shape=diamond]
+	822 -> 865
+	866 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	824 -> 866
+	867 [label="TERMINAL
+type: name
+string: rew" shape=diamond]
+	826 -> 867
+	868 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	828 -> 868
+	869 [label="TERMINAL
+type: name
+string: ddds" shape=diamond]
+	830 -> 869
+	870 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	831 -> 870
+	871 [label="KEY
+string: .." shape=oval]
+	831 -> 871
+	872 [label="NONTERMINAL
+type: INFIX_OPERAND" shape=box]
+	831 -> 872
+	873 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	834 -> 873
+	874 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	835 -> 874
+	875 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	837 -> 875
+	876 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	838 -> 876
+	877 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	839 -> 877
+	878 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	841 -> 878
+	879 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	842 -> 879
+	880 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	843 -> 880
+	881 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	844 -> 881
+	882 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	845 -> 882
+	883 [label="NONTERMINAL
+type: VAR" shape=box]
+	846 -> 883
+	884 [label="KEY
+string: -" shape=oval]
+	847 -> 884
+	885 [label="NONTERMINAL
+type: VAR" shape=box]
+	848 -> 885
+	886 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	849 -> 886
+	887 [label="NONTERMINAL
+type: VAR" shape=box]
+	850 -> 887
+	888 [label="KEY
+string: +" shape=oval]
+	851 -> 888
+	889 [label="NONTERMINAL
+type: VAR" shape=box]
+	852 -> 889
+	890 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	856 -> 890
+	891 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	857 -> 891
+	892 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	859 -> 892
+	893 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	861 -> 893
+	894 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	862 -> 894
+	895 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	864 -> 895
+	896 [label="NONTERMINAL
+type: VAR" shape=box]
+	866 -> 896
+	897 [label="NONTERMINAL
+type: VAR" shape=box]
+	868 -> 897
+	898 [label="TERMINAL
+type: number
+string: 432" shape=diamond]
+	870 -> 898
+	899 [label="TERMINAL
+type: number
+string: 43242" shape=diamond]
+	872 -> 899
+	900 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	874 -> 900
+	901 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	875 -> 901
+	902 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	877 -> 902
+	903 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	878 -> 903
+	904 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	879 -> 904
+	905 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	882 -> 905
+	906 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	883 -> 906
+	907 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	885 -> 907
+	908 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	886 -> 908
+	909 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	887 -> 909
+	910 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	889 -> 910
+	911 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	891 -> 911
+	912 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	892 -> 912
+	913 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	894 -> 913
+	914 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	895 -> 914
+	915 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	896 -> 915
+	916 [label="NONTERMINAL
+type: STRUCT_FIELD" shape=box]
+	897 -> 916
+	917 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	900 -> 917
+	918 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	901 -> 918
+	919 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	902 -> 919
+	920 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	903 -> 920
+	921 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	904 -> 921
+	922 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	906 -> 922
+	923 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	907 -> 923
+	924 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	909 -> 924
+	925 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	910 -> 925
+	926 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	911 -> 926
+	927 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	912 -> 927
+	928 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	913 -> 928
+	929 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	914 -> 929
+	930 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	915 -> 930
+	931 [label="NONTERMINAL
+type: VAR_NAME" shape=box]
+	916 -> 931
+	932 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	922 -> 932
+	933 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	923 -> 933
+	934 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	924 -> 934
+	935 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	925 -> 935
+	936 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	930 -> 936
+	937 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	931 -> 937
 }

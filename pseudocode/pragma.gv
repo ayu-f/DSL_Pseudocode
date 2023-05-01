@@ -4,6 +4,8 @@ digraph PRAGMA {
     pragma_name [label=PRAGMA_NAME shape=box]
     br_open [label="{" shape=oval]
     br_close [label="}" shape=oval]
+    nl1 [label="nl" shape=oval]
+    nl2 [label="nl" shape=oval]
     comma [label="," shape=oval]
     term_string [label=string shape=diamond]
     end [label="" shape=point]
@@ -12,8 +14,14 @@ digraph PRAGMA {
     pragma_name -> br_open
     pragma_name -> end
     br_open -> term_string
+    br_open -> nl1
+    nl1 -> term_string
     term_string -> comma
     term_string -> br_close
+    term_string -> nl2
     comma -> term_string
+    comma -> nl1
+    nl1 -> term_string
+    nl2 -> br_close
     br_close -> end
 }

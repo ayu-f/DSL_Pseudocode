@@ -1,10 +1,8 @@
 digraph VAR_LOOP {
     start [label=VAR_LOOP shape=plaintext]
-    var_loop [label=VAR_LOOP shape=box]
     var_name [label=VAR_NAME shape=box]
     end [label="" shape=point]
 
-    start -> var_loop
-    var_loop -> var_name
+    start -> var_name
     var_name -> end
 }

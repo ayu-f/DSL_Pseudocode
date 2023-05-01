@@ -1,0 +1,4 @@
+func GetSet (n : N) -> @@comment{"Множество $B$ целых чисел от $2$ до $n$"}
+B := {2, 3, 4, 5, ..., n}
+return B
+end algorithm

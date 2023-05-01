@@ -2,11 +2,12 @@ digraph CODE_BLOCK {
     start [label=CODE_BLOCK shape=plaintext]
     command [label=COMMAND shape=box]
     pragma [label=PRAGMA shape=box]
-    nl [label="\n" shape=oval]
+    nl [label="nl" shape=oval]
     semicol [label=";" shape=oval]
     end [label="" shape=point]
     start -> command
     start -> pragma
+    start -> nl
     command -> nl
     command -> semicol
     command -> end
@@ -15,6 +16,7 @@ digraph CODE_BLOCK {
     pragma -> end
     nl -> command
     nl -> pragma
+    nl -> nl
     semicol -> command
     semicol -> pragma
 }

@@ -1,224 +1,1300 @@
 digraph token_stream_after_scanner {
 	0 [label="" shape=point]
 	1 [label="KEY
-string: return" shape=oval]
+string: func" shape=oval]
 	0 -> 1
 	2 [label="TERMINAL
 type: name
-string: B" shape=diamond]
+string: GetSet" shape=diamond]
 	1 -> 2
 	3 [label="KEY
-string: \n" shape=oval]
+string: (" shape=oval]
 	2 -> 3
-	4 [label="KEY
-string: return" shape=oval]
-	3 -> 4
-	5 [label="TERMINAL
+	4 [label="TERMINAL
 type: name
-string: G" shape=diamond]
+string: n" shape=diamond]
+	3 -> 4
+	5 [label="KEY
+string: :" shape=oval]
 	4 -> 5
 	6 [label="KEY
-string: \n" shape=oval]
+string: natural" shape=oval]
 	5 -> 6
 	7 [label="KEY
-string: func" shape=oval]
+string: )" shape=oval]
 	6 -> 7
-	8 [label="TERMINAL
-type: name
-string: GetSet" shape=diamond]
+	8 [label="KEY
+string: ->" shape=oval]
 	7 -> 8
 	9 [label="KEY
-string: (" shape=oval]
+string: @@" shape=oval]
 	8 -> 9
 	10 [label="TERMINAL
 type: name
-string: n" shape=diamond]
+string: comment" shape=diamond]
 	9 -> 10
 	11 [label="KEY
-string: )" shape=oval]
-	10 -> 11
-	12 [label="KEY
-string: ->" shape=oval]
-	11 -> 12
-	13 [label="KEY
-string: @@" shape=oval]
-	12 -> 13
-	14 [label="TERMINAL
-type: name
-string: comment" shape=diamond]
-	13 -> 14
-	15 [label="KEY
 string: {" shape=oval]
-	14 -> 15
-	16 [label="TERMINAL
+	10 -> 11
+	12 [label="TERMINAL
 type: string
 string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	11 -> 12
+	13 [label="KEY
+string: }" shape=oval]
+	12 -> 13
+	14 [label="KEY
+string: \n" shape=oval]
+	13 -> 14
+	15 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	14 -> 15
+	16 [label="KEY
+string: :=" shape=oval]
 	15 -> 16
 	17 [label="KEY
-string: }" shape=oval]
+string: @set" shape=oval]
 	16 -> 17
 	18 [label="KEY
-string: \n" shape=oval]
+string: (" shape=oval]
 	17 -> 18
-	19 [label="KEY
-string: return" shape=oval]
+	19 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
 	18 -> 19
-	20 [label="TERMINAL
-type: name
-string: B" shape=diamond]
+	20 [label="KEY
+string: ," shape=oval]
 	19 -> 20
-	21 [label="KEY
-string: \n" shape=oval]
+	21 [label="TERMINAL
+type: number
+string: 3" shape=diamond]
 	20 -> 21
 	22 [label="KEY
-string: return" shape=oval]
+string: ," shape=oval]
 	21 -> 22
 	23 [label="TERMINAL
-type: name
-string: B" shape=diamond]
+type: number
+string: 4" shape=diamond]
 	22 -> 23
 	24 [label="KEY
-string: \n" shape=oval]
+string: ," shape=oval]
 	23 -> 24
-	25 [label="KEY
-string: return" shape=oval]
+	25 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
 	24 -> 25
-	26 [label="TERMINAL
-type: name
-string: B" shape=diamond]
+	26 [label="KEY
+string: ," shape=oval]
 	25 -> 26
 	27 [label="KEY
-string: \n" shape=oval]
+string: ..." shape=oval]
 	26 -> 27
 	28 [label="KEY
-string: return" shape=oval]
+string: ," shape=oval]
 	27 -> 28
 	29 [label="TERMINAL
 type: name
-string: B" shape=diamond]
+string: n" shape=diamond]
 	28 -> 29
 	30 [label="KEY
-string: ;" shape=oval]
+string: )" shape=oval]
 	29 -> 30
 	31 [label="KEY
-string: return" shape=oval]
+string: \n" shape=oval]
 	30 -> 31
-	32 [label="TERMINAL
+	32 [label="KEY
+string: return" shape=oval]
+	31 -> 32
+	33 [label="TERMINAL
 type: name
 string: B" shape=diamond]
-	31 -> 32
-	33 [label="KEY
-string: \n" shape=oval]
 	32 -> 33
 	34 [label="KEY
-string: end algorithm" shape=oval]
+string: \n" shape=oval]
 	33 -> 34
 	35 [label="KEY
-string: \n" shape=oval]
+string: end algorithm" shape=oval]
 	34 -> 35
 	36 [label="KEY
-string: @@" shape=oval]
+string: \n" shape=oval]
 	35 -> 36
-	37 [label="TERMINAL
-type: name
-string: comment" shape=diamond]
+	37 [label="KEY
+string: @@" shape=oval]
 	36 -> 37
-	38 [label="KEY
-string: {" shape=oval]
+	38 [label="TERMINAL
+type: name
+string: set_name_formatted" shape=diamond]
 	37 -> 38
-	39 [label="TERMINAL
-type: string
-string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	39 [label="KEY
+string: {" shape=oval]
 	38 -> 39
-	40 [label="KEY
-string: }" shape=oval]
+	40 [label="TERMINAL
+type: string
+string: \"gcd\"" shape=diamond]
 	39 -> 40
 	41 [label="KEY
-string: \n" shape=oval]
+string: ," shape=oval]
 	40 -> 41
-	42 [label="KEY
-string: return" shape=oval]
+	42 [label="TERMINAL
+type: string
+string: \"\textrm{gcd}\"" shape=diamond]
 	41 -> 42
-	43 [label="TERMINAL
-type: name
-string: B" shape=diamond]
+	43 [label="KEY
+string: }" shape=oval]
 	42 -> 43
 	44 [label="KEY
 string: \n" shape=oval]
 	43 -> 44
 	45 [label="KEY
-string: return" shape=oval]
+string: @@" shape=oval]
 	44 -> 45
 	46 [label="TERMINAL
 type: name
-string: G" shape=diamond]
+string: set_name_formatted" shape=diamond]
 	45 -> 46
 	47 [label="KEY
-string: \n" shape=oval]
+string: {" shape=oval]
 	46 -> 47
-	48 [label="KEY
-string: return" shape=oval]
+	48 [label="TERMINAL
+type: string
+string: \"min\"" shape=diamond]
 	47 -> 48
-	49 [label="TERMINAL
-type: name
-string: B" shape=diamond]
+	49 [label="KEY
+string: ," shape=oval]
 	48 -> 49
-	50 [label="KEY
-string: \n" shape=oval]
+	50 [label="TERMINAL
+type: string
+string: \"\textbf{min}\"" shape=diamond]
 	49 -> 50
 	51 [label="KEY
-string: func" shape=oval]
+string: }" shape=oval]
 	50 -> 51
-	52 [label="TERMINAL
-type: name
-string: GetSet" shape=diamond]
+	52 [label="KEY
+string: \n" shape=oval]
 	51 -> 52
 	53 [label="KEY
-string: (" shape=oval]
+string: @@" shape=oval]
 	52 -> 53
 	54 [label="TERMINAL
 type: name
-string: n" shape=diamond]
+string: begin_enumerate" shape=diamond]
 	53 -> 54
 	55 [label="KEY
-string: )" shape=oval]
+string: \n" shape=oval]
 	54 -> 55
 	56 [label="KEY
-string: ->" shape=oval]
+string: func" shape=oval]
 	55 -> 56
-	57 [label="KEY
-string: @@" shape=oval]
-	56 -> 57
-	58 [label="TERMINAL
+	57 [label="TERMINAL
 type: name
-string: comment" shape=diamond]
+string: gcd" shape=diamond]
+	56 -> 57
+	58 [label="KEY
+string: (" shape=oval]
 	57 -> 58
-	59 [label="KEY
-string: {" shape=oval]
+	59 [label="TERMINAL
+type: name
+string: a" shape=diamond]
 	58 -> 59
-	60 [label="TERMINAL
-type: string
-string: \"Множество $B$ целых чисел от $2$ до $n$\"" shape=diamond]
+	60 [label="KEY
+string: :" shape=oval]
 	59 -> 60
 	61 [label="KEY
-string: }" shape=oval]
+string: natural" shape=oval]
 	60 -> 61
 	62 [label="KEY
-string: \n" shape=oval]
+string: ," shape=oval]
 	61 -> 62
-	63 [label="KEY
-string: return" shape=oval]
-	62 -> 63
-	64 [label="TERMINAL
+	63 [label="TERMINAL
 type: name
-string: B" shape=diamond]
+string: b" shape=diamond]
+	62 -> 63
+	64 [label="KEY
+string: :" shape=oval]
 	63 -> 64
 	65 [label="KEY
-string: \n" shape=oval]
+string: natural" shape=oval]
 	64 -> 65
 	66 [label="KEY
-string: end algorithm" shape=oval]
+string: )" shape=oval]
 	65 -> 66
-	67 [label="" shape=point]
+	67 [label="KEY
+string: ->" shape=oval]
 	66 -> 67
+	68 [label="KEY
+string: @@" shape=oval]
+	67 -> 68
+	69 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	68 -> 69
+	70 [label="KEY
+string: {" shape=oval]
+	69 -> 70
+	71 [label="TERMINAL
+type: string
+string: \"НОД чисел $a$ и $b$\"" shape=diamond]
+	70 -> 71
+	72 [label="KEY
+string: }" shape=oval]
+	71 -> 72
+	73 [label="KEY
+string: \n" shape=oval]
+	72 -> 73
+	74 [label="KEY
+string: while" shape=oval]
+	73 -> 74
+	75 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	74 -> 75
+	76 [label="KEY
+string: !=" shape=oval]
+	75 -> 76
+	77 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	76 -> 77
+	78 [label="KEY
+string: &" shape=oval]
+	77 -> 78
+	79 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	78 -> 79
+	80 [label="KEY
+string: !=" shape=oval]
+	79 -> 80
+	81 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	80 -> 81
+	82 [label="KEY
+string: do" shape=oval]
+	81 -> 82
+	83 [label="KEY
+string: \n" shape=oval]
+	82 -> 83
+	84 [label="KEY
+string: if" shape=oval]
+	83 -> 84
+	85 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	84 -> 85
+	86 [label="KEY
+string: >" shape=oval]
+	85 -> 86
+	87 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	86 -> 87
+	88 [label="KEY
+string: then" shape=oval]
+	87 -> 88
+	89 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	88 -> 89
+	90 [label="KEY
+string: :=" shape=oval]
+	89 -> 90
+	91 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	90 -> 91
+	92 [label="KEY
+string: mod" shape=oval]
+	91 -> 92
+	93 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	92 -> 93
+	94 [label="KEY
+string: else" shape=oval]
+	93 -> 94
+	95 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	94 -> 95
+	96 [label="KEY
+string: :=" shape=oval]
+	95 -> 96
+	97 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	96 -> 97
+	98 [label="KEY
+string: mod" shape=oval]
+	97 -> 98
+	99 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	98 -> 99
+	100 [label="KEY
+string: end if" shape=oval]
+	99 -> 100
+	101 [label="KEY
+string: \n" shape=oval]
+	100 -> 101
+	102 [label="KEY
+string: end while" shape=oval]
+	101 -> 102
+	103 [label="KEY
+string: \n" shape=oval]
+	102 -> 103
+	104 [label="KEY
+string: return" shape=oval]
+	103 -> 104
+	105 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	104 -> 105
+	106 [label="KEY
+string: +" shape=oval]
+	105 -> 106
+	107 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	106 -> 107
+	108 [label="KEY
+string: \n" shape=oval]
+	107 -> 108
+	109 [label="KEY
+string: end algorithm" shape=oval]
+	108 -> 109
+	110 [label="KEY
+string: \n" shape=oval]
+	109 -> 110
+	111 [label="KEY
+string: @@" shape=oval]
+	110 -> 111
+	112 [label="TERMINAL
+type: name
+string: end_enumerate" shape=diamond]
+	111 -> 112
+	113 [label="KEY
+string: \n" shape=oval]
+	112 -> 113
+	114 [label="KEY
+string: iter" shape=oval]
+	113 -> 114
+	115 [label="TERMINAL
+type: name
+string: EratosphenGrid" shape=diamond]
+	114 -> 115
+	116 [label="KEY
+string: (" shape=oval]
+	115 -> 116
+	117 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	116 -> 117
+	118 [label="KEY
+string: :" shape=oval]
+	117 -> 118
+	119 [label="KEY
+string: natural" shape=oval]
+	118 -> 119
+	120 [label="KEY
+string: )" shape=oval]
+	119 -> 120
+	121 [label="KEY
+string: ->" shape=oval]
+	120 -> 121
+	122 [label="KEY
+string: @@" shape=oval]
+	121 -> 122
+	123 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	122 -> 123
+	124 [label="KEY
+string: {" shape=oval]
+	123 -> 124
+	125 [label="TERMINAL
+type: string
+string: \"Перечисление простых чисел, не превосходящих $n$\"" shape=diamond]
+	124 -> 125
+	126 [label="KEY
+string: }" shape=oval]
+	125 -> 126
+	127 [label="KEY
+string: \n" shape=oval]
+	126 -> 127
+	128 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	127 -> 128
+	129 [label="KEY
+string: :=" shape=oval]
+	128 -> 129
+	130 [label="KEY
+string: @set" shape=oval]
+	129 -> 130
+	131 [label="KEY
+string: (" shape=oval]
+	130 -> 131
+	132 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	131 -> 132
+	133 [label="KEY
+string: ," shape=oval]
+	132 -> 133
+	134 [label="TERMINAL
+type: number
+string: 3" shape=diamond]
+	133 -> 134
+	135 [label="KEY
+string: ," shape=oval]
+	134 -> 135
+	136 [label="TERMINAL
+type: number
+string: 4" shape=diamond]
+	135 -> 136
+	137 [label="KEY
+string: ," shape=oval]
+	136 -> 137
+	138 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	137 -> 138
+	139 [label="KEY
+string: ," shape=oval]
+	138 -> 139
+	140 [label="KEY
+string: ..." shape=oval]
+	139 -> 140
+	141 [label="KEY
+string: ," shape=oval]
+	140 -> 141
+	142 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	141 -> 142
+	143 [label="KEY
+string: )" shape=oval]
+	142 -> 143
+	144 [label="KEY
+string: \n" shape=oval]
+	143 -> 144
+	145 [label="KEY
+string: while" shape=oval]
+	144 -> 145
+	146 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	145 -> 146
+	147 [label="KEY
+string: !=" shape=oval]
+	146 -> 147
+	148 [label="KEY
+string: @value" shape=oval]
+	147 -> 148
+	149 [label="KEY
+string: {" shape=oval]
+	148 -> 149
+	150 [label="TERMINAL
+type: string
+string: \"$\emptyset$\"" shape=diamond]
+	149 -> 150
+	151 [label="KEY
+string: }" shape=oval]
+	150 -> 151
+	152 [label="KEY
+string: do" shape=oval]
+	151 -> 152
+	153 [label="KEY
+string: \n" shape=oval]
+	152 -> 153
+	154 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	153 -> 154
+	155 [label="KEY
+string: :=" shape=oval]
+	154 -> 155
+	156 [label="TERMINAL
+type: name
+string: min" shape=diamond]
+	155 -> 156
+	157 [label="KEY
+string: (" shape=oval]
+	156 -> 157
+	158 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	157 -> 158
+	159 [label="KEY
+string: )" shape=oval]
+	158 -> 159
+	160 [label="KEY
+string: ;" shape=oval]
+	159 -> 160
+	161 [label="KEY
+string: @@" shape=oval]
+	160 -> 161
+	162 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	161 -> 162
+	163 [label="KEY
+string: {" shape=oval]
+	162 -> 163
+	164 [label="TERMINAL
+type: string
+string: \"наименьший элемент\"" shape=diamond]
+	163 -> 164
+	165 [label="KEY
+string: }" shape=oval]
+	164 -> 165
+	166 [label="KEY
+string: \n" shape=oval]
+	165 -> 166
+	167 [label="KEY
+string: yield" shape=oval]
+	166 -> 167
+	168 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	167 -> 168
+	169 [label="KEY
+string: ;" shape=oval]
+	168 -> 169
+	170 [label="KEY
+string: @@" shape=oval]
+	169 -> 170
+	171 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	170 -> 171
+	172 [label="KEY
+string: {" shape=oval]
+	171 -> 172
+	173 [label="TERMINAL
+type: string
+string: \"выдать $x$\"" shape=diamond]
+	172 -> 173
+	174 [label="KEY
+string: }" shape=oval]
+	173 -> 174
+	175 [label="KEY
+string: \n" shape=oval]
+	174 -> 175
+	176 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	175 -> 176
+	177 [label="KEY
+string: :=" shape=oval]
+	176 -> 177
+	178 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	177 -> 178
+	179 [label="KEY
+string: -" shape=oval]
+	178 -> 179
+	180 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	179 -> 180
+	181 [label="KEY
+string: @@" shape=oval]
+	180 -> 181
+	182 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	181 -> 182
+	183 [label="KEY
+string: {" shape=oval]
+	182 -> 183
+	184 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	183 -> 184
+	185 [label="KEY
+string: }" shape=oval]
+	184 -> 185
+	186 [label="KEY
+string: \n" shape=oval]
+	185 -> 186
+	187 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	186 -> 187
+	188 [label="KEY
+string: :=" shape=oval]
+	187 -> 188
+	189 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	188 -> 189
+	190 [label="KEY
+string: pow" shape=oval]
+	189 -> 190
+	191 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	190 -> 191
+	192 [label="KEY
+string: \n" shape=oval]
+	191 -> 192
+	193 [label="KEY
+string: while" shape=oval]
+	192 -> 193
+	194 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	193 -> 194
+	195 [label="KEY
+string: <=" shape=oval]
+	194 -> 195
+	196 [label="TERMINAL
+type: name
+string: n" shape=diamond]
+	195 -> 196
+	197 [label="KEY
+string: do" shape=oval]
+	196 -> 197
+	198 [label="KEY
+string: \n" shape=oval]
+	197 -> 198
+	199 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	198 -> 199
+	200 [label="KEY
+string: :=" shape=oval]
+	199 -> 200
+	201 [label="TERMINAL
+type: name
+string: B" shape=diamond]
+	200 -> 201
+	202 [label="KEY
+string: -" shape=oval]
+	201 -> 202
+	203 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	202 -> 203
+	204 [label="KEY
+string: ;" shape=oval]
+	203 -> 204
+	205 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	204 -> 205
+	206 [label="KEY
+string: :=" shape=oval]
+	205 -> 206
+	207 [label="TERMINAL
+type: name
+string: y" shape=diamond]
+	206 -> 207
+	208 [label="KEY
+string: +" shape=oval]
+	207 -> 208
+	209 [label="TERMINAL
+type: name
+string: x" shape=diamond]
+	208 -> 209
+	210 [label="KEY
+string: @@" shape=oval]
+	209 -> 210
+	211 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	210 -> 211
+	212 [label="KEY
+string: {" shape=oval]
+	211 -> 212
+	213 [label="TERMINAL
+type: string
+string: \"удалить из $B$ все числа, кратные $x$\"" shape=diamond]
+	212 -> 213
+	214 [label="KEY
+string: }" shape=oval]
+	213 -> 214
+	215 [label="KEY
+string: \n" shape=oval]
+	214 -> 215
+	216 [label="KEY
+string: end while" shape=oval]
+	215 -> 216
+	217 [label="KEY
+string: \n" shape=oval]
+	216 -> 217
+	218 [label="KEY
+string: end while" shape=oval]
+	217 -> 218
+	219 [label="KEY
+string: \n" shape=oval]
+	218 -> 219
+	220 [label="KEY
+string: end algorithm" shape=oval]
+	219 -> 220
+	221 [label="KEY
+string: \n" shape=oval]
+	220 -> 221
+	222 [label="KEY
+string: func" shape=oval]
+	221 -> 222
+	223 [label="TERMINAL
+type: name
+string: gcd" shape=diamond]
+	222 -> 223
+	224 [label="KEY
+string: (" shape=oval]
+	223 -> 224
+	225 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	224 -> 225
+	226 [label="KEY
+string: :" shape=oval]
+	225 -> 226
+	227 [label="KEY
+string: natural" shape=oval]
+	226 -> 227
+	228 [label="KEY
+string: ," shape=oval]
+	227 -> 228
+	229 [label="TERMINAL
+type: name
+string: c" shape=diamond]
+	228 -> 229
+	230 [label="KEY
+string: ," shape=oval]
+	229 -> 230
+	231 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	230 -> 231
+	232 [label="KEY
+string: :" shape=oval]
+	231 -> 232
+	233 [label="KEY
+string: natural" shape=oval]
+	232 -> 233
+	234 [label="KEY
+string: )" shape=oval]
+	233 -> 234
+	235 [label="KEY
+string: ->" shape=oval]
+	234 -> 235
+	236 [label="KEY
+string: @@" shape=oval]
+	235 -> 236
+	237 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	236 -> 237
+	238 [label="KEY
+string: {" shape=oval]
+	237 -> 238
+	239 [label="TERMINAL
+type: string
+string: \"НОД чисел $a$ и $b$\"" shape=diamond]
+	238 -> 239
+	240 [label="KEY
+string: }" shape=oval]
+	239 -> 240
+	241 [label="KEY
+string: \n" shape=oval]
+	240 -> 241
+	242 [label="KEY
+string: @@" shape=oval]
+	241 -> 242
+	243 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	242 -> 243
+	244 [label="KEY
+string: {" shape=oval]
+	243 -> 244
+	245 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	244 -> 245
+	246 [label="KEY
+string: }" shape=oval]
+	245 -> 246
+	247 [label="KEY
+string: ;" shape=oval]
+	246 -> 247
+	248 [label="KEY
+string: @@" shape=oval]
+	247 -> 248
+	249 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	248 -> 249
+	250 [label="KEY
+string: {" shape=oval]
+	249 -> 250
+	251 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	250 -> 251
+	252 [label="KEY
+string: }" shape=oval]
+	251 -> 252
+	253 [label="KEY
+string: \n" shape=oval]
+	252 -> 253
+	254 [label="KEY
+string: while" shape=oval]
+	253 -> 254
+	255 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	254 -> 255
+	256 [label="KEY
+string: !=" shape=oval]
+	255 -> 256
+	257 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	256 -> 257
+	258 [label="KEY
+string: &" shape=oval]
+	257 -> 258
+	259 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	258 -> 259
+	260 [label="KEY
+string: !=" shape=oval]
+	259 -> 260
+	261 [label="TERMINAL
+type: number
+string: 0" shape=diamond]
+	260 -> 261
+	262 [label="KEY
+string: do" shape=oval]
+	261 -> 262
+	263 [label="KEY
+string: \n" shape=oval]
+	262 -> 263
+	264 [label="KEY
+string: @@" shape=oval]
+	263 -> 264
+	265 [label="TERMINAL
+type: name
+string: comment" shape=diamond]
+	264 -> 265
+	266 [label="KEY
+string: {" shape=oval]
+	265 -> 266
+	267 [label="TERMINAL
+type: string
+string: \"удалить $x$ из $B$\"" shape=diamond]
+	266 -> 267
+	268 [label="KEY
+string: }" shape=oval]
+	267 -> 268
+	269 [label="KEY
+string: \n" shape=oval]
+	268 -> 269
+	270 [label="KEY
+string: if" shape=oval]
+	269 -> 270
+	271 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	270 -> 271
+	272 [label="KEY
+string: >" shape=oval]
+	271 -> 272
+	273 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	272 -> 273
+	274 [label="KEY
+string: then" shape=oval]
+	273 -> 274
+	275 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	274 -> 275
+	276 [label="KEY
+string: :=" shape=oval]
+	275 -> 276
+	277 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	276 -> 277
+	278 [label="KEY
+string: mod" shape=oval]
+	277 -> 278
+	279 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	278 -> 279
+	280 [label="KEY
+string: elif" shape=oval]
+	279 -> 280
+	281 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	280 -> 281
+	282 [label="KEY
+string: ==" shape=oval]
+	281 -> 282
+	283 [label="TERMINAL
+type: number
+string: 2" shape=diamond]
+	282 -> 283
+	284 [label="KEY
+string: then" shape=oval]
+	283 -> 284
+	285 [label="KEY
+string: return" shape=oval]
+	284 -> 285
+	286 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	285 -> 286
+	287 [label="KEY
+string: else" shape=oval]
+	286 -> 287
+	288 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	287 -> 288
+	289 [label="KEY
+string: :=" shape=oval]
+	288 -> 289
+	290 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	289 -> 290
+	291 [label="KEY
+string: mod" shape=oval]
+	290 -> 291
+	292 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	291 -> 292
+	293 [label="KEY
+string: end if" shape=oval]
+	292 -> 293
+	294 [label="KEY
+string: \n" shape=oval]
+	293 -> 294
+	295 [label="TERMINAL
+type: name
+string: gdf" shape=diamond]
+	294 -> 295
+	296 [label="KEY
+string: :" shape=oval]
+	295 -> 296
+	297 [label="KEY
+string: natural" shape=oval]
+	296 -> 297
+	298 [label="KEY
+string: \n" shape=oval]
+	297 -> 298
+	299 [label="KEY
+string: end while" shape=oval]
+	298 -> 299
+	300 [label="KEY
+string: \n" shape=oval]
+	299 -> 300
+	301 [label="KEY
+string: for" shape=oval]
+	300 -> 301
+	302 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	301 -> 302
+	303 [label="KEY
+string: \in" shape=oval]
+	302 -> 303
+	304 [label="TERMINAL
+type: name
+string: G" shape=diamond]
+	303 -> 304
+	305 [label="KEY
+string: do" shape=oval]
+	304 -> 305
+	306 [label="KEY
+string: \n" shape=oval]
+	305 -> 306
+	307 [label="TERMINAL
+type: name
+string: s" shape=diamond]
+	306 -> 307
+	308 [label="KEY
+string: :=" shape=oval]
+	307 -> 308
+	309 [label="TERMINAL
+type: name
+string: rew" shape=diamond]
+	308 -> 309
+	310 [label="KEY
+string: [" shape=oval]
+	309 -> 310
+	311 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	310 -> 311
+	312 [label="KEY
+string: ]" shape=oval]
+	311 -> 312
+	313 [label="KEY
+string: \n" shape=oval]
+	312 -> 313
+	314 [label="KEY
+string: next for" shape=oval]
+	313 -> 314
+	315 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	314 -> 315
+	316 [label="KEY
+string: \n" shape=oval]
+	315 -> 316
+	317 [label="KEY
+string: end for" shape=oval]
+	316 -> 317
+	318 [label="KEY
+string: \n" shape=oval]
+	317 -> 318
+	319 [label="KEY
+string: repeat" shape=oval]
+	318 -> 319
+	320 [label="KEY
+string: \n" shape=oval]
+	319 -> 320
+	321 [label="TERMINAL
+type: name
+string: s" shape=diamond]
+	320 -> 321
+	322 [label="KEY
+string: :=" shape=oval]
+	321 -> 322
+	323 [label="TERMINAL
+type: name
+string: rew" shape=diamond]
+	322 -> 323
+	324 [label="KEY
+string: [" shape=oval]
+	323 -> 324
+	325 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	324 -> 325
+	326 [label="KEY
+string: ]" shape=oval]
+	325 -> 326
+	327 [label="KEY
+string: \n" shape=oval]
+	326 -> 327
+	328 [label="KEY
+string: next for" shape=oval]
+	327 -> 328
+	329 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	328 -> 329
+	330 [label="KEY
+string: \n" shape=oval]
+	329 -> 330
+	331 [label="KEY
+string: until" shape=oval]
+	330 -> 331
+	332 [label="TERMINAL
+type: number
+string: 6" shape=diamond]
+	331 -> 332
+	333 [label="KEY
+string: ==" shape=oval]
+	332 -> 333
+	334 [label="TERMINAL
+type: name
+string: g" shape=diamond]
+	333 -> 334
+	335 [label="KEY
+string: \n" shape=oval]
+	334 -> 335
+	336 [label="KEY
+string: return" shape=oval]
+	335 -> 336
+	337 [label="TERMINAL
+type: name
+string: a" shape=diamond]
+	336 -> 337
+	338 [label="KEY
+string: +" shape=oval]
+	337 -> 338
+	339 [label="TERMINAL
+type: name
+string: b" shape=diamond]
+	338 -> 339
+	340 [label="KEY
+string: \n" shape=oval]
+	339 -> 340
+	341 [label="TERMINAL
+type: name
+string: gdfg" shape=diamond]
+	340 -> 341
+	342 [label="KEY
+string: (" shape=oval]
+	341 -> 342
+	343 [label="TERMINAL
+type: name
+string: gdhfh" shape=diamond]
+	342 -> 343
+	344 [label="KEY
+string: ," shape=oval]
+	343 -> 344
+	345 [label="TERMINAL
+type: name
+string: gdfgf" shape=diamond]
+	344 -> 345
+	346 [label="KEY
+string: ," shape=oval]
+	345 -> 346
+	347 [label="TERMINAL
+type: name
+string: fd" shape=diamond]
+	346 -> 347
+	348 [label="KEY
+string: )" shape=oval]
+	347 -> 348
+	349 [label="KEY
+string: \n" shape=oval]
+	348 -> 349
+	350 [label="TERMINAL
+type: name
+string: gdfgdf" shape=diamond]
+	349 -> 350
+	351 [label="KEY
+string: :" shape=oval]
+	350 -> 351
+	352 [label="KEY
+string: \n" shape=oval]
+	351 -> 352
+	353 [label="KEY
+string: select" shape=oval]
+	352 -> 353
+	354 [label="TERMINAL
+type: name
+string: gfd" shape=diamond]
+	353 -> 354
+	355 [label="KEY
+string: \in" shape=oval]
+	354 -> 355
+	356 [label="TERMINAL
+type: name
+string: dff" shape=diamond]
+	355 -> 356
+	357 [label="KEY
+string: \n" shape=oval]
+	356 -> 357
+	358 [label="KEY
+string: goto" shape=oval]
+	357 -> 358
+	359 [label="TERMINAL
+type: name
+string: gdfgdf" shape=diamond]
+	358 -> 359
+	360 [label="KEY
+string: \n" shape=oval]
+	359 -> 360
+	361 [label="KEY
+string: return" shape=oval]
+	360 -> 361
+	362 [label="TERMINAL
+type: number
+string: 1" shape=diamond]
+	361 -> 362
+	363 [label="KEY
+string: *" shape=oval]
+	362 -> 363
+	364 [label="KEY
+string: (" shape=oval]
+	363 -> 364
+	365 [label="TERMINAL
+type: float
+string: 532.54" shape=diamond]
+	364 -> 365
+	366 [label="KEY
+string: +" shape=oval]
+	365 -> 366
+	367 [label="TERMINAL
+type: number
+string: 654" shape=diamond]
+	366 -> 367
+	368 [label="KEY
+string: -" shape=oval]
+	367 -> 368
+	369 [label="KEY
+string: (" shape=oval]
+	368 -> 369
+	370 [label="TERMINAL
+type: name
+string: ddds" shape=diamond]
+	369 -> 370
+	371 [label="KEY
+string: -" shape=oval]
+	370 -> 371
+	372 [label="TERMINAL
+type: number
+string: 5" shape=diamond]
+	371 -> 372
+	373 [label="KEY
+string: *" shape=oval]
+	372 -> 373
+	374 [label="KEY
+string: (" shape=oval]
+	373 -> 374
+	375 [label="TERMINAL
+type: number
+string: 432" shape=diamond]
+	374 -> 375
+	376 [label="KEY
+string: .." shape=oval]
+	375 -> 376
+	377 [label="TERMINAL
+type: number
+string: 43242" shape=diamond]
+	376 -> 377
+	378 [label="KEY
+string: )" shape=oval]
+	377 -> 378
+	379 [label="KEY
+string: )" shape=oval]
+	378 -> 379
+	380 [label="KEY
+string: )" shape=oval]
+	379 -> 380
+	381 [label="KEY
+string: \n" shape=oval]
+	380 -> 381
+	382 [label="TERMINAL
+type: name
+string: pGeter" shape=diamond]
+	381 -> 382
+	383 [label="KEY
+string: :" shape=oval]
+	382 -> 383
+	384 [label="KEY
+string: \uparrow" shape=oval]
+	383 -> 384
+	385 [label="KEY
+string: integer" shape=oval]
+	384 -> 385
+	386 [label="KEY
+string: \n" shape=oval]
+	385 -> 386
+	387 [label="KEY
+string: end algorithm" shape=oval]
+	386 -> 387
+	388 [label="" shape=point]
+	387 -> 388
 }

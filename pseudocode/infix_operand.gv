@@ -1,8 +1,8 @@
 digraph INFIX_OPERAND {
     start [label=INFIX_OPERAND shape=plaintext]
     int_const [label=number shape=diamond]
+    float_const [label=float shape=diamond]
     call_func [label=CALL_FUNC shape=box]
-    int_range [label=INT_RANGE shape=box]
     var [label=VAR shape=box]
     operation_unary [label=UNARY_OPERATION shape=box]
     br_prior [label=BR_PRIORITY shape=box]
@@ -19,12 +19,12 @@ digraph INFIX_OPERAND {
     start -> call_func
     start -> br_prior
     start -> int_const
+    start -> float_const
     start -> var
-    start -> int_range
 
     int_const -> end
+    float_const -> end
     call_func -> end
-    int_range -> end
     var -> end
     operation_unary -> end
     br_prior -> end

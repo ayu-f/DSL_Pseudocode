@@ -1,0 +1,164 @@
+\tb @@tex\{ \\
+\tb "$\backslash$documentclass\{article\}"$,$ \\
+\tb "$\backslash$usepackage[T2A]\{fontenc\}"$,$ \\
+\tb "$\backslash$usepackage[russian]\{babel\}"$,$ \\
+\tb "$\backslash$usepackage[utf8]\{inputenc\}"$,$ \\
+\tb "$\backslash$usepackage\{enumitem\}"$,$ \\
+\tb "$\backslash$usepackage[usenames]\{color\}"$,$ \\
+\tb "$\backslash$usepackage\{latexsym$,$amssymb$,$amsthm\}"$,$ \\
+\tb "$\backslash$setlength\{$\backslash$parindent\}\{0pt\}"$,$ \\
+\tb "$\backslash$begin\{document\}"$,$ \\
+\tb "$\backslash$newcommand$\backslash$tb[1][0.5cm]\{$\backslash$hspace*\{\#1\}\}" \\
+\tb \} \\
+\\
+\tb @@tex\{ "$\backslash$newpage" \} \\
+func GetSet (n : natural) -> @@comment\{ "Множество \$B\$ целых чисел от \$2\$ до \$n\$" \} \\
+\tb B := @set(2$,$ 3$,$ 4$,$ 5$,$ ...$,$ n) \\
+\tb return B \\
+end algorithm \\
+\tb @@tex\{ "$\backslash$newpage" \} \\
+\tb @@begin\_oneline \\
+\tb @@begin\_oneline \\
+\\
+\\
+\\
+\\
+\tb @@end\_oneline \\
+\\
+\\
+\tb @@set\_key\_formatted\{ "if"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "then"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "else"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "elif"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end if"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "for"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "do"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end for"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "while"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end while"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "repeat"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "until"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "return"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "yield"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "select"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "goto"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end algorithm"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "next for"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "array"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "of"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "struct"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "array"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "func"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "iter"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "proc"$,$ "$\backslash$textbf\{\#prev\}" \} \\
+\\
+\tb @@set\_key\_formatted\{ "if"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "then"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "else"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "elif"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end if"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "for"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "do"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end for"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "while"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end while"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "repeat"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "until"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "return"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "yield"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "select"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "goto"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "end algorithm"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "next for"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "array"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "of"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "struct"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "array"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "func"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "iter"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\tb @@set\_key\_formatted\{ "proc"$,$ "\{$\backslash$color\{blue\}\#prev\}" \} \\
+\\
+\tb @@set\_default\_var\_format\{ "\#value" \} \\
+\tb @@set\_default\_func\_name\_format\{ "\{$\backslash$color\{red\}$\backslash$textrm\{\#value\}\}" \} \\
+\tb @@set\_default\_goto\_mark\_name\_format\{ "\{$\backslash$color\{cyan\}$\backslash$textrm\{\#value\}\}" \} \\
+\tb @@set\_name\_formatted\{ "gcd"$,$ "\{$\backslash$color\{green\}$\backslash$textrm\{\#value\}\}" \} \\
+\tb @@begin\_oneline \\
+\\
+\\
+\\
+\\
+\tb @@end\_oneline \\
+\tb @@begin\_oneline \\
+\\
+\\
+\\
+\\
+\tb @@end\_oneline \\
+\tb @@begin\_oneline \\
+\\
+\\
+\\
+\\
+\tb @@end\_oneline \\
+\tb @@begin\_oneline \\
+\\
+\\
+\\
+\\
+\tb @@end\_oneline \\
+\tb @@end\_oneline \\
+\tb @@begin\_enumerate \\
+func gcd (a : natural$,$ b : natural) -> @@comment\{ "НОД чисел \$a\$ и \$b\$" \} \\
+\tb while a != 0 \& b != 0 do \\
+\tb \tb if a > b then a := a mod b else b := b mod a end if \\
+\tb end while \\
+\tb return a + b \\
+end algorithm \\
+\tb @@end\_enumerate \\
+\tb @@tex\{ "$\backslash$newpage" \} \\
+iter EratosphenGrid (n : natural) -> @@comment\{ "Перечисление простых чисел$,$ не превосходящих \$n\$" \} \\
+\tb B := @set(2$,$ 3$,$ 4$,$ 5$,$ ...$,$ n) \\
+\tb while B != @value\{ "\$$\backslash$emptyset\$" \} do \\
+\tb \tb x := min(B); @@comment\{ "наименьший элемент" \} \\
+\tb \tb yield x; @@comment\{ "выдать \$x\$" \} \\
+\tb \tb B := B - x @@comment\{ "удалить \$x\$ из \$B\$" \} \\
+\tb \tb y := x pow 2 \\
+\tb \tb while y <= n do \\
+\tb \tb \tb B := B - y; y := y + x @@comment\{ "удалить из \$B\$ все числа$,$ кратные \$x\$" \} \\
+\tb \tb end while \\
+\tb end while \\
+end algorithm \\
+\tb @@tex\{ "$\backslash$newpage" \} \\
+\\
+func gcd (a : natural$,$ c$,$ b : natural) -> @@comment\{ "НОД чисел \$a\$ и \$b\$" \} \\
+\tb @@comment\{ "удалить \$x\$ из \$B\$" \}; @@comment\{ "удалить \$x\$ из \$B\$" \} \\
+\tb while a != 0 \& b != 0 do \\
+\tb \tb @@comment\{ "удалить \$x\$ из \$B\$" \} \\
+\tb \tb @@begin\_oneline \\
+\tb \tb if a > b then \\
+\tb \tb \tb a := a mod b \\
+\tb \tb elif 5 == 2 then \\
+\tb \tb \tb return 5 \\
+\tb \tb else \\
+\tb \tb \tb b := b mod a \\
+\tb \tb end if \\
+\tb \tb @@end\_oneline \\
+\tb \tb gdf : natural \\
+\tb end while \\
+\tb for g $\backslash$in G do \\
+\tb \tb s := rew[g] \\
+\tb \tb next for g \\
+\tb end for \\
+\tb repeat \\
+\tb \tb s := rew[g] \\
+\tb \tb next for g \\
+\tb until 6 == g \\
+\tb return @value\{ "\$$\backslash$emptyset\$" \} \\
+\tb gdfg(gdhfh$,$ gdfgf$,$ fd) \\
+\tb gdfgdf : \\
+\tb select gfd $\backslash$in dff \\
+\tb goto gdfgdf \\
+\tb return 1 * (532.54 + 654 - (ddds - 5 * (432..43242))) \\
+\tb pGeter : $\backslash$uparrow integer \\
+end algorithm \\
+\tb @@tex\{ "$\backslash$end\{document\}" \}

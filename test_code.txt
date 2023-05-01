@@ -1,35 +1,91 @@
-func GetSet (n : natural) -> @@comment{"Множество $B$ целых чисел от $2$ до $n$"}
-B := @set(2, 3, 4, 5, ..., n)
-return B
+@@tex {
+        "\documentclass{article}",
+        "\usepackage[T2A]{fontenc}",
+        "\usepackage[russian]{babel}",
+        "\usepackage[utf8]{inputenc}",
+        "\usepackage{enumitem}",
+        "\usepackage[usenames]{color}",
+        "\usepackage{latexsym,amssymb,amsthm}",
+        "\setlength{\parindent}{0pt}",
+        "\begin{document}",
+        "\newcommand\tb[1][0.5cm]{\hspace*{#1}}"
+    }
+
+@@tex{ "\newpage" }
+func GetSet (n : natural) -> @@comment{ "Множество $B$ целых чисел от $2$ до $n$" }
+    B := @set(2, 3, 4, 5, ..., n)
+    return B
 end algorithm
-@@set_name_formatted{"gcd", "\textrm{gcd}"}
-@@set_name_formatted{"min", "\textbf{min}"}
+@@tex{ "\newpage" }
+@@begin_oneline
+    @@include{"utils.txt"}
+
+    %это коментарий
+    \for_each_key_word{"\key_format_textbf { @item }"}
+    
+    \for_each_key_word{f"\\key_format_colored { @item, \"blue\"}"}
+
+    @@set_default_var_format{ "#value" } %это коментарий
+    @@set_default_func_name_format{ "{\color{red}\textrm{#value}}" }
+    @@set_default_goto_mark_name_format{ "{\color{cyan}\textrm{#value}}" }
+    @@set_name_formatted{ "gcd", "{\color{green}\textrm{#value}}" }
+    @@include{"utils.txt"}
+    @@include{"utils.txt"}
+    @@include{"utils.txt"}
+    @@include{"utils.txt"}
+@@end_oneline
 @@begin_enumerate
-func gcd (a : natural, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
+func gcd (a : natural, b : natural) -> @@comment{ "НОД чисел $a$ и $b$" }
     while a != 0 & b != 0 do
         if a > b then a := a mod b else b := b mod a end if
     end while
     return a + b
 end algorithm
 @@end_enumerate
-iter EratosphenGrid (n : natural) -> @@comment{"Перечисление простых чисел, не превосходящих $n$"}
+@@tex{ "\newpage" }
+iter EratosphenGrid (n : natural) -> @@comment{ "Перечисление простых чисел, не превосходящих $n$" }
     B := @set(2, 3, 4, 5, ..., n)
-    while B != @value{"$\emptyset$"} do
-        x := min(B) @@comment{"наименьший элемент"}
-        yield x  @@comment{"выдать $x$"}
-        B := B - x  @@comment{"удалить $x$ из $B$"}
+    while B != @value{ "$\emptyset$" } do
+        x := min(B); @@comment{ "наименьший элемент" }
+        yield x; @@comment{ "выдать $x$" }
+        B := B - x @@comment{ "удалить $x$ из $B$" }
         y := x pow 2
         while y <= n do
-            B := B - y; y := y + x @@comment{"удалить из $B$ все числа, кратные $x$"}
+            B := B - y; y := y + x @@comment{ "удалить из $B$ все числа, кратные $x$" }
         end while
     end while
 end algorithm
-func gcd (a : natural, c, b : natural) -> @@comment{"НОД чисел $a$ и $b$"}
-    @@comment{"удалить $x$ из $B$"};@@comment{"удалить $x$ из $B$"}
+@@tex{ "\newpage" }
+@@new_command { @v_emptyset } [0] { f"@value{ \"$\\emptyset$\" }" }
+func gcd (a : natural, c, b : natural) -> @@comment{ "НОД чисел $a$ и $b$" }
+    @@comment{ "удалить $x$ из $B$" }; @@comment{ "удалить $x$ из $B$" }
     while a != 0 & b != 0 do
-        @@comment{"удалить $x$ из $B$"}
-        if a > b then a := a mod b elif 5==2 then return 5 else b := b mod a end if
+        @@comment{ "удалить $x$ из $B$" }
+        @@begin_oneline
+        if a > b then
+            a := a mod b
+        elif 5 == 2 then
+            return 5
+        else
+            b := b mod a
+        end if
+        @@end_oneline
         gdf : natural
     end while
-    return a + b
+    for g \in G do
+        s := rew[g]
+        next for g
+    end for
+    repeat
+        s := rew[g]
+        next for g
+    until 6 == g
+    return @v_emptyset
+    gdfg(gdhfh, gdfgf, fd)
+    gdfgdf :
+    select gfd \in dff
+    goto gdfgdf
+    return 1 * (532.54 + 654 - (ddds - 5 * (432..43242)))
+    pGeter : \uparrow integer
 end algorithm
+@@tex{"\end{document}"}

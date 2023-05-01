@@ -1,0 +1,164 @@
+    @@tex{ 
+    "\documentclass{article}", 
+    "\usepackage[T2A]{fontenc}", 
+    "\usepackage[russian]{babel}", 
+    "\usepackage[utf8]{inputenc}", 
+    "\usepackage{enumitem}", 
+    "\usepackage[usenames]{color}", 
+    "\usepackage{latexsym,amssymb,amsthm}", 
+    "\setlength{\parindent}{0pt}", 
+    "\begin{document}", 
+    "\newcommand\tb[1][0.5cm]{\hspace*{#1}}" 
+    } 
+
+    @@tex{ "\newpage" } 
+func GetSet (n : natural) -> @@comment{ "Множество $B$ целых чисел от $2$ до $n$" } 
+    B := @set(2, 3, 4, 5, ..., n) 
+    return B 
+end algorithm 
+    @@tex{ "\newpage" } 
+    @@begin_oneline 
+    @@begin_oneline 
+
+
+
+
+    @@end_oneline 
+
+
+    @@set_key_formatted{ "if", "\textbf{#prev}" } 
+    @@set_key_formatted{ "then", "\textbf{#prev}" } 
+    @@set_key_formatted{ "else", "\textbf{#prev}" } 
+    @@set_key_formatted{ "elif", "\textbf{#prev}" } 
+    @@set_key_formatted{ "end if", "\textbf{#prev}" } 
+    @@set_key_formatted{ "for", "\textbf{#prev}" } 
+    @@set_key_formatted{ "do", "\textbf{#prev}" } 
+    @@set_key_formatted{ "end for", "\textbf{#prev}" } 
+    @@set_key_formatted{ "while", "\textbf{#prev}" } 
+    @@set_key_formatted{ "end while", "\textbf{#prev}" } 
+    @@set_key_formatted{ "repeat", "\textbf{#prev}" } 
+    @@set_key_formatted{ "until", "\textbf{#prev}" } 
+    @@set_key_formatted{ "return", "\textbf{#prev}" } 
+    @@set_key_formatted{ "yield", "\textbf{#prev}" } 
+    @@set_key_formatted{ "select", "\textbf{#prev}" } 
+    @@set_key_formatted{ "goto", "\textbf{#prev}" } 
+    @@set_key_formatted{ "end algorithm", "\textbf{#prev}" } 
+    @@set_key_formatted{ "next for", "\textbf{#prev}" } 
+    @@set_key_formatted{ "array", "\textbf{#prev}" } 
+    @@set_key_formatted{ "of", "\textbf{#prev}" } 
+    @@set_key_formatted{ "struct", "\textbf{#prev}" } 
+    @@set_key_formatted{ "array", "\textbf{#prev}" } 
+    @@set_key_formatted{ "func", "\textbf{#prev}" } 
+    @@set_key_formatted{ "iter", "\textbf{#prev}" } 
+    @@set_key_formatted{ "proc", "\textbf{#prev}" } 
+
+    @@set_key_formatted{ "if", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "then", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "else", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "elif", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "end if", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "for", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "do", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "end for", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "while", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "end while", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "repeat", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "until", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "return", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "yield", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "select", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "goto", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "end algorithm", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "next for", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "array", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "of", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "struct", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "array", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "func", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "iter", "{\color{blue}#prev}" } 
+    @@set_key_formatted{ "proc", "{\color{blue}#prev}" } 
+
+    @@set_default_var_format{ "#value" } 
+    @@set_default_func_name_format{ "{\color{red}\textrm{#value}}" } 
+    @@set_default_goto_mark_name_format{ "{\color{cyan}\textrm{#value}}" } 
+    @@set_name_formatted{ "gcd", "{\color{green}\textrm{#value}}" } 
+    @@begin_oneline 
+
+
+
+
+    @@end_oneline 
+    @@begin_oneline 
+
+
+
+
+    @@end_oneline 
+    @@begin_oneline 
+
+
+
+
+    @@end_oneline 
+    @@begin_oneline 
+
+
+
+
+    @@end_oneline 
+    @@end_oneline 
+    @@begin_enumerate 
+func gcd (a : natural, b : natural) -> @@comment{ "НОД чисел $a$ и $b$" } 
+    while a != 0 & b != 0 do 
+        if a > b then a := a mod b else b := b mod a end if 
+    end while 
+    return a + b 
+end algorithm 
+    @@end_enumerate 
+    @@tex{ "\newpage" } 
+iter EratosphenGrid (n : natural) -> @@comment{ "Перечисление простых чисел, не превосходящих $n$" } 
+    B := @set(2, 3, 4, 5, ..., n) 
+    while B != @value{ "$\emptyset$" } do 
+        x := min(B); @@comment{ "наименьший элемент" } 
+        yield x; @@comment{ "выдать $x$" } 
+        B := B - x @@comment{ "удалить $x$ из $B$" } 
+        y := x pow 2 
+        while y <= n do 
+            B := B - y; y := y + x @@comment{ "удалить из $B$ все числа, кратные $x$" } 
+        end while 
+    end while 
+end algorithm 
+    @@tex{ "\newpage" } 
+
+func gcd (a : natural, c, b : natural) -> @@comment{ "НОД чисел $a$ и $b$" } 
+    @@comment{ "удалить $x$ из $B$" }; @@comment{ "удалить $x$ из $B$" } 
+    while a != 0 & b != 0 do 
+        @@comment{ "удалить $x$ из $B$" } 
+        @@begin_oneline 
+        if a > b then 
+            a := a mod b 
+        elif 5 == 2 then 
+            return 5 
+        else 
+            b := b mod a 
+        end if 
+        @@end_oneline 
+        gdf : natural 
+    end while 
+    for g \in G do 
+        s := rew[g] 
+        next for g 
+    end for 
+    repeat 
+        s := rew[g] 
+        next for g 
+    until 6 == g 
+    return @value{ "$\emptyset$" } 
+    gdfg(gdhfh, gdfgf, fd) 
+    gdfgdf : 
+    select gfd \in dff 
+    goto gdfgdf 
+    return 1 * (532.54 + 654 - (ddds - 5 * (432..43242))) 
+    pGeter : \uparrow integer 
+end algorithm 
+    @@tex{ "\end{document}" }

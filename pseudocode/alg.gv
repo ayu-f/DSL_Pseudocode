@@ -2,8 +2,8 @@ digraph ALG {
     start [label=ALG shape=plaintext]
     alg_head [label=ALG_HEAD shape=box]
     code_block [label=CODE_BLOCK shape=box]
-    nl_1 [label="\n" shape=oval]
-    nl_2 [label="\n" shape=oval]
+    nl_1 [label="nl" shape=oval]
+    nl_2 [label="nl" shape=oval]
     end_alg [label="end algorithm" shape=oval]
     end [label="" shape=point]
     start -> alg_head
